@@ -7,7 +7,7 @@
 ## Abstract
 
 Robotics is powered by software. The tools we use shape the pace of innovation in research, drive
-growth in industry, and underpin the educa$on of future developers. This hands-on tutorial presents
+growth in industry, and underpin the education of future developers. This hands-on tutorial presents
 a modern view of robotics software through live coding examples.
 
 We begin with open-source Python toolboxes for robotics, machine vision, and spatial mathematics,
@@ -38,7 +38,7 @@ We will be demonstrating tools: what they do, how to use them, and how to instal
 The room we've been allocated seats 470 so it might be a big crowd. We will use [mentimeter](https://www.mentimeter.com) to capture questions from the floor and we'll do our best to answer them.  
 
 
-## Bios
+## Presenters
 
 ![Peter and Tobi](https://raw.github.com/petercorke/ICRA2026-modern-software-tools/main/figs/peter+tobi.png)
 
