@@ -2,14 +2,14 @@
 title: "**From Research Code to Running Systems**"
 sub_title: "Cross-Platform Robotics and ML Workflows"
 authors:
-  - Peter Corke
   - Tobias Fischer
+  - Peter Corke
 theme:
   name: tokyonight-storm
   override:
     footer:
       style: template
-      left: '**Peter Corke & Tobias Fischer**: <span class="noice">From Research Code to Running Systems</span>'
+      left: '**Tobias Fischer & Peter Corke**: <span class="noice">From Research Code to Running Systems</span>'
       center: ''
       right: "{current_slide} / {total_slides}"
       height: 1
@@ -39,7 +39,7 @@ to:
 
 - executable workflows
 - cross-platform environments
-- reproducible robotics systems
+- portable + reproducible robotics systems
 
 <!-- end_slide -->
 
@@ -82,14 +82,8 @@ Pixi provides:
 # Start a Project
 
 ```bash +exec
-/// rm -rf pixi.toml
-/// rm -rf data
+/// python -c "from pathlib import Path; import shutil; [p.unlink() if p.is_file() else shutil.rmtree(p, ignore_errors=True) for p in [Path('pixi.toml'), Path('pixi.lock'), Path('data')]]"
 pixi init
-```
-
-```bash +image
-/// echo "test" > ./test.txt
-magick -size 1x1 xc:transparent png:-
 ```
 
 
@@ -103,20 +97,34 @@ pixi add pytorch torchvision
 
 <!-- end_slide -->
 
-# hello.py
+# train.py
 
 ```file +exec:pixi
-path: hello.py
+path: train.py
 language: python
 ```
 
 <!-- end_slide -->
 
-# Add a Task
+# Tasks Turn Commands into Workflows
+
+<!-- column_layout: [1, 1] -->
+
+<!-- column: 0 -->
+
+## Define the workflow
+
+```bash +exec
+/// python helper.py remove start download-mnist
+pixi task add start "python train.py" --depends-on download-mnist
+/// python helper.py add download-mnist
+```
+
+<!-- pause -->
 
 ```toml {1-2|4-5|6-7|1-8}
 [tasks]
-train = { cmd = "python train.py", depends-on = ["download-mnist"] }
+start = { cmd = "python train.py", depends-on = ["download-mnist"] }
 
 download-mnist = { 
   cmd = "python -c 'from torchvision.datasets import MNIST; MNIST(\"data\", download=True)'", 
@@ -124,28 +132,23 @@ download-mnist = {
 }
 ```
 
-```bash +image
-/// pixi task add start "python hello.py" > /dev/null 2>&1
-magick -size 1x1 xc:transparent png:-
-```
-
 <!-- pause -->
 
-# train.py
+<!-- column: 1 -->
 
-```python
-import torch
-
-print('Train ...')
-```
-
-<!-- pause -->
-
-# Run the Workflow
-
-```bash +exec +pty
+## Run it
+```bash +exec +pty:80:8
 pixi run start
 ```
+
+<!-- pause -->
+
+## Run it again
+```bash +exec +pty:80:4
+pixi run start
+```
+
+<!-- reset_layout -->
 
 <!-- end_slide -->
 
@@ -219,18 +222,93 @@ ROS + PyTorch + OpenCV + Transformers + ... + Custom research code
 
 # One lockfile.
 
+<!-- pause -->
+
+# One Machine, Multiple ROS Distros
+
+```bash
+# Add another ROS distro
+pixi workspace channel add https://prefix.dev/robostack-humble
+pixi add --feature humble ros-humble-desktop
+
+# Run different environments
+pixi run -e humble   ros2 run turtlesim turtlesim_node
+pixi run -e rolling  ros2 run rviz2 rviz2
+
+# We still support ROS1 Noetic
+```
+
+<!-- pause -->
+
+> Different ROS distributions become environments, not separate machines.
+
+<!-- end_slide -->
+
+# Build Your Own ROS / C++ / Python Packages
+
+<!-- column_layout: [1, 1] -->
+
+<!-- column: 0 -->
+
+## Create a ROS package
+
+```bash +exec +pty:80:2
+/// python -c "from pathlib import Path; import shutil; [p.unlink() if p.is_file() else shutil.rmtree(p, ignore_errors=True) for p in [Path('icra_ros_package')]]"
+ros2 pkg create \
+  --build-type ament_cmake \
+  --node-name icra_node \
+  icra_ros_package
+```
+
+<!-- pause -->
+
+## Add it to Pixi
+
+```toml
+[workspace]
+preview = ["pixi-build"]
+
+[dependencies]
+ros-rolling-icra-ros-package = { path = "icra_ros_package/package.xml" }
+```
+<!-- pause -->
+
+<!-- column: 1 -->
+
+## Build the package
+
+```bash +exec +pty:80:4
+/// python helper.py add pixi-build-preview icra-ros-package
+pixi install
+```
+
+<!-- pause -->
+
+## Does it work?
+
+```bash +exec +pty:80:4
+pixi run ros2 run icra_ros_package icra_node
+```
+
+<!-- reset_layout -->
+
+## Beyond ROS
+
+- pure CMake projects
+- Python packages
+- Rust crates
+- git repositories
+
+> Research code becomes installable, shareable infrastructure.
+
 <!-- end_slide -->
 
 # Cross Platform Reproducibility
 
 - Same repository
-
 - Same lockfile
-
 - Same command
-
 - Different machine
-
 - Different OS
 
 <!-- pause -->
@@ -240,23 +318,20 @@ ROS + PyTorch + OpenCV + Transformers + ... + Custom research code
 ```bash +exec
 /// ssh zeus "rm -rf ~/robotics-demo"
 # Add other platforms
-pixi workspace platform add linux-64 osx-arm64 win-64
+pixi workspace platform add linux-64 win-64
 ```
 <!-- pause -->
 
 ```bash +exec
+# Zeus is a Linux machine, so far everything ran on MacOS
 ssh zeus "mkdir -p ~/robotics-demo"
-scp pixi.toml pixi.lock hello.py zeus:~/robotics-demo/
+scp pixi.toml pixi.lock train.py zeus:~/robotics-demo/
 /// ssh zeus "cd ~/robotics-demo && printf '\n[system-requirements]\ncuda = \"12\"\n' >> pixi.toml"
 ```
 <!-- end_slide -->
 
-```bash +image
-/// ssh zeus "cd ~/robotics-demo && pixi add pytorch-gpu -p linux-64" > /dev/null 2>&1
-magick -size 1x1 xc:transparent png:-
-```
-
 ```bash +exec
+/// ssh zeus "cd ~/robotics-demo && pixi add pytorch-gpu -p linux-64" > /dev/null 2>&1
 ssh zeus "cd ~/robotics-demo && pixi run start"
 ```
 
@@ -264,20 +339,12 @@ ssh zeus "cd ~/robotics-demo && pixi run start"
 
 # From Scripts to Infrastructure
 
-<!-- pause -->
-
 ```text
-
         README.md + shell scripts
-
                   ↓
-
          Executable workflows
-
                   ↓
-
        Composable research systems
-
 ```
 
 <!-- pause -->
@@ -296,23 +363,15 @@ Large-scale visual SLAM framework for benchmarking, composability, reproducibili
 ## Before
 
 ```text
-
 README.md
 
 1. Install ROS
-
 2. Build OpenCV
-
 3. Download models
-
 4. Download datasets
-
 5. Configure CUDA
-
 6. Build dependencies
-
 7. Pray
-
 ```
 
 <!-- column: 1 -->
@@ -322,8 +381,7 @@ README.md
 ```bash +exec +pty:80:6
 git clone https://github.com/VSLAM-LAB/VSLAM-LAB.git > /dev/null 2>&1
 cd VSLAM-LAB && gh pr checkout 49 > /dev/null 2>&1 && \
-pixi run demo \
-orbslam2 eth table_3 mono
+pixi run demo orbslam2 eth table_3 mono
 ```
 
 <!-- reset_layout -->
@@ -331,23 +389,24 @@ orbslam2 eth table_3 mono
 <!-- pause -->
 
 > Multi-page setup instructions become executable workflows.
+> Tooling stopped being a convenience and became research infrastructure!
 
 <!-- end_slide -->
 
-# Tasks as Workflows
-
-```toml
-[tasks]
-download-data = "python scripts/download_data.py"
-download-models = "python scripts/download_models.py"
-benchmark = "python run_benchmark.py"
-```
+# Why Pixi for Robotics?
+| Built-in core feature | Pixi | Conda | Pip | Poetry | uv |
+|---|---:|---:|---:|---:|---:|
+| Installs Python | ✅ | ✅ | ❌ | ❌ | ✅ |
+| Multi-language packages | ✅ | ✅ | ❌ | ❌ | ❌ |
+| Lockfiles | ✅ | ❌ | ❌ | ✅ | ✅ |
+| Task runner | ✅ | ❌ | ❌ | ❌ | ❌ |
+| Workspace management | ✅ | ❌ | ❌ | ✅ | ✅ |
 
 <!-- pause -->
 
-# Research code becomes executable infrastructure
-
-This is where the tooling stopped being a convenience and became research infrastructure!
+> The point is not one feature.
+> 
+> The point is having the right combination for robotics.
 
 <!-- end_slide -->
 
@@ -360,52 +419,35 @@ This is where the tooling stopped being a convenience and became research infras
 ## Containers are excellent for
 
 - deployment
-
-- isolation
-
 - cloud workflows
+- CI/CD
+- reproducible services
+- production isolation
 
-- CI/CD pipelines
-
-- *But:* difficult composition across research repositories
 ```text
-
 Dockerfile
-
 apt-get
-
 pip install
-
 CUDA setup
-
 X11 forwarding
-
 volume mounts
-
 ```
+<!-- pause -->
 
 <!-- column: 1 -->
 
 ## But robotics research often needs
 
-- native hardware acceleration
-
-- GUI applications
-
+- native GUI applications
+- low-friction hardware access
 - ROS + ML composability
-
 - rapid iteration across repositories
-
-- native network access
+- cross-platform desktop workflows
 
 ```text
-
 pixi.toml
-
 pixi.lock
-
 pixi run start
-
 ```
 
 <!-- reset_layout -->
@@ -414,7 +456,7 @@ pixi run start
 
 ## Our goal
 
-Native, reproducible, cross-platform workflows with minimal setup friction.
+Native, reproducible workflows with minimal setup friction.
 
 <!-- end_slide -->
 
@@ -465,6 +507,27 @@ Native, reproducible, cross-platform workflows with minimal setup friction.
 
 <!-- end_slide -->
 
+# Teasers
+
+- Browser-native ROS via [ROS2WASM](https://ros2wasm.dev/)
+
+- [Cross-platform CI in GitHub](https://github.com/ruben-arts/ros-example)
+
+```yaml
+jobs:
+  strategy:
+    matrix:
+      os: [ubuntu-latest, windows-latest, macos-latest]
+  steps:
+    - name: Setup Pixi and install environment
+      uses: prefix-dev/setup-pixi@v0.9.3
+
+    - name: Test
+      run: pixi run ros2 pkg list
+```
+
+<!-- end_slide -->
+
 # Key Insights
 
 - Robotics is increasingly limited by software infrastructure.
@@ -492,11 +555,8 @@ Dependency management is becoming core research infrastructure.
 <!-- pause -->
 
 Modern robotics needs:
-
 - reproducible environments
-
 - composable software ecosystems
-
 - portable workflows across platforms
 
 <!-- pause -->
@@ -505,10 +565,16 @@ Modern robotics needs:
 
 <!-- pause -->
 
-# Thank You!
+<!-- new_lines: 3 -->
 
-Questions?
+# Questions?
 
-Peter Corke `peter.corke@qut.edu.au` & Tobias Fischer `tobias.fischer@qut.edu.au`
+Tobias Fischer `tobias.fischer@qut.edu.au` & Peter Corke `peter.corke@qut.edu.au`
 
 Queensland University of Technology
+
+<!-- new_lines: 3 -->
+
+# Thank you!
+
+To the **prefix.dev** team for their incredible work on Pixi, to **Silvio Traversaro** for the many hours of work on RoboStack, to my **co-authors**, and to the many, many **open-source contributors** to the many presented projects! Also thanks to the QUT Centre for Robotics and Australian Research Council for their support.

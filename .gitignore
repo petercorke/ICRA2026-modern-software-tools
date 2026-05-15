@@ -2,6 +2,9 @@
 # These are automatically generated temporary files
 tobi/pixi.toml
 tobi/pixi.lock
+tobi/.gitignore
+tobi/.gitattributes
+tobi/icra_ros_package
 
 # Conda/Pixi environment related
 *.conda
