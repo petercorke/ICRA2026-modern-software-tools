@@ -2,11 +2,11 @@
 authors = ["Tobias Fischer <info@tobiasfischer.info>", "Peter Corke <peter.corke@qut.edu.au>"]
 channels = ["conda-forge", "https://prefix.dev/github-releases"]
 name = "2026 - ICRA - Tutorial Keynote Peter Corke and Tobias Fischer"
-platforms = ["linux-64", "osx-arm64", "win-64"]
+platforms = ["linux-64", "osx-arm64", "win-64", "linux-aarch64", "osx-64"]
 version = "0.1.0"
 
 [tasks]
-presentation = { cmd = "pixi run presenterm --enable-snippet-execution -X icra_software_tools.md", description = "Run the presentation", cwd = "./tobi"}
+presentation = { cmd = "pixi run presenterm --enable-snippet-execution -X icra_software_tools.md --config-file presenterm_config.yaml", description = "Run the presentation", cwd = "./tobi"}
 
 [dependencies]
 presenterm = ">=0.16.1"

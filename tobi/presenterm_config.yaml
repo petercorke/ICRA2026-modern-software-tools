@@ -1,0 +1,22 @@
+snippet:
+  exec:
+    custom:
+      python:
+        filename: "snippet.py"
+
+        commands:
+          - ["python", "-u", "$pwd/snippet.py"]
+
+        hidden_line_prefix: "/// "
+
+        alternative:
+          uv:
+            filename: "snippet.py"
+            commands:
+              - ["uv", "run", "--script", "-q", "$pwd/snippet.py"]
+
+          pixi:
+            filename: "snippet.py"
+            commands:
+              - ["pixi", "run", "python", "-u", "$pwd/snippet.py"]
+

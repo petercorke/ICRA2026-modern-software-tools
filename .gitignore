@@ -5,6 +5,7 @@ tobi/pixi.lock
 tobi/.gitignore
 tobi/.gitattributes
 tobi/icra_ros_package
+tobi/data
 
 # Conda/Pixi environment related
 *.conda
