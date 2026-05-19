@@ -290,6 +290,8 @@ pixi install
 pixi run ros2 run icra_ros_package icra_node
 ```
 
+<!-- pause -->
+
 <!-- reset_layout -->
 
 ## Beyond ROS
