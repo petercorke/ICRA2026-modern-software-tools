@@ -6,9 +6,14 @@ platforms = ["linux-64", "osx-arm64", "win-64", "linux-aarch64", "osx-64"]
 version = "0.1.0"
 
 [tasks]
-presentation = { cmd = "pixi run presenterm --enable-snippet-execution -X icra_software_tools.md --config-file presenterm_config.yaml", description = "Run the presentation", cwd = "./tobi"}
+# They are terrible workarounds as we initialize a pixi workspace inside the presentation
+# If someone has a better idea how to do this, please let me know
+# One idea would be to `pixi global install presenterm -c https://prefix.dev/github-releases`
+presentation = { cmd = "rm ./pixi.toml; rm ./pixi.lock; pixi init && pixi run presenterm --enable-snippet-execution -X icra_software_tools.md --config-file presenterm_config.yaml --theme terminal-dark", description = "Run the presentation", cwd = "./tobi" }
+export_presentation = { cmd = "rm ./pixi.toml; rm ./pixi.lock; pixi init && pixi run presenterm --export-pdf icra_software_tools.md --config-file presenterm_config.yaml", description = "Export the presentation to PDF", cwd = "./tobi" }
 
 [dependencies]
 presenterm = ">=0.16.1"
 jupyterlab = ">=4.0.0"
 python = ">=3.10.0"
+weasyprint = "*"

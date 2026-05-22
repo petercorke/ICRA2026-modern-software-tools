@@ -6,6 +6,7 @@ tobi/.gitignore
 tobi/.gitattributes
 tobi/icra_ros_package
 tobi/data
+tobi/icra_software_tools.pdf
 
 # Conda/Pixi environment related
 *.conda

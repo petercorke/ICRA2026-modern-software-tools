@@ -5,12 +5,11 @@ authors:
   - Tobias Fischer
   - Peter Corke
 theme:
-  name: tokyonight-storm
   override:
     footer:
       style: template
-      left: '**Tobias Fischer & Peter Corke**: <span class="noice">From Research Code to Running Systems</span>'
-      center: ''
+      left: '**Tobias Fischer & Peter Corke**'
+      center: '<span class="noice">             From Research Code to Running Systems</span>'
       right: "{current_slide} / {total_slides}"
       height: 1
     palette:
@@ -19,7 +18,8 @@ theme:
           foreground: red
 ---
 
-# Robotics is Powered by Software
+Robotics is Powered by Software
+===
 
 - Software controls the pace of robotics innovation
 - Modern robotics requires integrating many ecosystems
@@ -43,7 +43,8 @@ to:
 
 <!-- end_slide -->
 
-# The Reality of Many Research Repositories
+The Reality of Many Research Repositories
+===
 
 ```text
 git clone https://github.com/some_repo/project
@@ -81,6 +82,9 @@ Pixi provides:
 
 # Start a Project
 
+<!-- // Note: we want to start from scratch every time, so delete any "leftovers" -->
+<!-- // Note 2: Lines starting with "///" will run but not be shown -->
+
 ```bash +exec
 /// python -c "from pathlib import Path; import shutil; [p.unlink() if p.is_file() else shutil.rmtree(p, ignore_errors=True) for p in [Path('pixi.toml'), Path('pixi.lock'), Path('data')]]"
 pixi init
@@ -106,7 +110,8 @@ language: python
 
 <!-- end_slide -->
 
-# Tasks Turn Commands into Workflows
+Tasks Turn Commands into Workflows
+===
 
 <!-- column_layout: [1, 1] -->
 
@@ -180,7 +185,8 @@ transformers = "*"
 
 <!-- end_slide -->
 
-# Robotics Meets ML: RoboStack
+Robotics Meets ML: RoboStack
+===
 
 RoboStack enables ROS on:
 
@@ -199,7 +205,9 @@ pixi add ros-rolling-desktop
 
 <!-- end_slide -->
 
-# ROS2 101: TurtleSim demo
+ROS2 101: TurtleSim demo
+===
+
 ```bash +exec
 pixi run ros2 run turtlesim turtlesim_node
 ```
@@ -244,7 +252,8 @@ pixi run -e rolling  ros2 run rviz2 rviz2
 
 <!-- end_slide -->
 
-# Build Your Own ROS / C++ / Python Packages
+Build Your Own ROS / C++ / Python Packages
+===
 
 <!-- column_layout: [1, 1] -->
 
@@ -252,6 +261,7 @@ pixi run -e rolling  ros2 run rviz2 rviz2
 
 ## Create a ROS package
 
+<!-- // Delete the icra_ros_package in case it already exists -->
 ```bash +exec +pty:80:2
 /// python -c "from pathlib import Path; import shutil; [p.unlink() if p.is_file() else shutil.rmtree(p, ignore_errors=True) for p in [Path('icra_ros_package')]]"
 ros2 pkg create \
@@ -276,6 +286,9 @@ ros-rolling-icra-ros-package = { path = "icra_ros_package/package.xml" }
 <!-- column: 1 -->
 
 ## Build the package
+
+<!-- // The helper script adds small snippets into the pixi.toml that I want to hide for the presentation -->
+<!-- // See the top of helper.py for these snippets -->
 
 ```bash +exec +pty:80:4
 /// python helper.py add pixi-build-preview icra-ros-package
@@ -305,7 +318,8 @@ pixi run ros2 run icra_ros_package icra_node
 
 <!-- end_slide -->
 
-# Cross Platform Reproducibility
+Cross Platform Reproducibility
+===
 
 - Same repository
 - Same lockfile
@@ -339,7 +353,8 @@ ssh zeus "cd ~/robotics-demo && pixi run start"
 
 <!-- end_slide -->
 
-# From Scripts to Infrastructure
+From Scripts to Infrastructure
+===
 
 ```text
         README.md + shell scripts
@@ -354,7 +369,8 @@ ssh zeus "cd ~/robotics-demo && pixi run start"
 > Better tooling changes how research is shared, reused, and extended.
 
 <!-- end_slide -->
-# Case Study: VSLAM-Lab
+Case Study: VSLAM-Lab
+===
 
 Large-scale visual SLAM framework for benchmarking, composability, reproducibility, and easy onboarding.
 
@@ -379,7 +395,7 @@ README.md
 <!-- column: 1 -->
 
 ## After
-
+<!-- // TODO: remove the gh once the PR is merged -->
 ```bash +exec +pty:80:6
 git clone https://github.com/VSLAM-LAB/VSLAM-LAB.git > /dev/null 2>&1
 cd VSLAM-LAB && gh pr checkout 49 > /dev/null 2>&1 && \
@@ -395,7 +411,9 @@ pixi run demo orbslam2 eth table_3 mono
 
 <!-- end_slide -->
 
-# Why Pixi for Robotics?
+Why Pixi for Robotics?
+===
+
 | Built-in core feature | Pixi | Conda | Pip | Poetry | uv |
 |---|---:|---:|---:|---:|---:|
 | Installs Python | ✅ | ✅ | ❌ | ❌ | ✅ |
@@ -412,7 +430,8 @@ pixi run demo orbslam2 eth table_3 mono
 
 <!-- end_slide -->
 
-# Why Not Docker?
+Why Not Docker?
+===
 
 <!-- column_layout: [1, 1] -->
 
@@ -462,7 +481,8 @@ Native, reproducible workflows with minimal setup friction.
 
 <!-- end_slide -->
 
-# Limitations and Trade-offs
+Limitations and Trade-offs
+===
 
 <!-- column_layout: [1, 1] -->
 
@@ -509,7 +529,8 @@ Native, reproducible workflows with minimal setup friction.
 
 <!-- end_slide -->
 
-# Teasers
+Teasers
+===
 
 - Browser-native ROS via [ROS2WASM](https://ros2wasm.dev/)
 
@@ -530,23 +551,27 @@ jobs:
 
 <!-- end_slide -->
 
-# Key Insights
+Key Insights
+===
 
-- Robotics is increasingly limited by software infrastructure.
+<!-- list_item_newlines: 2 -->
 
-<!-- pause -->
 
-- Tasks turn research code into executable workflows.
-
-<!-- pause -->
-
-- Composable environments unify robotics and machine learning.
+1. Robotics is increasingly limited by software infrastructure.
 
 <!-- pause -->
 
-- Better packaging enables reuse, benchmarking, and collaboration.
+2. Tasks turn research code into executable workflows.
 
----
+<!-- pause -->
+
+3. Composable environments unify robotics and machine learning.
+
+<!-- pause -->
+
+4. Better packaging enables reuse, benchmarking, and collaboration.
+
+<!-- end_slide -->
 
 # The Bigger Shift
 
@@ -567,7 +592,7 @@ Modern robotics needs:
 
 <!-- pause -->
 
-<!-- new_lines: 3 -->
+<!-- new_lines: 1 -->
 
 # Questions?
 
@@ -575,7 +600,7 @@ Tobias Fischer `tobias.fischer@qut.edu.au` & Peter Corke `peter.corke@qut.edu.au
 
 Queensland University of Technology
 
-<!-- new_lines: 3 -->
+<!-- new_lines: 1 -->
 
 # Thank you!
 
