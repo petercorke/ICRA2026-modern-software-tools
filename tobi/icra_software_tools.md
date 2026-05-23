@@ -18,6 +18,23 @@ theme:
           foreground: red
 ---
 
+Following Along
+===
+
+This presentation is executable.
+
+| Action | Keys |
+|---|---|
+| Navigate | arrow keys |
+| Run code on a slide | `control` + `e` |
+| Show all keybindings | `?` |
+
+<!-- pause -->
+
+Only run executable snippets from presentations you trust.
+
+<!-- end_slide -->
+
 Robotics is Powered by Software
 ===
 
@@ -332,23 +349,24 @@ Cross Platform Reproducibility
 # macOS → Linux → HPC
 
 ```bash +exec
-/// ssh zeus "rm -rf ~/robotics-demo"
 # Add other platforms
 pixi workspace platform add linux-64 win-64
+
+/// python helper.py remote-demo reset
 ```
 <!-- pause -->
 
 ```bash +exec
-# Zeus is a Linux machine, so far everything ran on MacOS
-ssh zeus "mkdir -p ~/robotics-demo"
-scp pixi.toml pixi.lock train.py zeus:~/robotics-demo/
-/// ssh zeus "cd ~/robotics-demo && printf '\n[system-requirements]\ncuda = \"12\"\n' >> pixi.toml"
+# Copy this demo to Linux/HPC via ssh/scp
+# Runs ssh/scp only when ICRA_REMOTE_HOST is set
+python helper.py remote-demo prepare
 ```
 <!-- end_slide -->
 
 ```bash +exec
-/// ssh zeus "cd ~/robotics-demo && pixi add pytorch-gpu -p linux-64" > /dev/null 2>&1
-ssh zeus "cd ~/robotics-demo && pixi run start"
+# Optional presenter remote: run the same Pixi task on Linux/HPC
+# Prints each remote command before executing it
+python helper.py remote-demo run
 ```
 
 <!-- end_slide -->
