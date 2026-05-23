@@ -11,6 +11,7 @@ version = "0.1.0"
 # One idea would be to `pixi global install presenterm -c https://prefix.dev/github-releases`
 presentation = { cmd = "rm ./pixi.toml; rm ./pixi.lock; pixi init && pixi run presenterm --enable-snippet-execution -X icra_software_tools.md --config-file presenterm_config.yaml --theme terminal-dark", description = "Run the presentation", cwd = "./tobi" }
 export_presentation = { cmd = "rm ./pixi.toml; rm ./pixi.lock; pixi init && pixi run presenterm --export-pdf icra_software_tools.md --config-file presenterm_config.yaml", description = "Export the presentation to PDF", cwd = "./tobi" }
+export_presentation_code = { cmd = "rm ./pixi.toml; rm ./pixi.lock; pixi init && pixi run presenterm --export-pdf  --enable-snippet-execution -X icra_software_tools.md --config-file presenterm_config.yaml", description = "Export the presentation to PDF", cwd = "./tobi" }
 
 [dependencies]
 presenterm = ">=0.16.1"

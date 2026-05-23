@@ -28,6 +28,7 @@ This presentation is executable.
 | Navigate | arrow keys |
 | Run code on a slide | `control` + `e` |
 | Show all keybindings | `?` |
+| Exit | `esc` or `control` + `c` |
 
 <!-- pause -->
 
@@ -413,10 +414,9 @@ README.md
 <!-- column: 1 -->
 
 ## After
-<!-- // TODO: remove the gh once the PR is merged -->
 ```bash +exec +pty:80:6
 git clone https://github.com/VSLAM-LAB/VSLAM-LAB.git > /dev/null 2>&1
-cd VSLAM-LAB && gh pr checkout 49 > /dev/null 2>&1 && \
+cd VSLAM-LAB && \
 pixi run demo orbslam2 eth table_3 mono
 ```
 
