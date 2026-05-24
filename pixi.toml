@@ -10,6 +10,7 @@ version = "0.1.0"
 # If someone has a better idea how to do this, please let me know
 # One idea would be to `pixi global install presenterm -c https://prefix.dev/github-releases`
 presentation = { cmd = "rm ./pixi.toml; rm ./pixi.lock; rm -rf .pixi; pixi init && pixi run presenterm --enable-snippet-execution -X icra_software_tools.md --config-file presenterm_config.yaml --theme terminal-dark", description = "Run the presentation", cwd = "./tobi" }
+presentation_debug = { cmd = "pixi run presenterm --enable-snippet-execution -X icra_software_tools.md --config-file presenterm_config.yaml --theme terminal-dark", description = "Run the presentation", cwd = "./tobi" }
 export_presentation_pdf = { cmd = "python helper.py export-copy icra_software_tools.md icra_software_tools_export.md && rm ./pixi.toml; rm ./pixi.lock; rm -rf .pixi; pixi init && pixi run presenterm --export-pdf --enable-snippet-execution icra_software_tools_export.md --config-file presenterm_config.yaml", description = "Export the presentation with safe code snippets executed", cwd = "./tobi" }
 export_presentation_html = { cmd = "python helper.py export-copy icra_software_tools.md icra_software_tools_export.md && rm ./pixi.toml; rm ./pixi.lock; rm -rf .pixi;pixi init && pixi run presenterm --export-html --enable-snippet-execution --image-protocol ascii-blocks icra_software_tools_export.md --config-file presenterm_config.yaml", description = "Export the presentation to HTML with safe code snippets executed", cwd = "./tobi" }
 

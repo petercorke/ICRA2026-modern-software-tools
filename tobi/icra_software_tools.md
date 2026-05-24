@@ -64,7 +64,7 @@ to:
 The Reality of Many Research Repositories
 ===
 
-```text
+```shell
 git clone https://github.com/some_repo/project
 
 # Ubuntu 20.04 only
@@ -261,7 +261,7 @@ pixi add --feature humble ros-humble-desktop
 pixi run -e humble   ros2 run turtlesim turtlesim_node
 pixi run -e rolling  ros2 run rviz2 rviz2
 
-# We still support ROS1 Noetic
+# We still support ROS1 Noetic :)
 ```
 
 <!-- pause -->
@@ -280,7 +280,7 @@ Build Your Own ROS / C++ / Python Packages
 ## Create a ROS package
 
 <!-- // Delete the icra_ros_package in case it already exists -->
-```bash +exec +pty:80:2
+```bash +exec +pty:80:4
 /// python -c "from pathlib import Path; import shutil; [p.unlink() if p.is_file() else shutil.rmtree(p, ignore_errors=True) for p in [Path('icra_ros_package')]]"
 ros2 pkg create \
   --build-type ament_cmake \
@@ -550,7 +550,10 @@ Limitations and Trade-offs
 Teasers
 ===
 
+<!-- list_item_newlines: 2 -->
+
 - Browser-native ROS via [ROS2WASM](https://ros2wasm.dev/)
+<!-- pause -->
 
 - [Cross-platform CI in GitHub](https://github.com/ruben-arts/ros-example)
 

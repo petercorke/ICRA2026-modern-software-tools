@@ -228,7 +228,8 @@ def run_logged(
     dry_run: bool = False,
     display: str | None = None,
 ) -> None:
-    print("$ " + (display or shlex.join(command)), flush=True)
+    if display is not None:
+        print("$ " + (display or shlex.join(command)), flush=True)
     if dry_run:
         return
     stdout = subprocess.DEVNULL if quiet else None
@@ -247,7 +248,6 @@ def remote_demo(args: argparse.Namespace) -> None:
         run_logged(
             ["ssh", host, f"rm -rf {remote_dir}"],
             dry_run=args.dry_run,
-            display=f'ssh {host} "rm -rf {remote_dir}"',
         )
     elif args.remote_action == "prepare":
         run_logged(
@@ -256,9 +256,9 @@ def remote_demo(args: argparse.Namespace) -> None:
             display=f'ssh {host} "mkdir -p {remote_dir}"',
         )
         run_logged(
-            ["scp", "pixi.toml", "pixi.lock", "train.py", remote_path(host, remote_dir)],
+            ["scp", "-r","pixi.toml", "pixi.lock", "train.py", "icra_ros_package", remote_path(host, remote_dir)],
             dry_run=args.dry_run,
-            display=f"scp pixi.toml pixi.lock train.py {remote_path(host, remote_dir)}",
+            display=f"scp -r pixi.toml pixi.lock train.py icra_ros_package {remote_path(host, remote_dir)}",
         )
         run_logged(
             [
@@ -270,18 +270,12 @@ def remote_demo(args: argparse.Namespace) -> None:
                     "printf '\\n[system-requirements]\\ncuda = \"12\"\\n' >> pixi.toml"
                 ),
             ],
-            dry_run=args.dry_run,
-            display=(
-                f'ssh {host} "cd {remote_dir} && '
-                "grep -q 'cuda = \\\"12\\\"' pixi.toml || "
-                "printf '\\n[system-requirements]\\ncuda = \\\"12\\\"\\n' >> pixi.toml"
-                '"'
-            ),
+            dry_run=args.dry_run
         )
     elif args.remote_action == "run":
         run_logged(
             ["ssh", host, f"cd {remote_dir} && pixi add pytorch-gpu -p linux-64"],
-            quiet=True,
+            quiet=False,
             dry_run=args.dry_run,
             display=f'ssh {host} "cd {remote_dir} && pixi add pytorch-gpu -p linux-64"',
         )
