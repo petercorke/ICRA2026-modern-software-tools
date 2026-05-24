@@ -178,6 +178,36 @@ def edit_file(path: Path, action: str, names: list[str], verbose: bool) -> None:
     path.write_text(text.rstrip() + "\n", encoding="utf-8")
 
 
+def write_export_copy(source: Path, destination: Path) -> None:
+    text = source.read_text(encoding="utf-8")
+
+    skip_patterns = (
+        "turtlesim_node",
+        "ros2 topic pub",
+        "remote-demo",
+        "VSLAM-LAB",
+        "orbslam2",
+    )
+
+    def rewrite_block(match: re.Match[str]) -> str:
+        fence, attrs, body = match.groups()
+        attrs = attrs or ""
+        attrs = re.sub(r" \+pty:\d+:\d+", "", attrs)
+
+        has_exec = re.search(r" \+exec(?::[A-Za-z0-9_-]+)?", attrs) is not None
+        if has_exec:
+            if any(pattern in body for pattern in skip_patterns):
+                attrs = re.sub(r" \+exec(?::[A-Za-z0-9_-]+)?", "", attrs)
+            elif "+auto_exec" not in attrs:
+                attrs += " +auto_exec"
+
+        return f"{fence}{attrs}\n{body}```"
+
+    text = re.sub(r"(?ms)^(```[^\s`]+)([^\n`]*)\n(.*?)^```", rewrite_block, text)
+    destination.write_text(text, encoding="utf-8")
+    print(f"Wrote export-safe markdown to {destination}")
+
+
 def remote_host(args: argparse.Namespace) -> str | None:
     host = args.host or os.environ.get("ICRA_REMOTE_HOST")
     if host:
@@ -274,6 +304,15 @@ def main() -> None:
         parser.add_argument("--dry-run", action="store_true")
         args = parser.parse_args()
         remote_demo(args)
+        return
+
+    if len(sys.argv) > 1 and sys.argv[1] == "export-copy":
+        parser = argparse.ArgumentParser()
+        parser.add_argument("action", choices=["export-copy"])
+        parser.add_argument("source", type=Path)
+        parser.add_argument("destination", type=Path)
+        args = parser.parse_args()
+        write_export_copy(args.source, args.destination)
         return
 
     parser = argparse.ArgumentParser()

@@ -7,6 +7,10 @@ tobi/.gitattributes
 tobi/icra_ros_package
 tobi/data
 tobi/icra_software_tools.pdf
+tobi/icra_software_tools_export.md
+tobi/icra_software_tools_export.pdf
+tobi/icra_software_tools_export.html
+tobi/VSLAM-LAB
 
 # Conda/Pixi environment related
 *.conda

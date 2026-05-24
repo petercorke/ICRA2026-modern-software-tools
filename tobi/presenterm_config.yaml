@@ -28,4 +28,4 @@ export:
   snippets: sequential
   dimensions:
     columns: 110
-    rows: 30
+    rows: 37
