@@ -4,6 +4,29 @@
 * When: Wednesday, 3 June
 * Where: Strauss 1-2
 
+## Getting started
+
+The tutorial landing site is published at:
+<https://petercorke.github.io/ICRA2026-modern-software-tools/>
+
+From there you can open Peter's Part 1 JupyterLite notebooks, Tobi's Part 2 HTML slides, and the
+Part 2 PDF export.
+
+To follow Peter's Part 1 material, open the JupyterLite notebooks from the landing site. Open the
+notebook before the tutorial, run the first cell, and wait for the setup to complete so the browser
+cache is ready.
+
+To follow Tobi's Part 2 presentation locally:
+
+1. Install `pixi` (or if already installed, please update to the latest version via `pixi self-update`):
+
+- On Unix (Linux/MacOS): `curl -fsSL https://pixi.sh/install.sh | sh`
+- On Windows:
+`powershell -ExecutionPolicy ByPass -c "irm -useb https://pixi.sh/install.ps1 | iex"`
+- Make sure to restart your shell after installation!
+
+2. Run `pixi run presentation` within this directory in a terminal.
+
 ## Abstract
 
 Robotics is powered by software. The tools we use shape the pace of innovation in research, drive
@@ -35,19 +58,7 @@ We will be demonstrating tools: what they do, how to use them, and how to instal
 
 
 
-The room we've been allocated seats 470 so it might be a big crowd. We will use [mentimeter](https://www.mentimeter.com) to capture questions from the floor and we'll do our best to answer them.  
-
-
-## Getting started
-
-1. Install `pixi` (or if already installed, please update to the latest version via `pixi self-update`):
-
-- On Unix (Linux/MacOS): `curl -fsSL https://pixi.sh/install.sh | sh`
-- On Windows:
-`powershell -ExecutionPolicy ByPass -c "irm -useb https://pixi.sh/install.ps1 | iex"`
-- Make sure to restart your shell after installation!
-
-2. To follow Tobi's presentation, simply run `pixi run presentation` within this directory in a terminal.
+The room we've been allocated seats 470 so it might be a big crowd. We will use [mentimeter](https://www.mentimeter.com) to capture questions from the floor and we'll do our best to answer them.
 
 ## Presenters
 
