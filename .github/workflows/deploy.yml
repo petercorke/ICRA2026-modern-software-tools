@@ -1,0 +1,37 @@
+name: Deploy gh-pages branch to GitHub Pages
+
+# Triggered whenever part1.yml or part2.yml push their built output
+# to the gh-pages branch.  This workflow is the single deployment point
+# so GitHub Pages source can be set to "GitHub Actions".
+on:
+  push:
+    branches: [gh-pages]
+
+permissions:
+  pages: write      # required to deploy to Pages
+  id-token: write   # required for OIDC token used by deploy-pages
+
+concurrency:
+  group: pages
+  cancel-in-progress: false   # don't cancel an in-flight deploy; queue instead
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
