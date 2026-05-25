@@ -40,7 +40,7 @@ The room we've been allocated seats 470 so it might be a big crowd. We will use 
 
 ## Getting started
 
-1. Install `pixi`:
+1. Install `pixi` (or if already installed, please update to the latest version via `pixi self-update`):
 
 - On Unix (Linux/MacOS): `curl -fsSL https://pixi.sh/install.sh | sh`
 - On Windows:

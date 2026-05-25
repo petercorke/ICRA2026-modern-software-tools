@@ -2,7 +2,11 @@
 from __future__ import annotations
 
 import argparse
+import os
 import re
+import shlex
+import subprocess
+import sys
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -174,7 +178,149 @@ def edit_file(path: Path, action: str, names: list[str], verbose: bool) -> None:
     path.write_text(text.rstrip() + "\n", encoding="utf-8")
 
 
+def write_export_copy(source: Path, destination: Path) -> None:
+    text = source.read_text(encoding="utf-8")
+
+    skip_patterns = (
+        "turtlesim_node",
+        "ros2 topic pub",
+        "remote-demo",
+        "VSLAM-LAB",
+        "orbslam2",
+    )
+
+    def rewrite_block(match: re.Match[str]) -> str:
+        fence, attrs, body = match.groups()
+        attrs = attrs or ""
+        attrs = re.sub(r" \+pty:\d+:\d+", "", attrs)
+
+        has_exec = re.search(r" \+exec(?::[A-Za-z0-9_-]+)?", attrs) is not None
+        if has_exec:
+            if any(pattern in body for pattern in skip_patterns):
+                attrs = re.sub(r" \+exec(?::[A-Za-z0-9_-]+)?", "", attrs)
+            elif "+auto_exec" not in attrs:
+                attrs += " +auto_exec"
+
+        return f"{fence}{attrs}\n{body}```"
+
+    text = re.sub(r"(?ms)^(```[^\s`]+)([^\n`]*)\n(.*?)^```", rewrite_block, text)
+    destination.write_text(text, encoding="utf-8")
+    print(f"Wrote export-safe markdown to {destination}")
+
+
+def remote_host(args: argparse.Namespace) -> str | None:
+    host = args.host or os.environ.get("ICRA_REMOTE_HOST")
+    if host:
+        return host
+
+    print("Remote demo skipped.")
+    print("Set ICRA_REMOTE_HOST=zeus to run the presenter-only SSH demo.")
+    return None
+
+
+def remote_path(host: str, remote_dir: str) -> str:
+    return f"{host}:{remote_dir}/"
+
+
+def run_logged(
+    command: list[str],
+    quiet: bool = False,
+    dry_run: bool = False,
+    display: str | None = None,
+) -> None:
+    if display is not None:
+        print("$ " + (display or shlex.join(command)), flush=True)
+    if dry_run:
+        return
+    stdout = subprocess.DEVNULL if quiet else None
+    stderr = subprocess.DEVNULL if quiet else None
+    subprocess.run(command, check=True, stdout=stdout, stderr=stderr)
+
+
+def ensure_zeus_internet_client(host: str, dry_run: bool) -> None:
+    command = (
+        "pgrep -f /opt/qutiaclient/IAClient >/dev/null || "
+        "(nohup /opt/qutiaclient/IAClient >/tmp/qutiaclient.log 2>&1 &)"
+    )
+    run_logged(
+        ["ssh", host, command],
+        dry_run=dry_run,
+    )
+
+
+def remote_demo(args: argparse.Namespace) -> None:
+    host = remote_host(args)
+    if host is None:
+        return
+
+    remote_dir = args.remote_dir
+
+    if args.remote_action == "reset":
+        run_logged(
+            ["ssh", host, f"rm -rf {remote_dir}"],
+            dry_run=args.dry_run,
+        )
+    elif args.remote_action == "prepare":
+        run_logged(
+            ["ssh", host, f"mkdir -p {remote_dir}"],
+            dry_run=args.dry_run,
+            display=f'ssh {host} "mkdir -p {remote_dir}"',
+        )
+        run_logged(
+            ["scp", "-r","pixi.toml", "pixi.lock", "train.py", "icra_ros_package", remote_path(host, remote_dir)],
+            dry_run=args.dry_run,
+            display=f"scp -r pixi.toml pixi.lock train.py icra_ros_package {remote_path(host, remote_dir)}",
+        )
+        run_logged(
+            [
+                "ssh",
+                host,
+                (
+                    f"cd {remote_dir} && "
+                    "grep -q 'cuda = \"12\"' pixi.toml || "
+                    "printf '\\n[system-requirements]\\ncuda = \"12\"\\n' >> pixi.toml"
+                ),
+            ],
+            dry_run=args.dry_run
+        )
+    elif args.remote_action == "run":
+        ensure_zeus_internet_client(host, args.dry_run)
+        run_logged(
+            ["ssh", host, f"cd {remote_dir} && pixi add pytorch-gpu -p linux-64"],
+            quiet=False,
+            dry_run=args.dry_run,
+            display=f'ssh {host} "cd {remote_dir} && pixi add pytorch-gpu -p linux-64"',
+        )
+        run_logged(
+            ["ssh", host, f"cd {remote_dir} && pixi run start"],
+            dry_run=args.dry_run,
+            display=f'ssh {host} "cd {remote_dir} && pixi run start"',
+        )
+    else:
+        raise ValueError(args.remote_action)
+
+
 def main() -> None:
+    if len(sys.argv) > 1 and sys.argv[1] == "remote-demo":
+        parser = argparse.ArgumentParser()
+        parser.add_argument("action", choices=["remote-demo"])
+        parser.add_argument("remote_action", choices=["reset", "prepare", "run"])
+        parser.add_argument("--host")
+        parser.add_argument("--remote-dir", default="~/robotics-demo")
+        parser.add_argument("--dry-run", action="store_true")
+        args = parser.parse_args()
+        remote_demo(args)
+        return
+
+    if len(sys.argv) > 1 and sys.argv[1] == "export-copy":
+        parser = argparse.ArgumentParser()
+        parser.add_argument("action", choices=["export-copy"])
+        parser.add_argument("source", type=Path)
+        parser.add_argument("destination", type=Path)
+        args = parser.parse_args()
+        write_export_copy(args.source, args.destination)
+        return
+
     parser = argparse.ArgumentParser()
     parser.add_argument("action", choices=["add", "remove"])
     parser.add_argument("snippets", nargs="+", choices=sorted(SNIPPETS))

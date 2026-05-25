@@ -5,6 +5,13 @@ tobi/pixi.lock
 tobi/.gitignore
 tobi/.gitattributes
 tobi/icra_ros_package
+tobi/data
+tobi/icra_software_tools.pdf
+tobi/icra_software_tools_export.md
+tobi/icra_software_tools_export.pdf
+tobi/icra_software_tools_export.html
+tobi/icra_software_tools_windows.md
+tobi/VSLAM-LAB
 
 # === JupyterLite / peter ===
 # rtb_data is 111 MB — exceeds GitHub's 100 MB limit; NEVER commit
@@ -255,3 +262,4 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+~*
