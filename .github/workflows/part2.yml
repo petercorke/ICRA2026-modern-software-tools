@@ -1,0 +1,51 @@
+name: Deploy Part 2 (Tobi) to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    # Peter's workflow builds Part 1; this keeps the two gh-pages writers from racing.
+    if: github.event_name == 'workflow_dispatch' || github.actor != 'petercorke'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Setup Pixi
+        uses: prefix-dev/setup-pixi@v0.9.3
+        with:
+          cache: true
+
+      - name: Export presentation HTML
+        run: pixi run export_presentation_html
+
+      - name: Export presentation PDF
+        run: pixi run export_presentation_pdf
+
+      - name: Assemble deployment directory
+        run: |
+          mkdir -p _deploy/part2
+          cp tobi/icra_software_tools_export.html _deploy/part2/index.html
+          cp tobi/icra_software_tools_export.pdf _deploy/part2/icra_software_tools_export.pdf
+          cp peter/landing/index.html _deploy/index.html
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: part2-presentation-pdf
+          path: tobi/icra_software_tools_export.pdf
+          if-no-files-found: error
+
+      - name: Deploy to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: _deploy
+          # keep_files prevents this job wiping Peter's part1/ directory.
+          keep_files: true
