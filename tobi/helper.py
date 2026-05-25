@@ -237,6 +237,17 @@ def run_logged(
     subprocess.run(command, check=True, stdout=stdout, stderr=stderr)
 
 
+def ensure_zeus_internet_client(host: str, dry_run: bool) -> None:
+    command = (
+        "pgrep -f /opt/qutiaclient/IAClient >/dev/null || "
+        "(nohup /opt/qutiaclient/IAClient >/tmp/qutiaclient.log 2>&1 &)"
+    )
+    run_logged(
+        ["ssh", host, command],
+        dry_run=dry_run,
+    )
+
+
 def remote_demo(args: argparse.Namespace) -> None:
     host = remote_host(args)
     if host is None:
@@ -273,6 +284,7 @@ def remote_demo(args: argparse.Namespace) -> None:
             dry_run=args.dry_run
         )
     elif args.remote_action == "run":
+        ensure_zeus_internet_client(host, args.dry_run)
         run_logged(
             ["ssh", host, f"cd {remote_dir} && pixi add pytorch-gpu -p linux-64"],
             quiet=False,

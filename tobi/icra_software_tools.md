@@ -21,7 +21,7 @@ theme:
 Following Along
 ===
 
-This presentation is executable.
+This presentation is executable 🚀.
 
 | Action | Keys |
 |---|---|
@@ -30,9 +30,7 @@ This presentation is executable.
 | Show all keybindings | `?` |
 | Exit | `esc` or `control` + `c` |
 
-<!-- pause -->
-
-Only run executable snippets from presentations you trust.
+Only run executable snippets from presentations you trust!
 
 <!-- end_slide -->
 
@@ -42,6 +40,13 @@ Robotics is Powered by Software
 - Software controls the pace of robotics innovation
 - Modern robotics requires integrating many ecosystems
 - The bottleneck is often *not algorithms*, but environments
+
+<!-- pause -->
+
+## What I wish I knew earlier
+
+<span style="color: #fbbf24">Research software</span>
+is part of the research contribution.
 
 <!-- pause -->
 
@@ -57,7 +62,7 @@ to:
 
 - executable workflows
 - cross-platform environments
-- portable + reproducible robotics systems
+- reproducible robotics systems others can extend
 
 <!-- end_slide -->
 
@@ -83,18 +88,63 @@ https://drive.google.com/...
 
 <!-- pause -->
 
-# We can do better.
+<!-- column_layout: [1, 3, 1] -->
+
+<!-- column: 1 -->
+
+# We can do better!
 
 <!-- end_slide -->
 
-# Pixi
+# Pixi ⚡
 
-Pixi provides:
+Pixi is a fast project manager built on the
+conda-forge ecosystem.
+
+<!-- pause -->
+
+Think: conda packages, modern project workflow.
+
+<!-- pause -->
+
+It provides:
 
 - declarative environments
 - lockfiles
 - executable tasks
 - cross-platform workflows
+
+<!-- end_slide -->
+
+From Instructions to Artifacts
+===
+
+<!-- column_layout: [1, 1] -->
+
+<!-- column: 0 -->
+
+## Instructions
+
+- README.md
+- shell scripts
+- oral tradition
+- "ask the previous student"
+
+<!-- column: 1 -->
+
+## Artifacts
+
+- `pixi.toml`
+- `pixi.lock`
+- `pixi run <task>`
+- CI-friendly commands
+
+<!-- reset_layout -->
+
+<!-- pause -->
+
+> The shift is from instructions to
+> <span style="color: #a7f3d0">runnable artifacts</span>.
 
 <!-- end_slide -->
 
@@ -116,6 +166,39 @@ pixi init
 ```bash +exec +pty:80:3
 pixi add pytorch torchvision
 ```
+
+<!-- end_slide -->
+
+Fast Environments Change Behavior ⚡
+===
+
+If changing environments takes
+<span style="color: #fb7185">minutes</span>,
+people avoid changing environments.
+
+<!-- pause -->
+
+If it takes <span style="color: #a7f3d0">seconds</span>,
+environments become part of iteration.
+
+# Environment Solve Time
+
+```text
+microenv
+▓▓▓▓                     🟩 Pixi         0.07s
+▒▒▒▒▒▒▒▒▒▒               🟦 Micromamba   2.54s
+████████████████         🟧 conda        4.08s
+
+
+stressenv
+▓▓▓▓                     🟩 Pixi         4.54s
+▒▒▒▒▒▒▒▒▒▒               🟦 Micromamba  12.58s
+████████████████████████ 🟧 conda       29.84s
+```
+
+<!-- pause -->
+
+> Speed matters because research is exploratory.
 
 <!-- end_slide -->
 
@@ -179,14 +262,33 @@ pixi run start
 
 Modern robotics often needs:
 
-- robotics frameworks
-- machine learning frameworks
-- system dependencies
-- Python-first tooling
+<!-- column_layout: [1, 1] -->
+
+<!-- column: 0 -->
+
+## Robotics stack
+
+- ROS
+- OpenCV
+- CUDA
+- native libraries
 
 <!-- pause -->
 
-# Conda + PyPI Together
+<!-- column: 1 -->
+
+## ML stack
+
+- PyTorch
+- Transformers
+- experiment tools
+- Python packages
+
+<!-- reset_layout -->
+
+<!-- pause -->
+
+# Conda-forge + PyPI Together
 
 ```toml
 [dependencies]
@@ -199,7 +301,7 @@ transformers = "*"
 
 <!-- pause -->
 
-# No boundary between ecosystems
+# No boundary between ecosystems ✨
 
 <!-- end_slide -->
 
@@ -212,7 +314,7 @@ RoboStack enables ROS on:
 - macOS
 - Windows
 
-using the conda-forge ecosystem.
+through the conda-forge ecosystem.
 
 <!-- pause -->
 
@@ -223,8 +325,13 @@ pixi add ros-rolling-desktop
 
 <!-- end_slide -->
 
-ROS2 101: TurtleSim demo
+ROS Desktop App from a Locked Environment
 ===
+
+Start with a tiny demo.
+Then scale the same idea to real stacks.
+
+<!-- pause -->
 
 ```bash +exec
 pixi run ros2 run turtlesim turtlesim_node
@@ -232,7 +339,9 @@ pixi run ros2 run turtlesim turtlesim_node
 <!-- pause -->
 
 ```bash +exec +pty:80:2
-pixi run ros2 topic pub /turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 2.0}, angular: {z: 1.8}}"
+pixi run ros2 topic pub /turtle1/cmd_vel \
+  geometry_msgs/msg/Twist \
+  "{linear: {x: 2.0}, angular: {z: 1.8}}"
 ```
 
 
@@ -241,12 +350,13 @@ pixi run ros2 topic pub /turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 2
 # One Environment
 
 ```text
-ROS + PyTorch + OpenCV + Transformers + ... + Custom research code
+ROS + PyTorch + OpenCV
++ Transformers + custom research code
 ```
 
 <!-- pause -->
 
-# One lockfile.
+# <span style="color: #a7f3d0">One lockfile.</span>
 
 <!-- pause -->
 
@@ -270,8 +380,26 @@ pixi run -e rolling  ros2 run rviz2 rviz2
 
 <!-- end_slide -->
 
+From Environment to Infrastructure
+===
+
+This is where Pixi stops being only an
+environment manager.
+
+<!-- pause -->
+
+It becomes lab infrastructure.
+
+<!-- pause -->
+
+> Research code becomes something others can install.
+
+<!-- end_slide -->
+
 Build Your Own ROS / C++ / Python Packages
 ===
+
+<!-- pause -->
 
 <!-- column_layout: [1, 1] -->
 
@@ -385,19 +513,22 @@ From Scripts to Infrastructure
 
 <!-- pause -->
 
-> Better tooling changes how research is shared, reused, and extended.
+> Better tooling changes how research is shared,
+> reused, and extended.
 
 <!-- end_slide -->
+
 Case Study: VSLAM-Lab
 ===
 
-Large-scale visual SLAM framework for benchmarking, composability, reproducibility, and easy onboarding.
+Large-scale visual SLAM framework for benchmarking,
+composability, reproducibility, and easy onboarding.
 
 <!-- column_layout: [1, 1] -->
 
 <!-- column: 0 -->
 
-## Before
+## Before 😬
 
 ```text
 README.md
@@ -413,7 +544,7 @@ README.md
 
 <!-- column: 1 -->
 
-## After
+## After ✨
 ```bash +exec +pty:80:6
 git clone https://github.com/VSLAM-LAB/VSLAM-LAB.git > /dev/null 2>&1
 cd VSLAM-LAB && \
@@ -425,30 +556,32 @@ pixi run demo orbslam2 eth table_3 mono
 <!-- pause -->
 
 > Multi-page setup instructions become executable workflows.
-> Tooling stopped being a convenience and became research infrastructure!
+> Tooling stopped being a convenience.
+> It became research infrastructure.
 
 <!-- end_slide -->
 
-Why Pixi for Robotics?
+Why Pixi for Robotics? ⚙️
 ===
 
-| Built-in core feature | Pixi | Conda | Pip | Poetry | uv |
+| Built-in project feature | Pixi | Conda | Pip | Poetry | uv |
 |---|---:|---:|---:|---:|---:|
 | Installs Python | ✅ | ✅ | ❌ | ❌ | ✅ |
-| Multi-language packages | ✅ | ✅ | ❌ | ❌ | ❌ |
-| Lockfiles | ✅ | ❌ | ❌ | ✅ | ✅ |
+| Native libraries | ✅ | ✅ | ❌ | ❌ | ❌ |
+| Lockfiles | ✅ | via tools | ❌ | ✅ | ✅ |
 | Task runner | ✅ | ❌ | ❌ | ❌ | ❌ |
 | Workspace management | ✅ | ❌ | ❌ | ✅ | ✅ |
+| Fast solver | ✅ | slower | n/a | ❌ | ✅ |
 
 <!-- pause -->
 
 > The point is not one feature.
-> 
-> The point is having the right combination for robotics.
+
+> The point is having the <span style="color: #a7f3d0">right combination</span> for robotics.
 
 <!-- end_slide -->
 
-Why Not Docker?
+Why Not Docker? 🧱
 ===
 
 <!-- column_layout: [1, 1] -->
@@ -495,7 +628,8 @@ pixi run start
 
 ## Our goal
 
-Native, reproducible workflows with minimal setup friction.
+<span style="color: #a7f3d0">Native, reproducible workflows</span>
+with minimal setup friction.
 
 <!-- end_slide -->
 
@@ -518,7 +652,7 @@ Limitations and Trade-offs
 
 - Older scientific software may require compatibility fixes
 - Packaging complex robotics stacks is still engineering effort
-- Reproducibility reduces friction, not complexity
+- Reproducibility captures complexity
 
 <!-- pause -->
 
@@ -542,21 +676,28 @@ Limitations and Trade-offs
 
 <!-- pause -->
 
-> The goal is not perfect portability.  
+> The goal is not perfect portability.
+
 > The goal is to reduce friction.
+
+<!-- pause -->
+
+> Reproducible does not mean effortless.
+> It means the effort is captured.
 
 <!-- end_slide -->
 
 Teasers
 ===
 
-<!-- list_item_newlines: 2 -->
-
 - Browser-native ROS via [ROS2WASM](https://ros2wasm.dev/)
 <!-- pause -->
 
-- [Cross-platform CI in GitHub](https://github.com/ruben-arts/ros-example)
+- Pack environments for another machine: `pixi pack`
 
+<!-- pause -->
+
+- [Cross-platform CI in GitHub](https://github.com/ruben-arts/ros-example)
 ```yaml
 jobs:
   strategy:
@@ -569,6 +710,12 @@ jobs:
     - name: Test
       run: pixi run ros2 pkg list
 ```
+<!-- pause -->
+- conda-forge is community infrastructure: `rattler-build generate-recipe pypi some-package`
+
+Open a PR in `conda-forge/staged-recipes`.
+
+> If a package blocks your research, packaging it can unblock the community.
 
 <!-- end_slide -->
 
@@ -591,6 +738,11 @@ Key Insights
 <!-- pause -->
 
 4. Better packaging enables reuse, benchmarking, and collaboration.
+
+<!-- pause -->
+
+5. <span style="color: #fbbf24">Research software</span>
+   is part of the contribution.
 
 <!-- end_slide -->
 
@@ -615,16 +767,16 @@ Modern robotics needs:
 
 <!-- pause -->
 
-<!-- new_lines: 1 -->
-
 # Questions?
 
-Tobias Fischer `tobias.fischer@qut.edu.au` & Peter Corke `peter.corke@qut.edu.au`
+`Tobias.Fischer@qut.edu.au` & `Peter.Corke@qut.edu.au`
 
 Queensland University of Technology
 
-<!-- new_lines: 1 -->
-
 # Thank you!
 
-To the **prefix.dev** team for their incredible work on Pixi, to **Silvio Traversaro** for the many hours of work on RoboStack, to my **co-authors**, and to the many, many **open-source contributors** to the many presented projects! Also thanks to the QUT Centre for Robotics and Australian Research Council for their support.
+To the **prefix.dev** team for their incredible work on Pixi,
+to **Silvio Traversaro** for the many hours of work on RoboStack,
+to **Alejandro Fontan** for his work on VSLAM-LAB,
+to my **co-authors**, and to the many **open-source contributors**! Also thanks to the QUT Centre for Robotics
+and Australian Research Council for their support.

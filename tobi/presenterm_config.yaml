@@ -25,6 +25,7 @@ defaults:
   max_columns_alignment: left
 
 export:
+  pauses: new_slide
   snippets: sequential
   dimensions:
     columns: 110
