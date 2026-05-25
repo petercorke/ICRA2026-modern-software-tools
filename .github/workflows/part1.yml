@@ -25,7 +25,8 @@ jobs:
         run: |
           pip install \
             "jupyterlite-core>=0.7,<0.8" \
-            "jupyterlite-pyodide-kernel>=0.7,<0.8"
+            "jupyterlite-pyodide-kernel>=0.7,<0.8" \
+            "jupyter-server"
 
       - name: Remove large/PyPI-available wheels from deployment bundle
         # bdsim and rtb_data are on PyPI and fetched at runtime by piplite.
