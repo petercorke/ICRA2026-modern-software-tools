@@ -12,6 +12,7 @@ peter/jupyter-lite/pypi/rtb_data-*.whl
 # bdsim is available on PyPI; fetched at runtime, save repo space
 peter/jupyter-lite/pypi/bdsim-*.whl
 # build & CI artifacts
+peter/jupyter-lite/_output/
 peter/jupyter-lite/_site/
 peter/jupyter-lite/.cache/
 peter/jupyter-lite/.jupyterlite.doit.db
