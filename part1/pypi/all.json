@@ -1,0 +1,132 @@
+{
+  "machinevision-toolbox-python": {
+    "releases": {
+      "2.0.0": [
+        {
+          "comment_text": "",
+          "digests": {
+            "md5": "51560f60ab8b38bb4cce0ea1ec4aadd9",
+            "sha256": "0dbcca4635cff5a6c408d45a94781f0957d96412346dd1957f482bee36fd82dd"
+          },
+          "downloads": -1,
+          "filename": "machinevision_toolbox_python-2.0.0-py3-none-any.whl",
+          "has_sig": false,
+          "md5_digest": "51560f60ab8b38bb4cce0ea1ec4aadd9",
+          "packagetype": "bdist_wheel",
+          "python_version": "py3",
+          "requires_python": ">=3.10",
+          "size": 453768,
+          "upload_time": "2026-05-25T22:23:28.037723Z",
+          "upload_time_iso_8601": "2026-05-25T22:23:28.037723Z",
+          "url": "./machinevision_toolbox_python-2.0.0-py3-none-any.whl",
+          "yanked": false,
+          "yanked_reason": null
+        }
+      ]
+    }
+  },
+  "pgraph-python": {
+    "releases": {
+      "0.6.3": [
+        {
+          "comment_text": "",
+          "digests": {
+            "md5": "6bbb9db0c658872d591f6924ae8274dc",
+            "sha256": "02570357a14b9e760ededcc943fc27167afa6d06b15f43d9c3ee209a9d4f0d9d"
+          },
+          "downloads": -1,
+          "filename": "pgraph_python-0.6.3-py3-none-any.whl",
+          "has_sig": false,
+          "md5_digest": "6bbb9db0c658872d591f6924ae8274dc",
+          "packagetype": "bdist_wheel",
+          "python_version": "py3",
+          "requires_python": ">=3.7",
+          "size": 17741,
+          "upload_time": "2026-05-25T22:23:28.037723Z",
+          "upload_time_iso_8601": "2026-05-25T22:23:28.037723Z",
+          "url": "./pgraph_python-0.6.3-py3-none-any.whl",
+          "yanked": false,
+          "yanked_reason": null
+        }
+      ]
+    }
+  },
+  "roboticstoolbox-python": {
+    "releases": {
+      "1.2.0": [
+        {
+          "comment_text": "",
+          "digests": {
+            "md5": "7978f26eb0c8d33b36de63194dee5094",
+            "sha256": "41dd768975fd6ac48fbcb43155504068b41e2815b16d4a69acaa8ec25bf9fdd9"
+          },
+          "downloads": -1,
+          "filename": "roboticstoolbox_python-1.2.0-cp313-cp313-pyodide_2025_0_wasm32.whl",
+          "has_sig": false,
+          "md5_digest": "7978f26eb0c8d33b36de63194dee5094",
+          "packagetype": "bdist_wheel",
+          "python_version": "py3",
+          "requires_python": ">=3.8",
+          "size": 14845616,
+          "upload_time": "2026-05-25T22:23:28.100723Z",
+          "upload_time_iso_8601": "2026-05-25T22:23:28.100723Z",
+          "url": "./roboticstoolbox_python-1.2.0-cp313-cp313-pyodide_2025_0_wasm32.whl",
+          "yanked": false,
+          "yanked_reason": null
+        }
+      ]
+    }
+  },
+  "spatialgeometry": {
+    "releases": {
+      "1.2.0": [
+        {
+          "comment_text": "",
+          "digests": {
+            "md5": "53c2ac54ba6a6187ce3e79423ce57aa3",
+            "sha256": "0116052955449f0212048fa9f46bb663bb93b5bae7b722c980bdde86310cc022"
+          },
+          "downloads": -1,
+          "filename": "spatialgeometry-1.2.0-py3-none-any.whl",
+          "has_sig": false,
+          "md5_digest": "53c2ac54ba6a6187ce3e79423ce57aa3",
+          "packagetype": "bdist_wheel",
+          "python_version": "py3",
+          "requires_python": ">=3.9",
+          "size": 1273597,
+          "upload_time": "2026-05-25T22:23:28.105723Z",
+          "upload_time_iso_8601": "2026-05-25T22:23:28.105723Z",
+          "url": "./spatialgeometry-1.2.0-py3-none-any.whl",
+          "yanked": false,
+          "yanked_reason": null
+        }
+      ]
+    }
+  },
+  "spatialmath-python": {
+    "releases": {
+      "1.1.15": [
+        {
+          "comment_text": "",
+          "digests": {
+            "md5": "18b971b03891b159e02a232d87c8cbc8",
+            "sha256": "58702c09e2688d4b613b52bb4118474d768843dd500e17849c8106324287ff61"
+          },
+          "downloads": -1,
+          "filename": "spatialmath_python-1.1.15-py3-none-any.whl",
+          "has_sig": false,
+          "md5_digest": "18b971b03891b159e02a232d87c8cbc8",
+          "packagetype": "bdist_wheel",
+          "python_version": "py3",
+          "requires_python": ">=3.7",
+          "size": 193874,
+          "upload_time": "2026-05-25T22:23:28.106723Z",
+          "upload_time_iso_8601": "2026-05-25T22:23:28.106723Z",
+          "url": "./spatialmath_python-1.1.15-py3-none-any.whl",
+          "yanked": false,
+          "yanked_reason": null
+        }
+      ]
+    }
+  }
+}
