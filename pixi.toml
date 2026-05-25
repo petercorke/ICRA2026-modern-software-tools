@@ -14,8 +14,16 @@ presentation_debug = { cmd = "pixi run presenterm --enable-snippet-execution -X 
 export_presentation_pdf = { cmd = "python helper.py export-copy icra_software_tools.md icra_software_tools_export.md && rm ./pixi.toml; rm ./pixi.lock; rm -rf .pixi; pixi init && pixi run presenterm --export-pdf --enable-snippet-execution icra_software_tools_export.md --config-file presenterm_config.yaml", description = "Export the presentation with safe code snippets executed", cwd = "./tobi" }
 export_presentation_html = { cmd = "python helper.py export-copy icra_software_tools.md icra_software_tools_export.md && rm ./pixi.toml; rm ./pixi.lock; rm -rf .pixi;pixi init && pixi run presenterm --export-html --enable-snippet-execution --image-protocol ascii-blocks icra_software_tools_export.md --config-file presenterm_config.yaml", description = "Export the presentation to HTML with safe code snippets executed", cwd = "./tobi" }
 
+[target.win-64.tasks]
+presentation_windows_markdown = { cmd = "sed -e 's/^```bash/```bat/' icra_software_tools.md > icra_software_tools_windows.md", description = "Generate the Windows presentation markdown", cwd = "./tobi" }
+presentation = { cmd = "rm ./pixi.toml; rm ./pixi.lock; rm -rf .pixi; pixi init && pixi run presenterm --enable-snippet-execution -X icra_software_tools_windows.md --config-file presenterm_config.yaml --theme terminal-dark", depends-on = ["presentation_windows_markdown"], description = "Run the Windows presentation", cwd = "./tobi" }
+presentation_debug = { cmd = "presenterm --enable-snippet-execution -X icra_software_tools_windows.md --config-file presenterm_config.yaml --theme terminal-dark", depends-on = ["presentation_windows_markdown"], description = "Run the Windows presentation", cwd = "./tobi" }
+
 [dependencies]
 presenterm = ">=0.16.1"
 jupyterlab = ">=4.0.0"
 python = ">=3.10.0"
 weasyprint = "*"
+
+[target.win-64.dependencies]
+m2-sed = "*"
