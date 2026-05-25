@@ -6,6 +6,17 @@ tobi/.gitignore
 tobi/.gitattributes
 tobi/icra_ros_package
 
+# === JupyterLite / peter ===
+# rtb_data is 111 MB — exceeds GitHub's 100 MB limit; NEVER commit
+peter/jupyter-lite/pypi/rtb_data-*.whl
+# bdsim is available on PyPI; fetched at runtime, save repo space
+peter/jupyter-lite/pypi/bdsim-*.whl
+# build & CI artifacts
+peter/jupyter-lite/_site/
+peter/jupyter-lite/.cache/
+peter/jupyter-lite/.jupyterlite.doit.db
+peter/jupyter-lite/_output/*
+
 # Conda/Pixi environment related
 *.conda
 .pixi

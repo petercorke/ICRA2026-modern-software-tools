@@ -1,0 +1,60 @@
+name: Deploy Part 1 (Peter) to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    # Only run when Peter pushes — Tobi's pushes won't trigger this workflow
+    if: github.actor == 'petercorke'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # needed to push to gh-pages branch
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Install JupyterLite CLI
+        run: |
+          pip install \
+            "jupyterlite-core>=0.7,<0.8" \
+            "jupyterlite-pyodide-kernel>=0.7,<0.8"
+
+      - name: Remove large/PyPI-available wheels from deployment bundle
+        # bdsim and rtb_data are on PyPI and fetched at runtime by piplite.
+        # Excluding them keeps the gh-pages artifact small (~16 MB vs ~141 MB).
+        # Students already depend on PyPI for mvtb-data and other deps anyway.
+        working-directory: peter/jupyter-lite/pypi
+        run: |
+          rm -f bdsim-*.whl rtb_data-*.whl
+
+      - name: Build JupyterLite site
+        working-directory: peter/jupyter-lite
+        run: |
+          jupyter lite build \
+            --contents content/ \
+            --base-url /ICRA2026-modern-software-tools/part1/ \
+            --output-dir _site
+
+      - name: Assemble deployment directory
+        # Combine the JupyterLite app (→ part1/) and the root landing page
+        # into a single _deploy/ tree so one gh-pages commit covers both.
+        run: |
+          mkdir -p _deploy/part1
+          cp -r peter/jupyter-lite/_site/. _deploy/part1/
+          cp peter/landing/index.html _deploy/index.html
+
+      - name: Deploy to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: _deploy
+          # keep_files prevents this job wiping Tobi's part2/ directory
+          keep_files: true
