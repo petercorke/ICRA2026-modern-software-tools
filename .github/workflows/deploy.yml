@@ -21,37 +21,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
 
-      - name: Set up Python
-        uses: actions/setup-python@v6
-        with:
-          python-version: '3.13'
-
-      - name: Install JupyterLite CLI
-        run: |
-          pip install \
-            "jupyterlite-core>=0.7,<0.8" \
-            "jupyterlite-pyodide-kernel>=0.7,<0.8" \
-            "jupyter-server"
-
-      - name: Remove large/PyPI-available wheels from deployment bundle
-        # bdsim and rtb_data are on PyPI and fetched at runtime by piplite.
-        # Excluding them keeps the Pages artifact small.
-        working-directory: peter/jupyter-lite/pypi
-        run: |
-          rm -f bdsim-*.whl rtb_data-*.whl
-
-      - name: Build Part 1 JupyterLite site
-        working-directory: peter/jupyter-lite
-        run: |
-          jupyter lite build \
-            --contents content/ \
-            --base-url /ICRA2026-modern-software-tools/part1/ \
-            --output-dir _site
-
       - name: Setup Pixi
         uses: prefix-dev/setup-pixi@v0.9.3
         with:
           cache: true
+
+      - name: Build Part 1 JupyterLite site
+        run: pixi run build_part1_jupyterlite
 
       - name: Export Part 2 HTML
         run: pixi run export_presentation_html
