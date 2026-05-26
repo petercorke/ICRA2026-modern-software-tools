@@ -145,8 +145,6 @@ Only run executable snippets from presentations you trust!
 Pixi is a fast project manager built on the
 conda-forge ecosystem.
 
-<!-- pause -->
-
 Think: conda packages, modern project workflow.
 
 <!-- pause -->
@@ -187,8 +185,7 @@ From Instructions to Artifacts
 
 <!-- pause -->
 
-> The shift is from instructions to
-> <span class="accent">runnable artifacts</span>.
+> The shift is from instructions to <span class="accent">runnable artifacts</span>.
 
 <!-- end_slide -->
 
@@ -495,9 +492,11 @@ pixi run ros2 run icra_ros_package icra_node
 
 <!-- pause -->
 
-<!-- reset_layout -->
+<!-- end_slide -->
 
-## Beyond ROS
+
+Beyond ROS
+===
 
 - pure CMake projects
 - Python packages
@@ -599,9 +598,7 @@ pixi run demo orbslam2 eth table_3 mono
 
 <!-- pause -->
 
-> Multi-page setup instructions become executable workflows.
-> Tooling stopped being a convenience.
-> It became research infrastructure.
+> Multi-page setup instructions become executable workflows!
 
 <!-- end_slide -->
 
@@ -794,11 +791,7 @@ Key Insights
 The Bigger Shift
 ===
 
-<!-- pause -->
-
 Dependency management is becoming core research infrastructure.
-
-<!-- pause -->
 
 Modern robotics needs:
 - reproducible environments
