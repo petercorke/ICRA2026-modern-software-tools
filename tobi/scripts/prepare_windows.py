@@ -17,6 +17,7 @@ def prepare_windows(source: Path, destination: Path) -> None:
         attrs, body = match.groups()
         attrs = re.sub(r" \+pty:\d+:\d+", "", attrs or "")
         body = re.sub(r"^#(?!\!)", "::", body, flags=re.MULTILINE)
+        body = re.sub(r"[ \t]*\\\r?\n", " ^\n", body)
         body = body.replace("/dev/null", "NUL")
         return f"```bat{attrs}\n{body}```"
 
