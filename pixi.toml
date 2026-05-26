@@ -11,15 +11,15 @@ version = "0.1.0"
 # One idea would be to `pixi global install presenterm -c https://prefix.dev/github-releases`
 presentation = { cmd = "rm ./pixi.toml; rm ./pixi.lock; rm -rf .pixi; pixi init && TQDM_DISABLE=1 pixi run presenterm --enable-snippet-execution -X icra_software_tools.md --config-file presenterm_config.yaml --theme terminal-dark", description = "Run the presentation", cwd = "./tobi" }
 presentation_debug = { cmd = "TQDM_DISABLE=1 pixi run presenterm --enable-snippet-execution -X icra_software_tools.md --config-file presenterm_config.yaml", description = "Run the presentation", cwd = "./tobi" }
-export_presentation_pdf = { cmd = "python helper.py export-copy icra_software_tools.md icra_software_tools_export.md && rm ./pixi.toml; rm ./pixi.lock; rm -rf .pixi; pixi init && pixi run presenterm --export-pdf --enable-snippet-execution icra_software_tools_export.md --config-file presenterm_config.yaml", description = "Export the presentation with safe code snippets executed", cwd = "./tobi", env = { TQDM_DISABLE = "1" } }
-export_presentation_html = { cmd = "python helper.py export-copy icra_software_tools.md icra_software_tools_export.md && rm ./pixi.toml; rm ./pixi.lock; rm -rf .pixi;pixi init && pixi run presenterm --export-html --enable-snippet-execution --image-protocol ascii-blocks icra_software_tools_export.md --config-file presenterm_config.yaml && python add_mobile_navigation.py icra_software_tools_export.html", description = "Export the presentation to HTML with safe code snippets executed", cwd = "./tobi", env = { TQDM_DISABLE = "1" } }
+export_presentation_pdf = { cmd = "python scripts/prepare_export.py icra_software_tools.md icra_software_tools_export.md && rm ./pixi.toml; rm ./pixi.lock; rm -rf .pixi; pixi init && TQDM_DISABLE=1 pixi run presenterm --export-pdf --enable-snippet-execution icra_software_tools_export.md --config-file presenterm_config.yaml", description = "Export the presentation with safe code snippets executed", cwd = "./tobi" }
+export_presentation_html = { cmd = "python scripts/prepare_export.py icra_software_tools.md icra_software_tools_export.md && rm ./pixi.toml; rm ./pixi.lock; rm -rf .pixi;pixi init && TQDM_DISABLE=1 pixi run presenterm --export-html --enable-snippet-execution --image-protocol ascii-blocks icra_software_tools_export.md --config-file presenterm_config.yaml && python add_mobile_navigation.py icra_software_tools_export.html", description = "Export the presentation to HTML with safe code snippets executed", cwd = "./tobi" }
 
 # Peter's JupyterLite site
 remove_large_peter_wheels = { cmd = "python -c \"from pathlib import Path; [p.unlink() for pattern in ('bdsim-*.whl', 'rtb_data-*.whl') for p in Path('.').glob(pattern)]\"", description = "Remove large wheels from Peter's JupyterLite deployment bundle", cwd = "./peter/jupyter-lite/pypi" }
 build_part1_jupyterlite = { cmd = "jupyter lite build --contents content/ --base-url /ICRA2026-modern-software-tools/part1/ --output-dir _site", depends-on = ["remove_large_peter_wheels"], description = "Build Peter's JupyterLite site", cwd = "./peter/jupyter-lite" }
 
 [target.win-64.tasks]
-presentation_windows_markdown = { cmd = "sed -e 's/^```bash/```bat/' icra_software_tools.md > icra_software_tools_windows.md", description = "Generate the Windows presentation markdown", cwd = "./tobi" }
+presentation_windows_markdown = { cmd = "python scripts/prepare_windows.py icra_software_tools.md icra_software_tools_windows.md", description = "Generate the Windows presentation markdown", cwd = "./tobi" }
 presentation = { cmd = "rm ./pixi.toml; rm ./pixi.lock; rm -rf .pixi; pixi init && pixi run presenterm --enable-snippet-execution -X icra_software_tools_windows.md --config-file presenterm_config.yaml --theme terminal-dark", depends-on = ["presentation_windows_markdown"], description = "Run the Windows presentation", cwd = "./tobi" }
 presentation_debug = { cmd = "presenterm --enable-snippet-execution -X icra_software_tools_windows.md --config-file presenterm_config.yaml --theme terminal-dark", depends-on = ["presentation_windows_markdown"], description = "Run the Windows presentation", cwd = "./tobi" }
 
@@ -31,6 +31,3 @@ weasyprint = "*"
 jupyterlite-core = ">=0.7,<0.8"
 jupyterlite-pyodide-kernel = ">=0.7,<0.8"
 jupyter_server = "*"
-
-[target.win-64.dependencies]
-m2-sed = "*"

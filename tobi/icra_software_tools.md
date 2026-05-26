@@ -292,9 +292,9 @@ Tasks Turn Commands into Workflows
 ## Define the workflow
 
 ```bash +exec
-/// python helper.py remove start download-mnist
+/// python scripts/pixi_snippets.py remove start download-mnist
 pixi task add start "python train.py" --depends-on download-mnist
-/// python helper.py add download-mnist
+/// python scripts/pixi_snippets.py add download-mnist
 ```
 
 <!-- pause -->
@@ -530,10 +530,10 @@ ros-rolling-icra-ros-package = { path = "icra_ros_package/package.xml" }
 ## Build the package
 
 <!-- // The helper script adds small snippets into the pixi.toml that I want to hide for the presentation -->
-<!-- // See the top of helper.py for these snippets -->
+<!-- // See scripts/pixi_snippets.py for these snippets -->
 
 ```bash +exec +pty:80:4
-/// python helper.py add pixi-build-preview icra-ros-package
+/// python scripts/pixi_snippets.py add pixi-build-preview icra-ros-package
 pixi install
 ```
 
@@ -579,21 +579,21 @@ Cross Platform Reproducibility
 # Add other platforms
 pixi workspace platform add linux-64 win-64
 
-/// python helper.py remote-demo reset
+/// python scripts/remote_demo.py reset
 ```
 <!-- pause -->
 
 ```bash +exec
 # Copy this demo to Linux/HPC via ssh/scp
 # Runs ssh/scp only when ICRA_REMOTE_HOST is set
-python helper.py remote-demo prepare
+python scripts/remote_demo.py prepare
 ```
 <!-- end_slide -->
 
 ```bash +exec
 # Optional presenter remote: run the same Pixi task on Linux/HPC
 # Prints each remote command before executing it
-python helper.py remote-demo run
+python scripts/remote_demo.py run
 ```
 
 <!-- end_slide -->

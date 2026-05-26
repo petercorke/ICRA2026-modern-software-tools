@@ -182,14 +182,14 @@ def patch_html(html: str) -> str:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Add mobile navigation to a presenterm HTML export.")
+    parser = argparse.ArgumentParser(description="Post-process a presenterm HTML export.")
     parser.add_argument("html", type=Path)
     args = parser.parse_args()
 
     source = args.html.read_text(encoding="utf-8")
     patched = patch_html(source)
     args.html.write_text(patched, encoding="utf-8")
-    print(f"Added mobile navigation to {args.html}")
+    print(f"Post-processed {args.html}")
 
 
 if __name__ == "__main__":
