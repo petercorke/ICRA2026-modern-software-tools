@@ -56,6 +56,9 @@ IMPORT_TO_PIP = {
     "cv2": "opencv-python",
     "mvtbdata": "mvtb-data",
     "PIL": "pillow",
+    "spatialmath": "spatialmath-python",
+    "spatialgeometry": "spatialgeometry",
+    "pgraph": "pgraph-python",
 }
 
 
@@ -326,6 +329,8 @@ async def setup_tutorial(
             "Unknown package name(s): "
             f"{', '.join(unknown_packages)}. Supported names: {supported}."
         )
+
+    print("Setting up tutorial environment — wait for the \u2705")
 
     if verbose:
         where = "JupyterLite/WASM" if _is_wasm() else "local Python"

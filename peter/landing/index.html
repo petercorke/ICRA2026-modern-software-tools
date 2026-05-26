@@ -1,156 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ICRA 2026 – Modern Software Tools for Robotics</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #f5f7fa;
-      color: #222;
-      padding: 2rem 1rem;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 2.5rem;
-    }
-    header h1 {
-      font-size: 1.9rem;
-      font-weight: 700;
-      color: #1a1a2e;
-    }
-    header p {
-      margin-top: 0.4rem;
-      color: #555;
-      font-size: 1rem;
-    }
-    .warning {
-      background: #fff8e1;
-      border-left: 5px solid #f59e0b;
-      border-radius: 6px;
-      padding: 1.2rem 1.5rem;
-      max-width: 760px;
-      margin: 0 auto 2.5rem;
-    }
-    .warning h2 {
-      font-size: 1.05rem;
-      margin-bottom: 0.6rem;
-      color: #92400e;
-    }
-    .warning p { font-size: 0.95rem; line-height: 1.6; color: #78350f; }
-    .warning strong { color: #92400e; }
-    .parts {
-      display: flex;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-      justify-content: center;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-    .card {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.09);
-      padding: 1.8rem;
-      flex: 1 1 340px;
-      max-width: 420px;
-    }
-    .card h2 {
-      font-size: 1.2rem;
-      margin-bottom: 0.3rem;
-      color: #1a1a2e;
-    }
-    .card .author {
-      font-size: 0.88rem;
-      color: #777;
-      margin-bottom: 1.1rem;
-    }
-    .card ul {
-      padding-left: 1.2rem;
-      font-size: 0.93rem;
-      line-height: 1.8;
-      color: #444;
-      margin-bottom: 1.4rem;
-    }
-    .card .size-note {
-      font-size: 0.82rem;
-      color: #888;
-      margin-bottom: 1.2rem;
-    }
-    .btn {
-      display: inline-block;
-      background: #2563eb;
-      color: #fff;
-      text-decoration: none;
-      padding: 0.65rem 1.4rem;
-      border-radius: 6px;
-      font-size: 0.95rem;
-      font-weight: 600;
-      transition: background 0.15s;
-    }
-    .btn:hover { background: #1d4ed8; }
-    .btn-secondary { background: #6b7280; }
-    .btn-secondary:hover { background: #4b5563; }
-    footer {
-      text-align: center;
-      margin-top: 3rem;
-      font-size: 0.82rem;
-      color: #aaa;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICRA 2026 – Modern Software Tools for Robotics</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #f5f7fa;
+            color: #222;
+            padding: 2rem 1rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        header h1 {
+            font-size: 1.9rem;
+            font-weight: 700;
+            color: #1a1a2e;
+        }
+
+        header p {
+            margin-top: 0.4rem;
+            color: #555;
+            font-size: 1rem;
+        }
+
+        .warning {
+            background: #fff8e1;
+            border-left: 5px solid #f59e0b;
+            border-radius: 6px;
+            padding: 1.2rem 1.5rem;
+            max-width: 760px;
+            margin: 0 auto 2.5rem;
+        }
+
+        .warning h2 {
+            font-size: 1.05rem;
+            margin-bottom: 0.6rem;
+            color: #92400e;
+        }
+
+        .warning p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #78350f;
+        }
+
+        .warning strong {
+            color: #92400e;
+        }
+
+        .parts {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.09);
+            padding: 1.8rem;
+            flex: 1 1 340px;
+            max-width: 420px;
+        }
+
+        .card h2 {
+            font-size: 1.2rem;
+            margin-bottom: 0.3rem;
+            color: #1a1a2e;
+        }
+
+        .card .author {
+            font-size: 0.88rem;
+            color: #777;
+            margin-bottom: 1.1rem;
+        }
+
+        .card ul {
+            padding-left: 1.2rem;
+            font-size: 0.93rem;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 1.4rem;
+        }
+
+        .card .size-note {
+            font-size: 0.82rem;
+            color: #888;
+            margin-bottom: 1.2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #2563eb;
+            color: #fff;
+            text-decoration: none;
+            padding: 0.65rem 1.4rem;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: background 0.15s;
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
+        }
+
+        .btn-secondary {
+            background: #6b7280;
+        }
+
+        .btn-secondary:hover {
+            background: #4b5563;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            font-size: 0.82rem;
+            color: #aaa;
+        }
+    </style>
 </head>
+
 <body>
 
-<header>
-  <h1>ICRA 2026 — Modern Software Tools for Robotics</h1>
-  <p>Workshop Tutorial · May 2026</p>
-</header>
+    <header>
+        <h1>ICRA 2026 — Modern Software Tools for Robotics</h1>
+        <p>Workshop Tutorial · May 2026</p>
+    </header>
 
-<div class="warning">
-  <h2>⚠️  Pre-download before the tutorial (takes 2–3 minutes)</h2>
-  <p>
-    The tutorials download ~130–240 MB of data packages on first run.
-    <strong>Open your notebook now</strong>, run the first cell, and wait for <em>Setup complete</em>.
-    The data is cached in your browser and will load instantly on the day.
-  </p>
-  <p style="margin-top:0.7rem">
-    Use the <strong>same browser and profile</strong> on the day. Do <strong>not</strong> use incognito/private mode.
-  </p>
-</div>
+    <div class="warning">
+        <h2>⚠️ Pre-download before the tutorial (takes 2–3 minutes)</h2>
+        <p>
+            The tutorials download ~130–240 MB of data packages on first run.
+            <strong>Open your notebook now</strong>, run the first cell, and wait for <em>Setup complete</em>.
+            The data is cached in your browser and will load instantly on the day.
+        </p>
+        <p style="margin-top:0.7rem">
+            Use the <strong>same browser and profile</strong> on the day. Do <strong>not</strong> use incognito/private
+            mode.
+        </p>
+    </div>
 
-<div class="parts">
+    <div class="parts">
 
-  <div class="card">
-    <h2>Part 1 — Robotics &amp; Vision Toolboxes</h2>
-    <div class="author">Peter Corke · Queensland University of Technology</div>
-    <ul>
-      <li>Spatial math: poses &amp; transforms</li>
-      <li>Mobile robotics &amp; path planning</li>
-      <li>Arm kinematics &amp; dynamics</li>
-      <li>Machine vision &amp; camera models</li>
-      <li>Block diagram simulation (bdsim)</li>
-    </ul>
-    <div class="size-note">First-run download: ~240 MB (cached after that)</div>
-    <a class="btn" href="part1/lab/index.html?path=index.ipynb">Open Part 1 →</a>
-  </div>
+        <div class="card">
+            <h2>Part 1 — Robotics &amp; Vision Toolboxes</h2>
+            <div class="author">Peter Corke · Queensland University of Technology</div>
+            <ul>
+                <li>Spatial math: poses &amp; transforms</li>
+                <li>Mobile robotics &amp; path planning</li>
+                <li>Arm kinematics &amp; dynamics</li>
+                <li>Machine vision &amp; camera models</li>
+                <li>Block diagram simulation (bdsim)</li>
+            </ul>
+            <div class="size-note">First-run download: ~240 MB (cached after that)</div>
+            <a class="btn" href="part1/lab/index.html?path=index.ipynb">Open Part 1 →</a>
+        </div>
 
-  <div class="card">
-    <h2>Part 2 — TBD</h2>
-    <div class="author">Tobias Fischer · Queensland University of Technology</div>
-    <ul>
-      <li>Coming soon</li>
-    </ul>
-    <div class="size-note">&nbsp;</div>
-    <a class="btn btn-secondary" href="part2/lab/index.html?path=index.ipynb">Open Part 2 →</a>
-  </div>
+        <div class="card">
+            <h2>Part 2 — TBD</h2>
+            <div class="author">Tobias Fischer · Queensland University of Technology</div>
+            <ul>
+                <li>Coming soon</li>
+            </ul>
+            <div class="size-note">&nbsp;</div>
+            <a class="btn btn-secondary" href="part2/lab/index.html?path=index.ipynb">Open Part 2 →</a>
+        </div>
 
-</div>
+    </div>
 
-<footer>
-  ICRA 2026 · Brisbane, Australia
-</footer>
+    <footer>
+        ICRA 2026 · Vienna, Austria · June 2026
+    </footer>
 
 </body>
+
 </html>
