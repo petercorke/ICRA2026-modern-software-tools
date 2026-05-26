@@ -32,16 +32,12 @@ theme:
       classes:
         noice:
           foreground: "ff0000"
-          background: "000000"
         accent:
           foreground: "a7f3d0"
-          background: "000000"
         caution:
           foreground: "fb7185"
-          background: "000000"
         highlight:
           foreground: "fbbf24"
-          background: "000000"
 ---
 
 From Research Code to Running Systems
@@ -708,6 +704,7 @@ volume mounts
 
 - native GUI applications
 - low-friction hardware access
+- host networking and shared memory behavior
 - ROS + ML composability
 - rapid iteration across repositories
 - cross-platform desktop workflows
@@ -726,6 +723,14 @@ pixi run start
 
 <span class="accent">Native, reproducible workflows</span>
 with minimal setup friction.
+
+<!--
+speaker_note: |
+  Docker is still the right tool for many deployment jobs.
+  The mismatch here is research iteration: host hardware, GUI tools, ROS networking, local notebooks, and multiple repositories need to move together.
+  Containers can also make ROS middleware behavior more surprising: networking isolation, discovery, and shared-memory transport across host/container boundaries are often exactly the kind of friction robotics researchers are trying to avoid.
+  Avoid making a size claim unless you have measured it; it is enough to say Pixi often feels faster because it resolves, links, and caches packages differently from pulling full images.
+-->
 
 <!-- end_slide -->
 
@@ -805,12 +810,17 @@ jobs:
 4. Package missing dependencies:
    `rattler-build generate-recipe pypi some-package`
 
+<!-- pause -->
+5. Package AI/ML models as versioned, cached dependencies:
+   [prefix.dev blog](https://prefix.dev/blog/packaging-ai-ml-models-as-conda-packages)
+
 > If a package blocks your research, packaging it can unblock the community.
 
 <!--
 speaker_note: |
-  Treat these as doors the audience can open after the tutorial, not as four more demos.
+  Treat these as doors the audience can open after the tutorial, not as five more demos.
   The shared theme is that tooling work compounds beyond one repository.
+  The model-packaging teaser is about model files becoming lockable, cacheable, and traceable artifacts rather than side downloads hidden in setup scripts.
 -->
 
 <!-- end_slide -->
@@ -870,3 +880,22 @@ Queensland University of Technology
 Thanks to the **prefix.dev** team, **Silvio Traversaro**,
 **Alejandro Fontan**, my **co-authors**, the open-source contributors,
 the QUT Centre for Robotics, and the Australian Research Council.
+
+<!-- end_slide -->
+
+References and Links
+===
+
+<!-- list_item_newlines: 2 -->
+
+- [<span class="highlight">A RoboStack Tutorial: Using the Robot Operating System Alongside the Conda and Jupyter Data Science Ecosystems</span>](https://doi.org/10.1109/MRA.2021.3128367), IEEE Robotics & Automation Magazine, vol. 29, no. 2, June 2022
+
+- [<span class="highlight">Pixi: Unified Software Development and Distribution for Robotics and AI</span>](https://arxiv.org/abs/2511.04827), arXiv:2511.04827
+
+- [<span class="highlight">ROS2WASM: Bringing the Robot Operating System to the Web</span>](https://doi.org/10.1109/ICRA55743.2025.11127821), IEEE International Conference on Robotics and Automation (ICRA) 2025
+
+- [<span class="highlight">VSLAM-LAB: A Comprehensive Framework for Visual SLAM Methods and Datasets</span>](https://arxiv.org/abs/2504.04457), IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2025
+
+- [<span class="highlight">pixi.sh</span>](https://pixi.sh)
+
+- [<span class="highlight">rattler.build</span>](https://rattler.build)
