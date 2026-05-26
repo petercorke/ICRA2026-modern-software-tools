@@ -9,7 +9,7 @@ theme:
     footer:
       style: template
       left: '**Tobias Fischer & Peter Corke**'
-      center: '<span class="noice">             From Research Code to Running Systems</span>'
+      center: '<span class="noice">     From Research Code to Running Systems</span>'
       right: "{current_slide} / {total_slides}"
       height: 1
     palette:
@@ -18,19 +18,19 @@ theme:
           foreground: red
 ---
 
-Following Along
+From Research Code to Running Systems
 ===
 
-This presentation is executable 🚀.
+Cross-platform robotics and ML workflows
 
-| Action | Keys |
-|---|---|
-| Navigate | arrow keys |
-| Run code on a slide | `control` + `e` |
-| Show all keybindings | `?` |
-| Exit | `esc` or `control` + `c` |
+<!-- pause -->
 
-Only run executable snippets from presentations you trust!
+# Research software is part of the research contribution.
+
+<!-- pause -->
+
+Today: turn fragile setup instructions into
+<span style="color: #a7f3d0">executable systems</span>.
 
 <!-- end_slide -->
 
@@ -43,10 +43,10 @@ Robotics is Powered by Software
 
 <!-- pause -->
 
-## What I wish I knew earlier
+## What changes in practice?
 
-<span style="color: #fbbf24">Research software</span>
-is part of the research contribution.
+Tooling becomes part of how research is
+<span style="color: #a7f3d0">shared, reused, and extended</span>.
 
 <!-- pause -->
 
@@ -93,6 +93,24 @@ https://drive.google.com/...
 <!-- column: 1 -->
 
 # We can do better!
+
+<!-- end_slide -->
+
+This Talk Is Executable
+===
+
+The slides are also the demo environment.
+
+<!-- pause -->
+
+- Navigate with arrow keys
+- Run code on a slide with `control` + `e`
+- Show keybindings with `?`
+- Exit with `esc` or `control` + `c`
+
+<!-- pause -->
+
+Only run executable snippets from presentations you trust!
 
 <!-- end_slide -->
 
