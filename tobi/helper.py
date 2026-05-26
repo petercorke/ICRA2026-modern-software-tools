@@ -28,7 +28,7 @@ SNIPPETS = {
         section="tasks",
         key="download-mnist",
         body=r'''download-mnist = {
-  cmd = "python -c 'from torchvision.datasets import MNIST; MNIST(\"data\", download=True)'",
+  cmd = "python -c 'from torchvision.datasets import MNIST; MNIST(\"data\", download=True)' 2>/dev/null",
   outputs = ["data/MNIST"]
 }''',
     ),
