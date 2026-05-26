@@ -9,19 +9,26 @@ version = "0.1.0"
 # They are terrible workarounds as we initialize a pixi workspace inside the presentation
 # If someone has a better idea how to do this, please let me know
 # One idea would be to `pixi global install presenterm -c https://prefix.dev/github-releases`
-presentation = { cmd = "rm ./pixi.toml; rm ./pixi.lock; rm -rf .pixi; pixi init && pixi run presenterm --enable-snippet-execution -X icra_software_tools.md --config-file presenterm_config.yaml --theme terminal-dark", description = "Run the presentation", cwd = "./tobi", env = { TQDM_DISABLE = "1" } }
-presentation_debug = { cmd = "pixi run presenterm --enable-snippet-execution -X icra_software_tools.md --config-file presenterm_config.yaml --theme terminal-dark", description = "Run the presentation", cwd = "./tobi", env = { TQDM_DISABLE = "1" } }
-export_presentation_pdf = { cmd = "python helper.py export-copy icra_software_tools.md icra_software_tools_export.md && rm ./pixi.toml; rm ./pixi.lock; rm -rf .pixi; pixi init && pixi run presenterm --export-pdf --enable-snippet-execution icra_software_tools_export.md --config-file presenterm_config.yaml", description = "Export the presentation with safe code snippets executed", cwd = "./tobi", env = { TQDM_DISABLE = "1" } }
-export_presentation_html = { cmd = "python helper.py export-copy icra_software_tools.md icra_software_tools_export.md && rm ./pixi.toml; rm ./pixi.lock; rm -rf .pixi;pixi init && pixi run presenterm --export-html --enable-snippet-execution --image-protocol ascii-blocks icra_software_tools_export.md --config-file presenterm_config.yaml", description = "Export the presentation to HTML with safe code snippets executed", cwd = "./tobi", env = { TQDM_DISABLE = "1" } }
+clean_init_pixi = { cmd = "rm ./pixi.toml; rm ./pixi.lock; rm -rf .pixi; pixi init", description = "Clean pixi workspace and reinitialize", cwd = "./tobi" }
+prepare_export_markdown = { cmd = "python scripts/prepare_export.py icra_software_tools.md icra_software_tools_export.md", description = "Prepare dark-theme export markdown from presentation", cwd = "./tobi" }
+prepare_export_markdown_light = { cmd = "python scripts/prepare_export.py icra_software_tools.md icra_software_tools_export_light.md --theme light", description = "Prepare light-theme export markdown from presentation", cwd = "./tobi" }
+export_presentation_pdf = { cmd = "TQDM_DISABLE=1 pixi run presenterm --export-pdf --enable-snippet-execution icra_software_tools_export.md --config-file presenterm_config.yaml --theme terminal-dark", depends-on = ["prepare_export_markdown", "clean_init_pixi"], description = "Export the presentation to PDF (dark theme)", cwd = "./tobi" }
+export_presentation_html = { cmd = "TQDM_DISABLE=1 pixi run presenterm --export-html --enable-snippet-execution --image-protocol ascii-blocks icra_software_tools_export.md --config-file presenterm_config.yaml --theme terminal-dark && python add_mobile_navigation.py icra_software_tools_export.html", depends-on = ["prepare_export_markdown", "clean_init_pixi"], description = "Export the presentation to HTML (dark theme)", cwd = "./tobi" }
+export_presentation_pdf_light = { cmd = "TQDM_DISABLE=1 pixi run presenterm --export-pdf --enable-snippet-execution icra_software_tools_export_light.md --config-file presenterm_config.yaml --theme terminal-light", depends-on = ["prepare_export_markdown_light", "clean_init_pixi"], description = "Export the presentation to PDF (light theme)", cwd = "./tobi" }
+export_presentation_html_light = { cmd = "TQDM_DISABLE=1 pixi run presenterm --export-html --enable-snippet-execution --image-protocol ascii-blocks icra_software_tools_export_light.md --config-file presenterm_config.yaml --theme terminal-light && python add_mobile_navigation.py icra_software_tools_export_light.html", depends-on = ["prepare_export_markdown_light", "clean_init_pixi"], description = "Export the presentation to HTML (light theme)", cwd = "./tobi" }
 
 # Peter's JupyterLite site
 remove_large_peter_wheels = { cmd = "python -c \"from pathlib import Path; [p.unlink() for pattern in ('bdsim-*.whl', 'rtb_data-*.whl') for p in Path('.').glob(pattern)]\"", description = "Remove large wheels from Peter's JupyterLite deployment bundle", cwd = "./peter/jupyter-lite/pypi" }
 build_part1_jupyterlite = { cmd = "jupyter lite build --contents content/ --base-url /ICRA2026-modern-software-tools/part1/ --output-dir _site", depends-on = ["remove_large_peter_wheels"], description = "Build Peter's JupyterLite site", cwd = "./peter/jupyter-lite" }
 
+run_presenterm = { cmd = "TQDM_DISABLE=1 pixi run presenterm --enable-snippet-execution -X icra_software_tools.md --config-file presenterm_config.yaml --theme {{ theme }}", args = [{ arg = "theme", default = "terminal-dark", choices = ["terminal-dark", "terminal-light"] }], description = "Run presenterm presentation", cwd = "./tobi" }
+presentation = { cmd = "exit 0", args = [{ arg = "theme", default = "terminal-dark", choices = ["terminal-dark", "terminal-light"] }], depends-on = ["clean_init_pixi", { task = "run_presenterm", args = ["{{ theme }}"] }], description = "Run the presentation", cwd = "./tobi" }
+
 [target.win-64.tasks]
-presentation_windows_markdown = { cmd = "sed -e 's/^```bash/```bat/' icra_software_tools.md > icra_software_tools_windows.md", description = "Generate the Windows presentation markdown", cwd = "./tobi" }
-presentation = { cmd = "rm ./pixi.toml; rm ./pixi.lock; rm -rf .pixi; pixi init && pixi run presenterm --enable-snippet-execution -X icra_software_tools_windows.md --config-file presenterm_config.yaml --theme terminal-dark", depends-on = ["presentation_windows_markdown"], description = "Run the Windows presentation", cwd = "./tobi" }
-presentation_debug = { cmd = "presenterm --enable-snippet-execution -X icra_software_tools_windows.md --config-file presenterm_config.yaml --theme terminal-dark", depends-on = ["presentation_windows_markdown"], description = "Run the Windows presentation", cwd = "./tobi" }
+presentation_windows_markdown = { cmd = "python scripts/prepare_windows.py icra_software_tools.md icra_software_tools_windows.md", description = "Generate the Windows presentation markdown", cwd = "./tobi" }
+
+run_presenterm = { cmd = "TQDM_DISABLE=1 pixi run presenterm --enable-snippet-execution -X icra_software_tools_windows.md --config-file presenterm_config.yaml --theme {{ theme }}", args = [{ arg = "theme", default = "terminal-dark", choices = ["terminal-dark", "terminal-light"] }], depends-on = ["presentation_windows_markdown"], description = "Run presenterm Windows presentation", cwd = "./tobi" }
+presentation = { cmd = "exit /b 0", args = [{ arg = "theme", default = "terminal-dark", choices = ["terminal-dark", "terminal-light"] }], depends-on = ["clean_init_pixi", { task = "run_presenterm", args = ["{{ theme }}"] }], description = "Run the Windows presentation", cwd = "./tobi" }
 
 [dependencies]
 presenterm = ">=0.16.1"
@@ -31,6 +38,4 @@ weasyprint = "*"
 jupyterlite-core = ">=0.7,<0.8"
 jupyterlite-pyodide-kernel = ">=0.7,<0.8"
 jupyter_server = "*"
-
-[target.win-64.dependencies]
-m2-sed = "*"
+actionlint = "*"
