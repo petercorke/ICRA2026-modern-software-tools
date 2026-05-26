@@ -29,11 +29,17 @@ jobs:
       - name: Build Part 1 JupyterLite site
         run: pixi run build_part1_jupyterlite
 
-      - name: Export Part 2 HTML
+      - name: Export Part 2 HTML (dark theme)
         run: pixi run export_presentation_html
 
-      - name: Export Part 2 PDF
+      - name: Export Part 2 PDF (dark theme)
         run: pixi run export_presentation_pdf
+
+      - name: Export Part 2 HTML (light theme)
+        run: pixi run export_presentation_html_light
+
+      - name: Export Part 2 PDF (light theme)
+        run: pixi run export_presentation_pdf_light
 
       - name: Assemble Pages site
         run: |
@@ -41,13 +47,22 @@ jobs:
           cp -r peter/jupyter-lite/_site/. _site/part1/
           cp tobi/icra_software_tools_export.html _site/part2/index.html
           cp tobi/icra_software_tools_export.pdf _site/part2/icra_software_tools_export.pdf
+          cp tobi/icra_software_tools_export_light.html _site/part2/index_light.html
+          cp tobi/icra_software_tools_export_light.pdf _site/part2/icra_software_tools_export_light.pdf
           cp peter/landing/index.html _site/index.html
 
-      - name: Upload PDF artifact
+      - name: Upload PDF artifact (dark theme)
         uses: actions/upload-artifact@v7
         with:
-          name: part2-presentation-pdf
+          name: part2-presentation-pdf-dark
           path: tobi/icra_software_tools_export.pdf
+          if-no-files-found: error
+
+      - name: Upload PDF artifact (light theme)
+        uses: actions/upload-artifact@v7
+        with:
+          name: part2-presentation-pdf-light
+          path: tobi/icra_software_tools_export_light.pdf
           if-no-files-found: error
 
       - name: Configure GitHub Pages
