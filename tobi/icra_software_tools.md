@@ -7,6 +7,22 @@ authors:
 theme:
   name: terminal-dark
   override:
+    intro_slide:
+      subtitle:
+        colors:
+          foreground: cyan
+      location:
+        colors:
+          foreground: cyan
+
+    execution_output:
+      status:
+        running:
+          foreground: cyan
+
+    layout_grid:
+      color: cyan
+
     footer:
       style: template
       left: '**Tobias Fischer & Peter Corke**: <span class="noice">From Research Code to Running Systems</span>'
@@ -15,7 +31,17 @@ theme:
     palette:
       classes:
         noice:
-          foreground: red
+          foreground: "ff0000"
+          background: "000000"
+        accent:
+          foreground: "a7f3d0"
+          background: "000000"
+        caution:
+          foreground: "fb7185"
+          background: "000000"
+        highlight:
+          foreground: "fbbf24"
+          background: "000000"
 ---
 
 From Research Code to Running Systems
@@ -30,7 +56,7 @@ Cross-platform robotics and ML workflows
 <!-- pause -->
 
 Today: turn fragile setup instructions into
-<span style="color: #a7f3d0">executable systems</span>.
+<span class="accent">executable systems</span>.
 
 <!-- end_slide -->
 
@@ -46,7 +72,7 @@ Robotics is Powered by Software
 ## What changes in practice?
 
 Tooling becomes part of how research is
-<span style="color: #a7f3d0">shared, reused, and extended</span>.
+<span class="accent">shared, reused, and extended</span>.
 
 <!-- pause -->
 
@@ -162,7 +188,7 @@ From Instructions to Artifacts
 <!-- pause -->
 
 > The shift is from instructions to
-> <span style="color: #a7f3d0">runnable artifacts</span>.
+> <span class="accent">runnable artifacts</span>.
 
 <!-- end_slide -->
 
@@ -191,12 +217,12 @@ Fast Environments Change Behavior ⚡
 ===
 
 If changing environments takes
-<span style="color: #fb7185">minutes</span>,
+<span class="caution">minutes</span>,
 people avoid changing environments.
 
 <!-- pause -->
 
-If it takes <span style="color: #a7f3d0">seconds</span>,
+If it takes <span class="accent">seconds</span>,
 environments become part of iteration.
 
 # Environment Solve Time
@@ -374,7 +400,7 @@ ROS + PyTorch + OpenCV
 
 <!-- pause -->
 
-# <span style="color: #a7f3d0">One lockfile.</span>
+# <span class="accent">One lockfile.</span>
 
 <!-- pause -->
 
@@ -595,7 +621,7 @@ Why Pixi for Robotics? ⚙️
 
 > The point is not one feature.
 
-> The point is having the <span style="color: #a7f3d0">right combination</span> for robotics.
+> The point is having the <span class="accent">right combination</span> for robotics.
 
 <!-- end_slide -->
 
@@ -646,7 +672,7 @@ pixi run start
 
 ## Our goal
 
-<span style="color: #a7f3d0">Native, reproducible workflows</span>
+<span class="accent">Native, reproducible workflows</span>
 with minimal setup friction.
 
 <!-- end_slide -->
@@ -759,7 +785,7 @@ Key Insights
 
 <!-- pause -->
 
-5. <span style="color: #fbbf24">Research software</span>
+5. <span class="highlight">Research software</span>
    is part of the contribution.
 
 <!-- end_slide -->

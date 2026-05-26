@@ -204,8 +204,26 @@ def write_export_copy(source: Path, destination: Path) -> None:
         return f"{fence}{attrs}\n{body}```"
 
     text = re.sub(r"(?ms)^(```[^\s`]+)([^\n`]*)\n(.*?)^```", rewrite_block, text)
+    text = ensure_export_default_colors(text)
     destination.write_text(text, encoding="utf-8")
     print(f"Wrote export-safe markdown to {destination}")
+
+
+def ensure_export_default_colors(text: str) -> str:
+    if not text.startswith("---"):
+        return text
+    if re.search(r"(?m)^    default:\n      colors:\n        foreground:", text):
+        return text
+
+    return text.replace(
+        "  override:\n",
+        "  override:\n"
+        "    default:\n"
+        "      colors:\n"
+        "        foreground: white\n"
+        "        background: black\n\n",
+        1,
+    )
 
 
 def remote_host(args: argparse.Namespace) -> str | None:
