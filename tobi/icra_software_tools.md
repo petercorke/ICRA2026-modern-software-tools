@@ -49,46 +49,54 @@ From Research Code to Running Systems
 
 Cross-platform robotics and ML workflows
 
-<!-- pause -->
-
-# Research software is part of the research contribution.
+Robotics papers increasingly depend on software systems.
 
 <!-- pause -->
 
-Today: turn fragile setup instructions into
-<span class="accent">executable systems</span>.
+Today: make those systems
+<span class="accent">runnable, repeatable, and portable</span>.
+
+<!--
+speaker_note: |
+  Open with the shared pain, not with Pixi.
+  The promise is practical: by the end, setup instructions should look less like folklore and more like executable infrastructure.
+-->
 
 <!-- end_slide -->
 
-Robotics is Powered by Software
+The Problem: Research Code Becomes Infrastructure
 ===
 
-- Software controls the pace of robotics innovation
-- Modern robotics requires integrating many ecosystems
-- The bottleneck is often *not algorithms*, but environments
+- Robots run on software stacks, not isolated algorithms
+- Modern robotics mixes ROS, Python, C++, CUDA, simulators, and ML tooling
+- The environment often determines whether the result can be reproduced
 
 <!-- pause -->
 
-## What changes in practice?
+## The thesis
 
 Tooling becomes part of how research is
 <span class="accent">shared, reused, and extended</span>.
 
-<!-- pause -->
+<!--
+speaker_note: |
+  This is the bridge from "software matters" to "environment management is research infrastructure".
+  Keep it concrete: when a stack cannot be installed, the algorithm effectively cannot be evaluated.
+-->
 
 ## Goal today
 
 Move from:
 
-- messy research repositories
-- fragile installation instructions
-- machine-specific setups
+- fragile setup instructions
+- machine-specific environments
+- commands that only one person remembers
 
 to:
 
+- captured environments
 - executable workflows
-- cross-platform environments
-- reproducible robotics systems others can extend
+- reproducible systems others can run and extend
 
 <!-- end_slide -->
 
@@ -120,14 +128,19 @@ https://drive.google.com/...
 
 # We can do better!
 
+<!--
+speaker_note: |
+  Let the bad README breathe for a moment.
+  The point is not to mock old repositories; most of us have written this slide.
+  The question is how to make the next repository easier to run.
+-->
+
 <!-- end_slide -->
 
 This Talk Is Executable
 ===
 
 The slides are also the demo environment.
-
-<!-- pause -->
 
 - Navigate with arrow keys
 - Run code on a slide with `control` + `e`
@@ -137,6 +150,8 @@ The slides are also the demo environment.
 <!-- pause -->
 
 Only run executable snippets from presentations you trust!
+
+<!-- speaker_note: This slide establishes trust and agency before code starts executing. -->
 
 <!-- end_slide -->
 
@@ -155,6 +170,12 @@ It provides:
 - lockfiles
 - executable tasks
 - cross-platform workflows
+
+<!--
+speaker_note: |
+  Introduce Pixi as the tool that carries the story, not the story itself.
+  The story is: environment, task, lockfile, platform.
+-->
 
 <!-- end_slide -->
 
@@ -183,9 +204,12 @@ From Instructions to Artifacts
 
 <!-- reset_layout -->
 
-<!-- pause -->
-
 > The shift is from instructions to <span class="accent">runnable artifacts</span>.
+
+<!--
+speaker_note: |
+  Stress that a README is still useful, but it should point to commands that can be checked by CI and run by collaborators.
+-->
 
 <!-- end_slide -->
 
@@ -241,6 +265,12 @@ stressenv
 
 > Speed matters because research is exploratory.
 
+<!--
+speaker_note: |
+  Do not oversell benchmark numbers as universal.
+  The talking point is behavioral: slow environments make people avoid experiments, fast environments make them part of the loop.
+-->
+
 <!-- end_slide -->
 
 # train.py
@@ -279,8 +309,6 @@ download-mnist = {
 }
 ```
 
-<!-- pause -->
-
 <!-- column: 1 -->
 
 ## Run it
@@ -296,6 +324,12 @@ pixi run start
 ```
 
 <!-- reset_layout -->
+
+<!--
+speaker_note: |
+  This is the first real "workflow" moment.
+  The task name becomes the interface: students, CI, and future you do not need to remember the exact Python command.
+-->
 
 <!-- end_slide -->
 
@@ -424,23 +458,44 @@ pixi run -e rolling  ros2 run rviz2 rviz2
 From Environment to Infrastructure
 ===
 
-This is where Pixi stops being only an
-environment manager.
+An environment file becomes infrastructure when it defines
+the project contract.
 
-<!-- pause -->
+<!-- column_layout: [1, 1] -->
 
-It becomes lab infrastructure.
+<!-- column: 0 -->
 
-<!-- pause -->
+## Shared interfaces
 
-> Research code becomes something others can install.
+- laptop: `pixi run start`
+- CI: `pixi run test`
+- HPC: `pixi run benchmark`
+- workshop: `pixi run presentation`
+
+<!-- column: 1 -->
+
+## Captured assumptions
+
+- dependencies are declared
+- solver output is locked
+- tasks are named
+- platform differences are explicit
+
+<!-- reset_layout -->
+
+> Different entry points, one reproducible project.
+
+<!--
+speaker_note: |
+  This slide should answer "so what?" after the demos.
+  Pixi is useful locally, but the bigger value is a shared contract between authors, students, reviewers, CI, and collaborators.
+  The commands differ because the jobs differ; the important part is that they are named, versioned, and reproducible.
+-->
 
 <!-- end_slide -->
 
 Build Your Own ROS / C++ / Python Packages
 ===
-
-<!-- pause -->
 
 <!-- column_layout: [1, 1] -->
 
@@ -683,62 +738,52 @@ Limitations and Trade-offs
 
 ## Cross-platform is not magic
 
-- Linux software may still require patches on Windows or macOS
-- Native libraries and build systems can behave differently across platforms
-- Some robotics packages assume Ubuntu-specific tooling
+- Linux-first robotics software can still need patches on Windows or macOS
+- GUI applications, hardware access, and native builds behave differently
+- Some ROS packages still assume Ubuntu-specific tooling
 
-<!-- pause -->
+## Packaging moves work earlier
 
-## Ecosystem integration takes work
-
-- Older scientific software may require compatibility fixes
-- Packaging complex robotics stacks is still engineering effort
-- Reproducibility captures complexity
-
-<!-- pause -->
+- Old scientific software may need compatibility fixes
+- Complex robotics stacks still require engineering effort
+- Reproducibility captures complexity; it does not remove it
 
 <!-- column: 1 -->
 
 ## Pixi is not universal
 
-- Large organisations often have bespoke infrastructure
-- Proprietary toolchains may not integrate cleanly
-- Real-time and embedded workflows can require specialised environments
+- Docker remains excellent for deployment and services
+- HPC modules and lab infrastructure may still be the right layer
+- Real-time, embedded, and proprietary toolchains can need specialised setups
 
-<!-- pause -->
+## The ecosystem is improving
 
-## But the ecosystem is improving rapidly
-
-- Strong community support through conda-forge
-- Unified CUDA support via conda-forge and NVIDIA collaboration
-- Increasing convergence between robotics and ML tooling
+- conda-forge gives robotics access to shared packaging infrastructure
+- RoboStack brings ROS into that ecosystem
+- CUDA and ML tooling are becoming more composable
 
 <!-- reset_layout -->
 
-<!-- pause -->
-
-> The goal is not perfect portability.
-
-> The goal is to reduce friction.
-
-<!-- pause -->
-
 > Reproducible does not mean effortless.
-> It means the effort is captured.
+> It means the effort is captured instead of rediscovered.
+
+<!--
+speaker_note: |
+  Keep this honest and short.
+  The point is not "Pixi solves everything"; the point is that captured complexity is better than undocumented complexity.
+-->
 
 <!-- end_slide -->
 
 Teasers
 ===
 
-- Browser-native ROS via [ROS2WASM](https://ros2wasm.dev/)
-<!-- pause -->
+1. Browser-native ROS via [ROS2WASM](https://ros2wasm.dev/)
 
-- Pack environments for another machine: `pixi pack`
+2. Pack environments for another machine: `pixi pack`
 
-<!-- pause -->
+3. [Cross-platform CI in GitHub](https://github.com/ruben-arts/ros-example)
 
-- [Cross-platform CI in GitHub](https://github.com/ruben-arts/ros-example)
 ```yaml
 jobs:
   strategy:
@@ -751,12 +796,17 @@ jobs:
     - name: Test
       run: pixi run ros2 pkg list
 ```
-<!-- pause -->
-- conda-forge is community infrastructure: `rattler-build generate-recipe pypi some-package`
 
-Open a PR in `conda-forge/staged-recipes`.
+4. Package missing dependencies:
+   `rattler-build generate-recipe pypi some-package`
 
 > If a package blocks your research, packaging it can unblock the community.
+
+<!--
+speaker_note: |
+  Treat these as doors the audience can open after the tutorial, not as four more demos.
+  The shared theme is that tooling work compounds beyond one repository.
+-->
 
 <!-- end_slide -->
 
@@ -765,44 +815,44 @@ Key Insights
 
 <!-- list_item_newlines: 2 -->
 
+1. Environments are part of the method.
 
-1. Robotics is increasingly limited by software infrastructure.
+2. Tasks are the interface to a project.
 
-<!-- pause -->
+3. Lockfiles preserve more than dependencies; they preserve context.
 
-2. Tasks turn research code into executable workflows.
+4. Packaging turns local code into shared infrastructure.
 
-<!-- pause -->
+5. <span class="highlight">Research software</span> is part of the contribution.
 
-3. Composable environments unify robotics and machine learning.
-
-<!-- pause -->
-
-4. Better packaging enables reuse, benchmarking, and collaboration.
-
-<!-- pause -->
-
-5. <span class="highlight">Research software</span>
-   is part of the contribution.
+<!--
+speaker_note: |
+  This is the recap slide, not a new-content slide.
+  Read it as a ladder: method, interface, context, infrastructure, contribution.
+-->
 
 <!-- end_slide -->
 
 
-The Bigger Shift
+Make the Easy Path the Reproducible Path
 ===
 
-Dependency management is becoming core research infrastructure.
+A useful research artifact should answer:
 
-Modern robotics needs:
-- reproducible environments
-- composable software ecosystems
-- portable workflows across platforms
-
-<!-- pause -->
-
-> Build systems that others can run, extend, and build upon.
+1. What environment do I need?
+2. What command should I run?
+3. What result should I expect?
+4. How do I run it somewhere else?
 
 <!-- pause -->
+
+> Build systems that others can run, trust, extend, and build upon.
+
+<!--
+speaker_note: |
+  End by returning to the title.
+  "Running systems" means less time recovering setup state and more time evaluating ideas.
+-->
 
 # Questions?
 
@@ -812,8 +862,6 @@ Queensland University of Technology
 
 # Thank you!
 
-To the **prefix.dev** team for their incredible work on Pixi,
-to **Silvio Traversaro** for the many hours of work on RoboStack,
-to **Alejandro Fontan** for his work on VSLAM-LAB,
-to my **co-authors**, and to the many **open-source contributors**! Also thanks to the QUT Centre for Robotics
-and Australian Research Council for their support.
+Thanks to the **prefix.dev** team, **Silvio Traversaro**,
+**Alejandro Fontan**, my **co-authors**, the open-source contributors,
+the QUT Centre for Robotics, and the Australian Research Council.
