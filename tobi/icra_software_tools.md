@@ -5,11 +5,11 @@ authors:
   - Tobias Fischer
   - Peter Corke
 theme:
+  name: terminal-dark
   override:
     footer:
       style: template
-      left: '**Tobias Fischer & Peter Corke**'
-      center: '<span class="noice">     From Research Code to Running Systems</span>'
+      left: '**Tobias Fischer & Peter Corke**: <span class="noice">From Research Code to Running Systems</span>'
       right: "{current_slide} / {total_slides}"
       height: 1
     palette:

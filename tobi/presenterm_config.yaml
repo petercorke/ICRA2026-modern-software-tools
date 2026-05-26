@@ -21,7 +21,7 @@ snippet:
               - ["pixi", "run", "python", "-u", "$pwd/snippet.py"]
 
 defaults:
-  max_columns: 100
+  max_columns: 83
   max_columns_alignment: left
 
 export:
