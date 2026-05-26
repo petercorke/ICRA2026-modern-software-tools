@@ -742,11 +742,14 @@ Limitations and Trade-offs
 - GUI applications, hardware access, and native builds behave differently
 - Some ROS packages still assume Ubuntu-specific tooling
 
+<!-- pause -->
+
 ## Packaging moves work earlier
 
 - Old scientific software may need compatibility fixes
 - Complex robotics stacks still require engineering effort
 - Reproducibility captures complexity; it does not remove it
+<!-- pause -->
 
 <!-- column: 1 -->
 
@@ -755,6 +758,7 @@ Limitations and Trade-offs
 - Docker remains excellent for deployment and services
 - HPC modules and lab infrastructure may still be the right layer
 - Real-time, embedded, and proprietary toolchains can need specialised setups
+<!-- pause -->
 
 ## The ecosystem is improving
 
@@ -763,6 +767,7 @@ Limitations and Trade-offs
 - CUDA and ML tooling are becoming more composable
 
 <!-- reset_layout -->
+<!-- pause -->
 
 > Reproducible does not mean effortless.
 > It means the effort is captured instead of rediscovered.
@@ -779,9 +784,9 @@ Teasers
 ===
 
 1. Browser-native ROS via [ROS2WASM](https://ros2wasm.dev/)
-
+<!-- pause -->
 2. Pack environments for another machine: `pixi pack`
-
+<!-- pause -->
 3. [Cross-platform CI in GitHub](https://github.com/ruben-arts/ros-example)
 
 ```yaml
@@ -796,7 +801,7 @@ jobs:
     - name: Test
       run: pixi run ros2 pkg list
 ```
-
+<!-- pause -->
 4. Package missing dependencies:
    `rattler-build generate-recipe pypi some-package`
 
