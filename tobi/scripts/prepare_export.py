@@ -40,24 +40,26 @@ def limit_shell_output(body: str, rows: int) -> str:
     return "\n".join(hidden_lines + wrapper_start + visible_lines + wrapper_end)
 
 
-def ensure_export_default_colors(text: str) -> str:
+def ensure_export_default_colors(text: str, light: bool = False) -> str:
     if not text.startswith("---"):
         return text
     if re.search(r"(?m)^    default:\n      colors:\n        foreground:", text):
         return text
 
+    foreground = "black" if light else "white"
+    background = "white" if light else "black"
     return text.replace(
         "  override:\n",
         "  override:\n"
         "    default:\n"
         "      colors:\n"
-        "        foreground: white\n"
-        "        background: black\n\n",
+        f"        foreground: {foreground}\n"
+        f"        background: {background}\n\n",
         1,
     )
 
 
-def prepare_export(source: Path, destination: Path) -> None:
+def prepare_export(source: Path, destination: Path, light: bool = False) -> None:
     text = source.read_text(encoding="utf-8")
 
     def rewrite_block(match: re.Match[str]) -> str:
@@ -79,7 +81,7 @@ def prepare_export(source: Path, destination: Path) -> None:
         return f"{fence}{attrs}\n{body}```"
 
     text = re.sub(r"(?ms)^(```[^\s`]+)([^\n`]*)\n(.*?)^```", rewrite_block, text)
-    text = ensure_export_default_colors(text)
+    text = ensure_export_default_colors(text, light=light)
     destination.write_text(text, encoding="utf-8")
     print(f"Wrote export-safe markdown to {destination}")
 
@@ -88,9 +90,15 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("source", type=Path)
     parser.add_argument("destination", type=Path)
+    parser.add_argument(
+        "--theme",
+        choices=["dark", "light"],
+        default="dark",
+        help="Colour theme for exported slides: dark (white-on-black) or light (black-on-white). Default: dark.",
+    )
     args = parser.parse_args()
 
-    prepare_export(args.source, args.destination)
+    prepare_export(args.source, args.destination, light=(args.theme == "light"))
 
 
 if __name__ == "__main__":
