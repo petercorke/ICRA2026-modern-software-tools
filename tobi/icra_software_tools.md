@@ -250,8 +250,8 @@ pixi task add start "python train.py" --depends-on download-mnist
 [tasks]
 start = { cmd = "python train.py", depends-on = ["download-mnist"] }
 
-download-mnist = { 
-  cmd = "python -c 'from torchvision.datasets import MNIST; MNIST(\"data\", download=True)'", 
+download-mnist = {
+  cmd = "python -c 'from torchvision.datasets import MNIST; MNIST(\"data\", download=True)'",
   outputs = ["data/MNIST"]
 }
 ```
@@ -261,7 +261,7 @@ download-mnist = {
 <!-- column: 1 -->
 
 ## Run it
-```bash +exec +pty:80:8
+```bash +exec +pty:80:4
 pixi run start
 ```
 
