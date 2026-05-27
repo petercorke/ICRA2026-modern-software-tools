@@ -45,7 +45,7 @@ jobs:
         run: |
           mkdir -p _artifacts/part1-pdfs
           for nb in peter/jupyter-lite/content/*.ipynb; do
-            jupyter nbconvert "$nb" \
+            pixi run jupyter nbconvert "$nb" \
               --to pdf \
               --execute \
               --output-dir _artifacts/part1-pdfs \
