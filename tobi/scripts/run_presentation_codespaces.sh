@@ -36,4 +36,4 @@ if [[ "$INSTALL_ONLY" == "true" ]]; then
 fi
 
 cd "$REPO_ROOT"
-pixi run presentation --theme "$THEME"
+pixi run presentation
