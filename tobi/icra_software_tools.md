@@ -139,7 +139,7 @@ This Talk Is Executable
 The slides are also the demo environment.
 
 - Navigate with arrow keys
-- Run code on a slide with `control` + `e`
+- Run code on a slide with `e` (or `control` + `e`)
 - Show keybindings with `?`
 - Exit with `esc` or `control` + `c`
 
