@@ -31,6 +31,30 @@ jobs:
       - name: Build Part 1 JupyterLite site
         run: pixi run build_part1_jupyterlite
 
+      - name: Install Part 1 PDF export dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            texlive-xetex \
+            texlive-fonts-recommended \
+            texlive-plain-generic \
+            pandoc \
+            zip
+
+      - name: Export Part 1 notebooks to PDF zip
+        run: |
+          mkdir -p _artifacts/part1-pdfs
+          for nb in peter/jupyter-lite/content/*.ipynb; do
+            jupyter nbconvert "$nb" \
+              --to pdf \
+              --execute \
+              --output-dir _artifacts/part1-pdfs \
+              --TagRemovePreprocessor.enabled=True \
+              --TagRemovePreprocessor.remove_cell_tags="['skip-execution', 'skip-nbconvert']"
+          done
+          cd _artifacts/part1-pdfs
+          zip -r ../part1-notebooks-pdf.zip ./*.pdf
+
       - name: Export Part 2 HTML (dark theme)
         run: pixi run export_presentation_html
 
@@ -47,6 +71,7 @@ jobs:
         run: |
           mkdir -p _site/part1 _site/part2
           cp -r peter/jupyter-lite/_site/. _site/part1/
+          cp _artifacts/part1-notebooks-pdf.zip _site/part1/part1-notebooks-pdf.zip
           cp tobi/icra_software_tools_export.html _site/part2/index.html
           cp tobi/icra_software_tools_export.pdf _site/part2/icra_software_tools_export.pdf
           cp tobi/icra_software_tools_export_light.html _site/part2/index_light.html
