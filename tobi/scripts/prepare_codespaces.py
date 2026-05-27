@@ -39,7 +39,8 @@ pixi run ros2 run turtlesim turtlesim_node
     vnc_url = vnc_lite_url()
     turtlesim_note = """
 > Codespaces note: turtlesim opens in the virtual desktop on port 6080.
-> Open the PORTS tab, then open port 6080 in your browser (direct link: [here]({vnc_url})).
+> Open the PORTS tab, then open port 6080 in your browser 
+> Direct link: {vnc_url}
 > 
 
 """.format(vnc_url=vnc_url)
@@ -56,7 +57,8 @@ pixi run demo orbslam2 eth table_3 mono
 """
     orbslam_note = """
 > Codespaces note: ORB-SLAM also renders in the virtual desktop on port 6080.
-> If no window appears, reopen forwarded port 6080 from the PORTS tab (direct link: [here]({vnc_url})).
+> If no window appears, reopen forwarded port 6080 from the PORTS tab 
+> Direct link: {vnc_url}
 
 """.format(vnc_url=vnc_url)
     orbslam_note_marker = "> Codespaces note: ORB-SLAM also renders in the virtual desktop on port 6080."
