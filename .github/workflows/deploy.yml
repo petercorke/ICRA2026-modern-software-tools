@@ -35,11 +35,20 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends \
+            texlive-latex-base \
             texlive-xetex \
             texlive-fonts-recommended \
             texlive-plain-generic \
             pandoc \
             zip
+
+      - name: Install Part 1 toolbox packages from PyPI
+        run: |
+          pixi run python -m pip install --upgrade \
+            bdsim \
+            machinevision-toolbox-python \
+            robotics-toolbox-python \
+            spatialmath-python
 
       - name: Export Part 1 notebooks to PDF zip
         run: |
@@ -49,6 +58,7 @@ jobs:
               --to pdf \
               --execute \
               --output-dir _artifacts/part1-pdfs \
+              --PDFExporter.latex_command="['xelatex', '{filename}', '-interaction=nonstopmode']" \
               --TagRemovePreprocessor.enabled=True \
               --TagRemovePreprocessor.remove_cell_tags="['skip-execution', 'skip-nbconvert']"
           done
