@@ -44,6 +44,27 @@ jobs:
 
       - name: Install Part 1 toolbox packages from PyPI
         run: |
+          # Pixi's Python environment may not include pip by default.
+          pixi run python - <<'PY'
+          import importlib.util
+          import subprocess
+          import sys
+          import tempfile
+          import urllib.request
+
+          if importlib.util.find_spec("pip") is None:
+              try:
+                  import ensurepip
+                  ensurepip.bootstrap(upgrade=True)
+              except Exception:
+                  url = "https://bootstrap.pypa.io/get-pip.py"
+                  with tempfile.NamedTemporaryFile(suffix=".py") as f:
+                      f.write(urllib.request.urlopen(url).read())
+                      f.flush()
+                      subprocess.check_call([sys.executable, f.name])
+          PY
+
+          pixi run python -m pip install --upgrade pip
           pixi run python -m pip install --upgrade \
             bdsim \
             machinevision-toolbox-python \
