@@ -7,7 +7,7 @@ if [[ "${CODESPACES:-}" != "true" ]]; then
 	exit 0
 fi
 
-bash "$SCRIPT_DIR/prepare_presenterm_config_codespaces.sh"
+python "$SCRIPT_DIR/prepare_codespaces.py" --config-only --config-file "$SCRIPT_DIR/../presenterm_config.yaml"
 
 if [[ -f "$HOME/.bashrc" ]]; then
 	for line in \

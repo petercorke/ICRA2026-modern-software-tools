@@ -40,4 +40,4 @@ if [[ "${CODESPACES:-}" == "true" ]]; then
 fi
 
 cd "$REPO_ROOT"
-pixi run presentation
+pixi run presentation_codespaces "$THEME"
