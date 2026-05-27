@@ -36,6 +36,4 @@ if [[ "$INSTALL_ONLY" == "true" ]]; then
 fi
 
 cd "$REPO_ROOT"
-pixi run presenterm --manifest-path "$REPO_ROOT/pixi.toml" --enable-snippet-execution -X \
-  "$TOBI_DIR/icra_software_tools.md" --config-file "$TOBI_DIR/presenterm_config.yaml" \
-  --theme "$THEME"
+pixi run presentation --theme "$THEME"
