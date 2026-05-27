@@ -171,6 +171,8 @@ It provides:
 speaker_note: |
   Introduce Pixi as the tool that carries the story, not the story itself.
   The story is: environment, task, lockfile, platform.
+  Be precise about the lockfile: it is a fully resolved environment, including exact package versions, hashes, and per-platform solver output.
+  That is what lets a project be shared as more than "try these install commands".
 -->
 
 <!-- end_slide -->
@@ -205,6 +207,7 @@ From Instructions to Artifacts
 <!--
 speaker_note: |
   Stress that a README is still useful, but it should point to commands that can be checked by CI and run by collaborators.
+  The important shift is that setup knowledge moves out of oral tradition and into files we can version, review, and execute.
 -->
 
 <!-- end_slide -->
@@ -325,6 +328,8 @@ pixi run start
 speaker_note: |
   This is the first real "workflow" moment.
   The task name becomes the interface: students, CI, and future you do not need to remember the exact Python command.
+  Also stress that a task is not just an alias: `pixi run start` runs inside the resolved environment, so the command and the environment contract travel together.
+  The `outputs` entry means Pixi can avoid repeating work once the data is already present; reproducibility does not have to mean rerunning every expensive setup step.
 -->
 
 <!-- end_slide -->
@@ -449,6 +454,12 @@ pixi run -e rolling  ros2 run rviz2 rviz2
 
 > Different ROS distributions become environments, not separate machines.
 
+<!--
+speaker_note: |
+  A Pixi feature is a building block for an environment.
+  That is the key idea here: Humble and Rolling can share a repository, but still resolve into distinct environments with their own dependencies, channels, and tasks.
+-->
+
 <!-- end_slide -->
 
 From Environment to Infrastructure
@@ -486,6 +497,7 @@ speaker_note: |
   This slide should answer "so what?" after the demos.
   Pixi is useful locally, but the bigger value is a shared contract between authors, students, reviewers, CI, and collaborators.
   The commands differ because the jobs differ; the important part is that they are named, versioned, and reproducible.
+  For CI, the cache is meaningful because the lockfile is the environment contract: if the lockfile is still in sync, setup-pixi can reuse the cached environment instead of rebuilding it from scratch.
 -->
 
 <!-- end_slide -->
@@ -543,6 +555,13 @@ pixi run ros2 run icra_ros_package icra_node
 
 <!-- pause -->
 
+<!--
+speaker_note: |
+  The important detail is that the dependency is the local `package.xml`.
+  Pixi-build uses that metadata to build and install the package, and dependency resolution follows the package.xml declarations instead of a separate hand-written install list.
+  In practice, this is what you want for ROS research code: not only install ROS packages, but develop local ROS packages inside the same reproducible environment.
+-->
+
 <!-- end_slide -->
 
 
@@ -591,6 +610,13 @@ python scripts/remote_demo.py prepare
 # Prints each remote command before executing it
 python scripts/remote_demo.py run
 ```
+
+<!--
+speaker_note: |
+  This is the real reproducibility test: clone or copy the same repository to a different machine, then run the same task.
+  It simulates handing the repository to a colleague on different hardware.
+  If something still fails, the remaining problem is usually an explicit system-level issue rather than hidden project setup.
+-->
 
 <!-- end_slide -->
 
@@ -727,6 +753,7 @@ with minimal setup friction.
 <!--
 speaker_note: |
   Docker is still the right tool for many deployment jobs.
+  Pixi is not anti-container: a Pixi environment can also be installed inside a container when that is the deployment boundary.
   The mismatch here is research iteration: host hardware, GUI tools, ROS networking, local notebooks, and multiple repositories need to move together.
   Containers can also make ROS middleware behavior more surprising: networking isolation, discovery, and shared-memory transport across host/container boundaries are often exactly the kind of friction robotics researchers are trying to avoid.
   Avoid making a size claim unless you have measured it; it is enough to say Pixi often feels faster because it resolves, links, and caches packages differently from pulling full images.
@@ -820,6 +847,7 @@ jobs:
 speaker_note: |
   Treat these as doors the audience can open after the tutorial, not as five more demos.
   The shared theme is that tooling work compounds beyond one repository.
+  For the CI teaser, mention that setup-pixi installs Pixi and prepares the environment; cache hits are useful because the lockfile is still in sync.
   The model-packaging teaser is about model files becoming lockable, cacheable, and traceable artifacts rather than side downloads hidden in setup scripts.
 -->
 
