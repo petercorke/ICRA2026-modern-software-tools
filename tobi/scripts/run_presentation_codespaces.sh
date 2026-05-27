@@ -35,5 +35,9 @@ if [[ "$INSTALL_ONLY" == "true" ]]; then
   exit 0
 fi
 
+if [[ "${CODESPACES:-}" == "true" ]]; then
+  bash "$SCRIPT_DIR/config_codespaces.sh"
+fi
+
 cd "$REPO_ROOT"
 pixi run presentation
