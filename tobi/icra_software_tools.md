@@ -63,16 +63,16 @@ speaker_note: |
 The Problem: Research Code Becomes Infrastructure
 ===
 
-- Robots run on software stacks, not isolated algorithms
-- Modern robotics mixes ROS, Python, C++, CUDA, simulators, and ML tooling
-- The environment often determines whether the result can be reproduced
+Robotics papers increasingly depend on full software stacks:
+ROS, Python, C++, CUDA, simulators, ML tooling, and data.
 
 <!-- pause -->
 
-## The thesis
+## Hands up if you have lost time to...
 
-Tooling becomes part of how research is
-<span class="accent">shared, reused, and extended</span>.
+- a missing dependency
+- a mystery dataset or model download
+- "works on my machine"
 
 <!--
 speaker_note: |
@@ -80,19 +80,12 @@ speaker_note: |
   Keep it concrete: when a stack cannot be installed, the algorithm effectively cannot be evaluated.
 -->
 
-## Goal today
+<!-- pause -->
 
-Move from:
+## The thesis
 
-- fragile setup instructions
-- machine-specific environments
-- commands that only one person remembers
-
-to:
-
-- captured environments
-- executable workflows
-- reproducible systems others can run and extend
+Tooling is part of how research is
+<span class="accent">shared, reused, and extended</span>.
 
 <!-- end_slide -->
 
@@ -118,11 +111,11 @@ https://drive.google.com/...
 
 <!-- pause -->
 
-<!-- column_layout: [1, 3, 1] -->
+<!-- column_layout: [1, 5, 1] -->
 
 <!-- column: 1 -->
 
-# We can do better!
+# What if the README had one command?
 
 <!--
 speaker_note: |
@@ -138,20 +131,49 @@ This Talk Is Executable
 
 The slides are also the demo environment.
 
-- Navigate with arrow keys
-- Run code on a slide with `control` + `e`
-- Show keybindings with `?`
-- Exit with `esc` or `control` + `c`
+<!-- column_layout: [1, 1] -->
+
+<!-- column: 0 -->
+
+## During the talk
+
+- arrows: navigate
+- `control` + `e`: run code
+- `control` + `r`: reset slide
+- `?`: show keybindings
+- `esc` or `control` + `c`: exit
+
+<!-- column: 1 -->
+
+## Running it yourself
+
+Use a terminal and raw `git clone`
+(avoid GitHub web download or GitHub Desktop).
+
+```bash
+git clone https://github.com/petercorke/ICRA2026-modern-software-tools.git
+cd ICRA2026-modern-software-tools
+pixi run presentation
+```
+
+<!-- reset_layout -->
 
 <!-- pause -->
 
 Only run executable snippets from presentations you trust!
 
-<!-- speaker_note: This slide establishes trust and agency before code starts executing. -->
+<!--
+speaker_note: |
+  This slide establishes trust and agency before code starts executing.
+  For Windows users, explicitly say to open PowerShell or Git Bash and paste the `git clone` command.
+  Avoid GitHub's web download and GitHub Desktop for the workshop, because the live commands assume a normal Git checkout and a terminal in the repository directory.
+  Explain that `cd ICRA2026-modern-software-tools` moves the terminal into the downloaded project folder.
+-->
 
 <!-- end_slide -->
 
-# Pixi ⚡
+Pixi: From Instructions to Artifacts ⚡
+===
 
 Pixi is a fast project manager built on the
 conda-forge ecosystem.
@@ -159,26 +181,6 @@ conda-forge ecosystem.
 Think: conda packages, modern project workflow.
 
 <!-- pause -->
-
-It provides:
-
-- declarative environments
-- lockfiles
-- executable tasks
-- cross-platform workflows
-
-<!--
-speaker_note: |
-  Introduce Pixi as the tool that carries the story, not the story itself.
-  The story is: environment, task, lockfile, platform.
-  Be precise about the lockfile: it is a fully resolved environment, including exact package versions, hashes, and per-platform solver output.
-  That is what lets a project be shared as more than "try these install commands".
--->
-
-<!-- end_slide -->
-
-From Instructions to Artifacts
-===
 
 <!-- column_layout: [1, 1] -->
 
@@ -206,6 +208,10 @@ From Instructions to Artifacts
 
 <!--
 speaker_note: |
+  Introduce Pixi as the tool that carries the story, not the story itself.
+  The story is: environment, task, lockfile, platform.
+  Be precise about the lockfile: it is a fully resolved environment, including exact package versions, hashes, and per-platform solver output.
+  That is what lets a project be shared as more than "try these install commands".
   Stress that a README is still useful, but it should point to commands that can be checked by CI and run by collaborators.
   The important shift is that setup knowledge moves out of oral tradition and into files we can version, review, and execute.
 -->
@@ -260,10 +266,6 @@ stressenv
 ████████████████████████ 🟧 conda       29.84s
 ```
 
-<!-- pause -->
-
-> Speed matters because research is exploratory.
-
 <!--
 speaker_note: |
   Do not oversell benchmark numbers as universal.
@@ -284,7 +286,12 @@ language: python
 Tasks Turn Commands into Workflows
 ===
 
-<!-- column_layout: [1, 1] -->
+Hands up: who has a command in their lab
+that nobody wants to type from memory?
+
+<!-- pause -->
+
+<!-- column_layout: [3, 2] -->
 
 <!-- column: 0 -->
 
@@ -298,15 +305,16 @@ pixi task add start "python train.py" --depends-on download-mnist
 
 <!-- pause -->
 
-```toml {1-2|4-5|6-7|1-8}
+```toml
 [tasks]
 start = { cmd = "python train.py", depends-on = ["download-mnist"] }
 
 download-mnist = {
-  cmd = "python -c 'from torchvision.datasets import MNIST; MNIST(\"data\", download=True)' 2>/dev/null",
+  cmd = "python -c 'torchvision.datasets.MNIST("data", download=True)'",
   outputs = ["data/MNIST"]
 }
 ```
+<!-- pause -->
 
 <!-- column: 1 -->
 
@@ -409,6 +417,11 @@ Then scale the same idea to real stacks.
 
 <!-- pause -->
 
+Hands up if you have ever installed a VM
+or old Ubuntu just to get ROS running.
+
+<!-- pause -->
+
 ```bash +exec
 pixi run ros2 run turtlesim turtlesim_node
 ```
@@ -450,10 +463,6 @@ pixi run -e rolling  ros2 run rviz2 rviz2
 # We still support ROS1 Noetic :)
 ```
 
-<!-- pause -->
-
-> Different ROS distributions become environments, not separate machines.
-
 <!--
 speaker_note: |
   A Pixi feature is a building block for an environment.
@@ -462,50 +471,10 @@ speaker_note: |
 
 <!-- end_slide -->
 
-From Environment to Infrastructure
-===
-
-An environment file becomes infrastructure when it defines
-the project contract.
-
-<!-- column_layout: [1, 1] -->
-
-<!-- column: 0 -->
-
-## Shared interfaces
-
-- laptop: `pixi run start`
-- CI: `pixi run test`
-- HPC: `pixi run benchmark`
-- workshop: `pixi run presentation`
-
-<!-- column: 1 -->
-
-## Captured assumptions
-
-- dependencies are declared
-- solver output is locked
-- tasks are named
-- platform differences are explicit
-
-<!-- reset_layout -->
-
-> Different entry points, one reproducible project.
-
-<!--
-speaker_note: |
-  This slide should answer "so what?" after the demos.
-  Pixi is useful locally, but the bigger value is a shared contract between authors, students, reviewers, CI, and collaborators.
-  The commands differ because the jobs differ; the important part is that they are named, versioned, and reproducible.
-  For CI, the cache is meaningful because the lockfile is the environment contract: if the lockfile is still in sync, setup-pixi can reuse the cached environment instead of rebuilding it from scratch.
--->
-
-<!-- end_slide -->
-
 Build Your Own ROS / C++ / Python Packages
 ===
 
-<!-- column_layout: [1, 1] -->
+<!-- column_layout: [3, 2] -->
 
 <!-- column: 0 -->
 
@@ -514,7 +483,7 @@ Build Your Own ROS / C++ / Python Packages
 <!-- // Delete the icra_ros_package in case it already exists -->
 ```bash +exec +pty:80:4
 /// python -c "from pathlib import Path; import shutil; [p.unlink() if p.is_file() else shutil.rmtree(p, ignore_errors=True) for p in [Path('icra_ros_package')]]"
-ros2 pkg create \
+pixi run ros2 pkg create \
   --build-type ament_cmake \
   --node-name icra_node \
   icra_ros_package
@@ -617,24 +586,6 @@ speaker_note: |
   It simulates handing the repository to a colleague on different hardware.
   If something still fails, the remaining problem is usually an explicit system-level issue rather than hidden project setup.
 -->
-
-<!-- end_slide -->
-
-From Scripts to Infrastructure
-===
-
-```text
-        README.md + shell scripts
-                  ↓
-         Executable workflows
-                  ↓
-       Composable research systems
-```
-
-<!-- pause -->
-
-> Better tooling changes how research is shared,
-> reused, and extended.
 
 <!-- end_slide -->
 
@@ -764,45 +715,27 @@ speaker_note: |
 Limitations and Trade-offs
 ===
 
-<!-- column_layout: [1, 1] -->
-
-<!-- column: 0 -->
-
-## Cross-platform is not magic
-
-- Linux-first robotics software can still need patches on Windows or macOS
-- GUI applications, hardware access, and native builds behave differently
-- Some ROS packages still assume Ubuntu-specific tooling
+Reproducible does not mean effortless.
+It means the effort is captured instead of rediscovered.
 
 <!-- pause -->
 
-## Packaging moves work earlier
+1. Some robotics software is still Linux-first.
+   Drivers, GUIs, middleware, and hardware access need testing.
 
-- Old scientific software may need compatibility fixes
-- Complex robotics stacks still require engineering effort
-- Reproducibility captures complexity; it does not remove it
+2. Packaging moves work earlier.
+   Old libraries and unusual builds likely need patches.
+
+3. Pixi is one layer.
+   Docker, HPC modules, and embedded toolchains still matter.
+
+4. Lockfiles capture complexity.
+   They do not make complex systems simple.
+
 <!-- pause -->
 
-<!-- column: 1 -->
-
-## Pixi is not universal
-
-- Docker remains excellent for deployment and services
-- HPC modules and lab infrastructure may still be the right layer
-- Real-time, embedded, and proprietary toolchains can need specialised setups
-<!-- pause -->
-
-## The ecosystem is improving
-
-- conda-forge gives robotics access to shared packaging infrastructure
-- RoboStack brings ROS into that ecosystem
-- CUDA and ML tooling are becoming more composable
-
-<!-- reset_layout -->
-<!-- pause -->
-
-> Reproducible does not mean effortless.
-> It means the effort is captured instead of rediscovered.
+> The win is not zero setup.
+> The win is setup you can inspect, share, and rerun.
 
 <!--
 speaker_note: |
@@ -825,23 +758,21 @@ Teasers
 jobs:
   strategy:
     matrix:
-      os: [ubuntu-latest, windows-latest, macos-latest]
+      os: [ubuntu, windows, macos]
   steps:
     - name: Setup Pixi and install environment
-      uses: prefix-dev/setup-pixi@v0.9.3
+      uses: prefix-dev/setup-pixi
 
-    - name: Test
+    - name: Run ROS node
       run: pixi run ros2 pkg list
 ```
 <!-- pause -->
-4. Package missing dependencies:
+4. Package missing dependencies (if it blocks your research, it blocks someone else's research, too!):
    `rattler-build generate-recipe pypi some-package`
 
 <!-- pause -->
 5. Package AI/ML models as versioned, cached dependencies:
    [prefix.dev blog](https://prefix.dev/blog/packaging-ai-ml-models-as-conda-packages)
-
-> If a package blocks your research, packaging it can unblock the community.
 
 <!--
 speaker_note: |
@@ -860,54 +791,36 @@ Key Insights
 
 1. Environments are part of the method.
 
-2. Tasks are the interface to a project.
+2. Tasks and lockfiles make projects runnable.
 
-3. Lockfiles preserve more than dependencies; they preserve context.
+3. Packaging turns local code into shared infrastructure.
 
-4. Packaging turns local code into shared infrastructure.
-
-5. <span class="highlight">Research software</span> is part of the contribution.
-
-<!--
-speaker_note: |
-  This is the recap slide, not a new-content slide.
-  Read it as a ladder: method, interface, context, infrastructure, contribution.
--->
-
-<!-- end_slide -->
-
-
-Make the Easy Path the Reproducible Path
-===
-
-A useful research artifact should answer:
-
-1. What environment do I need?
-2. What command should I run?
-3. What result should I expect?
-4. How do I run it somewhere else?
+4. <span class="highlight">Research software</span> is part of the contribution.
 
 <!-- pause -->
 
 > Build systems that others can run, trust, extend, and build upon.
+
+<!-- pause -->
+
+## Thank you
+
+`Tobias.Fischer@qut.edu.au` & `Peter.Corke@qut.edu.au`
+
+QUT Centre for Robotics
+
+Thanks to the **prefix.dev** team, **Silvio Traversaro**,
+**Alejandro Fontan**, **Nicolas Marticorena**, **Margaux Edwards**,
+my **co-authors**, open-source contributors,
+and the Australian Research Council.
+
+# Questions?
 
 <!--
 speaker_note: |
   End by returning to the title.
   "Running systems" means less time recovering setup state and more time evaluating ideas.
 -->
-
-# Questions?
-
-`Tobias.Fischer@qut.edu.au` & `Peter.Corke@qut.edu.au`
-
-Queensland University of Technology
-
-# Thank you!
-
-Thanks to the **prefix.dev** team, **Silvio Traversaro**,
-**Alejandro Fontan**, my **co-authors**, the open-source contributors,
-the QUT Centre for Robotics, and the Australian Research Council.
 
 <!-- end_slide -->
 

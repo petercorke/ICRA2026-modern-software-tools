@@ -22,7 +22,12 @@ def prepare_windows(source: Path, destination: Path) -> None:
         return f"```bat{attrs}\n{body}```"
 
     text = re.sub(r"(?ms)^```bash([^\n`]*)\n(.*?)^```", rewrite_block, text)
-    text = WINDOWS_SLIDE_BREAK_PATTERN.sub(r"\1<!-- end_slide -->\n\n\2", text, count=1)
+    text, slide_breaks = WINDOWS_SLIDE_BREAK_PATTERN.subn(r"\1<!-- end_slide -->\n\n\2", text, count=1)
+    if slide_breaks != 1:
+        raise RuntimeError(
+            "Expected to split the Windows ROS package build slide exactly once, "
+            f"but matched {slide_breaks} times."
+        )
     destination.write_text(text, encoding="utf-8")
     print(f"Wrote Windows markdown to {destination}")
 
