@@ -14,6 +14,8 @@ tobi/icra_software_tools_export_light.md
 tobi/icra_software_tools_export_light.pdf
 tobi/icra_software_tools_windows.md
 tobi/VSLAM-LAB
+tobi/VSLAM-LAB-Benchmark
+tobi/VSLAM-LAB-Evaluation
 
 # === JupyterLite / peter ===
 # rtb_data is 111 MB — exceeds GitHub's 100 MB limit; NEVER commit

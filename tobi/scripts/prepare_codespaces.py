@@ -2,8 +2,16 @@
 from __future__ import annotations
 
 import argparse
+import os
 import re
 from pathlib import Path
+
+
+def vnc_lite_url() -> str:
+    codespace_name = os.getenv("CODESPACE_NAME")
+    if codespace_name:
+        return f"https://{codespace_name}-6080.app.github.dev/vnc_lite.html"
+    return "https://<your-codespace-name>-6080.app.github.dev/vnc_lite.html"
 
 
 def transform_codespaces_markdown(text: str) -> str:
@@ -17,30 +25,42 @@ def transform_codespaces_markdown(text: str) -> str:
         flags=re.IGNORECASE,
     )
 
+    updated = re.sub(
+        r"(?m)^pixi run demo orbslam2 eth table_3 mono$",
+        "DISPLAY=:99 QT_QPA_PLATFORM=xcb LIBGL_ALWAYS_SOFTWARE=1 \\\npixi run demo orbslam2 eth table_3 mono",
+        updated,
+        count=1,
+    )
+
     turtlesim_anchor = """```bash +exec
 pixi run ros2 run turtlesim turtlesim_node
 ```
 """
+    vnc_url = vnc_lite_url()
     turtlesim_note = """
 > Codespaces note: turtlesim opens in the virtual desktop on port 6080.
-> Open the PORTS tab, then open port 6080 in your browser.
+> Open the PORTS tab, then open port 6080 in your browser (direct link: [here]({vnc_url})).
+> 
 
-"""
-    if turtlesim_anchor in updated and turtlesim_note.strip() not in updated:
+""".format(vnc_url=vnc_url)
+    turtlesim_note_marker = "> Codespaces note: turtlesim opens in the virtual desktop on port 6080."
+    if turtlesim_anchor in updated and turtlesim_note_marker not in updated:
         updated = updated.replace(turtlesim_anchor, turtlesim_anchor + turtlesim_note, 1)
 
     orbslam_anchor = """```bash +exec +pty:80:6
 git clone https://github.com/VSLAM-LAB/VSLAM-LAB.git > /dev/null 2>&1
 cd VSLAM-LAB && \
+DISPLAY=:99 QT_QPA_PLATFORM=xcb LIBGL_ALWAYS_SOFTWARE=1 \
 pixi run demo orbslam2 eth table_3 mono
 ```
 """
     orbslam_note = """
 > Codespaces note: ORB-SLAM also renders in the virtual desktop on port 6080.
-> If no window appears, reopen forwarded port 6080 from the PORTS tab.
+> If no window appears, reopen forwarded port 6080 from the PORTS tab (direct link: [here]({vnc_url})).
 
-"""
-    if orbslam_anchor in updated and orbslam_note.strip() not in updated:
+""".format(vnc_url=vnc_url)
+    orbslam_note_marker = "> Codespaces note: ORB-SLAM also renders in the virtual desktop on port 6080."
+    if orbslam_anchor in updated and orbslam_note_marker not in updated:
         updated = updated.replace(orbslam_anchor, orbslam_anchor + orbslam_note, 1)
 
     return updated
