@@ -97,6 +97,7 @@ committee.
 ](https://doi.org/10.1109/MRA.2021.3128367), IEEE Robotics & Automation Magazine (Volume: 29, Issue: 2, June 2022)
 - [Pixi: Unified Software Development and Distribution for Robotics and AI](https://arxiv.org/abs/2511.04827), arXiv:2511.04827
 - [ROS2WASM: Bringing the Robot Operating System to the Web](https://doi.org/10.1109/ICRA55743.2025.11127821), IEEE International Conference on Robotics and Automation (ICRA) 2025
+- [VSLAM-LAB: A Comprehensive Framework for Visual SLAM Methods and Datasets](https://arxiv.org/abs/2504.04457), IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2025
 
 ## Acknowledgements
 Tobi would like to thank the fantastic team at [prefix.dev](https://prefix.dev/) for the great work on Pixi over the last few years, and the nice and productive collaboration. He also thanks all contributors to [RoboStack](https://robostack.github.io/), and in particular Silvio Traversaro for his never-ending support. Tobi acknowledges partial support from the [QUT Centre for Robotics](https://qcr.ai/) and an ARC DECRA Fellowship DE240100149.

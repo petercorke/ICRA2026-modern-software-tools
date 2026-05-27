@@ -32,16 +32,12 @@ theme:
       classes:
         noice:
           foreground: "ff0000"
-          background: "000000"
         accent:
           foreground: "a7f3d0"
-          background: "000000"
         caution:
           foreground: "fb7185"
-          background: "000000"
         highlight:
           foreground: "fbbf24"
-          background: "000000"
 ---
 
 From Research Code to Running Systems
@@ -175,6 +171,8 @@ It provides:
 speaker_note: |
   Introduce Pixi as the tool that carries the story, not the story itself.
   The story is: environment, task, lockfile, platform.
+  Be precise about the lockfile: it is a fully resolved environment, including exact package versions, hashes, and per-platform solver output.
+  That is what lets a project be shared as more than "try these install commands".
 -->
 
 <!-- end_slide -->
@@ -209,6 +207,7 @@ From Instructions to Artifacts
 <!--
 speaker_note: |
   Stress that a README is still useful, but it should point to commands that can be checked by CI and run by collaborators.
+  The important shift is that setup knowledge moves out of oral tradition and into files we can version, review, and execute.
 -->
 
 <!-- end_slide -->
@@ -329,6 +328,8 @@ pixi run start
 speaker_note: |
   This is the first real "workflow" moment.
   The task name becomes the interface: students, CI, and future you do not need to remember the exact Python command.
+  Also stress that a task is not just an alias: `pixi run start` runs inside the resolved environment, so the command and the environment contract travel together.
+  The `outputs` entry means Pixi can avoid repeating work once the data is already present; reproducibility does not have to mean rerunning every expensive setup step.
 -->
 
 <!-- end_slide -->
@@ -453,6 +454,12 @@ pixi run -e rolling  ros2 run rviz2 rviz2
 
 > Different ROS distributions become environments, not separate machines.
 
+<!--
+speaker_note: |
+  A Pixi feature is a building block for an environment.
+  That is the key idea here: Humble and Rolling can share a repository, but still resolve into distinct environments with their own dependencies, channels, and tasks.
+-->
+
 <!-- end_slide -->
 
 From Environment to Infrastructure
@@ -490,6 +497,7 @@ speaker_note: |
   This slide should answer "so what?" after the demos.
   Pixi is useful locally, but the bigger value is a shared contract between authors, students, reviewers, CI, and collaborators.
   The commands differ because the jobs differ; the important part is that they are named, versioned, and reproducible.
+  For CI, the cache is meaningful because the lockfile is the environment contract: if the lockfile is still in sync, setup-pixi can reuse the cached environment instead of rebuilding it from scratch.
 -->
 
 <!-- end_slide -->
@@ -547,6 +555,13 @@ pixi run ros2 run icra_ros_package icra_node
 
 <!-- pause -->
 
+<!--
+speaker_note: |
+  The important detail is that the dependency is the local `package.xml`.
+  Pixi-build uses that metadata to build and install the package, and dependency resolution follows the package.xml declarations instead of a separate hand-written install list.
+  In practice, this is what you want for ROS research code: not only install ROS packages, but develop local ROS packages inside the same reproducible environment.
+-->
+
 <!-- end_slide -->
 
 
@@ -595,6 +610,13 @@ python scripts/remote_demo.py prepare
 # Prints each remote command before executing it
 python scripts/remote_demo.py run
 ```
+
+<!--
+speaker_note: |
+  This is the real reproducibility test: clone or copy the same repository to a different machine, then run the same task.
+  It simulates handing the repository to a colleague on different hardware.
+  If something still fails, the remaining problem is usually an explicit system-level issue rather than hidden project setup.
+-->
 
 <!-- end_slide -->
 
@@ -708,6 +730,7 @@ volume mounts
 
 - native GUI applications
 - low-friction hardware access
+- host networking and shared memory behavior
 - ROS + ML composability
 - rapid iteration across repositories
 - cross-platform desktop workflows
@@ -726,6 +749,15 @@ pixi run start
 
 <span class="accent">Native, reproducible workflows</span>
 with minimal setup friction.
+
+<!--
+speaker_note: |
+  Docker is still the right tool for many deployment jobs.
+  Pixi is not anti-container: a Pixi environment can also be installed inside a container when that is the deployment boundary.
+  The mismatch here is research iteration: host hardware, GUI tools, ROS networking, local notebooks, and multiple repositories need to move together.
+  Containers can also make ROS middleware behavior more surprising: networking isolation, discovery, and shared-memory transport across host/container boundaries are often exactly the kind of friction robotics researchers are trying to avoid.
+  Avoid making a size claim unless you have measured it; it is enough to say Pixi often feels faster because it resolves, links, and caches packages differently from pulling full images.
+-->
 
 <!-- end_slide -->
 
@@ -805,12 +837,18 @@ jobs:
 4. Package missing dependencies:
    `rattler-build generate-recipe pypi some-package`
 
+<!-- pause -->
+5. Package AI/ML models as versioned, cached dependencies:
+   [prefix.dev blog](https://prefix.dev/blog/packaging-ai-ml-models-as-conda-packages)
+
 > If a package blocks your research, packaging it can unblock the community.
 
 <!--
 speaker_note: |
-  Treat these as doors the audience can open after the tutorial, not as four more demos.
+  Treat these as doors the audience can open after the tutorial, not as five more demos.
   The shared theme is that tooling work compounds beyond one repository.
+  For the CI teaser, mention that setup-pixi installs Pixi and prepares the environment; cache hits are useful because the lockfile is still in sync.
+  The model-packaging teaser is about model files becoming lockable, cacheable, and traceable artifacts rather than side downloads hidden in setup scripts.
 -->
 
 <!-- end_slide -->
@@ -870,3 +908,22 @@ Queensland University of Technology
 Thanks to the **prefix.dev** team, **Silvio Traversaro**,
 **Alejandro Fontan**, my **co-authors**, the open-source contributors,
 the QUT Centre for Robotics, and the Australian Research Council.
+
+<!-- end_slide -->
+
+References and Links
+===
+
+<!-- list_item_newlines: 2 -->
+
+- [<span class="highlight">A RoboStack Tutorial: Using the Robot Operating System Alongside the Conda and Jupyter Data Science Ecosystems</span>](https://doi.org/10.1109/MRA.2021.3128367), IEEE Robotics & Automation Magazine, vol. 29, no. 2, June 2022
+
+- [<span class="highlight">Pixi: Unified Software Development and Distribution for Robotics and AI</span>](https://arxiv.org/abs/2511.04827), arXiv:2511.04827
+
+- [<span class="highlight">ROS2WASM: Bringing the Robot Operating System to the Web</span>](https://doi.org/10.1109/ICRA55743.2025.11127821), IEEE International Conference on Robotics and Automation (ICRA) 2025
+
+- [<span class="highlight">VSLAM-LAB: A Comprehensive Framework for Visual SLAM Methods and Datasets</span>](https://arxiv.org/abs/2504.04457), IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2025
+
+- [<span class="highlight">pixi.sh</span>](https://pixi.sh)
+
+- [<span class="highlight">rattler.build</span>](https://rattler.build)
