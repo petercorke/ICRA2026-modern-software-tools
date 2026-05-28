@@ -1,0 +1,2269 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="540.808mm" height="249.061mm"
+ viewBox="0 0 1533 706"
+ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" baseProfile="tiny">
+<title>bdedit diagram</title>
+<desc>Generated with Qt</desc>
+<defs>
+</defs>
+<g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" >
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#ffffff" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<rect x="-270" y="-110" width="1533" height="706"/>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="-280,-110 -280,596 " />
+<polyline fill="none" vector-effect="none" points="-260,-110 -260,596 " />
+<polyline fill="none" vector-effect="none" points="-240,-110 -240,596 " />
+<polyline fill="none" vector-effect="none" points="-220,-110 -220,596 " />
+<polyline fill="none" vector-effect="none" points="-180,-110 -180,596 " />
+<polyline fill="none" vector-effect="none" points="-160,-110 -160,596 " />
+<polyline fill="none" vector-effect="none" points="-140,-110 -140,596 " />
+<polyline fill="none" vector-effect="none" points="-120,-110 -120,596 " />
+<polyline fill="none" vector-effect="none" points="-80,-110 -80,596 " />
+<polyline fill="none" vector-effect="none" points="-60,-110 -60,596 " />
+<polyline fill="none" vector-effect="none" points="-40,-110 -40,596 " />
+<polyline fill="none" vector-effect="none" points="-20,-110 -20,596 " />
+<polyline fill="none" vector-effect="none" points="20,-110 20,596 " />
+<polyline fill="none" vector-effect="none" points="40,-110 40,596 " />
+<polyline fill="none" vector-effect="none" points="60,-110 60,596 " />
+<polyline fill="none" vector-effect="none" points="80,-110 80,596 " />
+<polyline fill="none" vector-effect="none" points="120,-110 120,596 " />
+<polyline fill="none" vector-effect="none" points="140,-110 140,596 " />
+<polyline fill="none" vector-effect="none" points="160,-110 160,596 " />
+<polyline fill="none" vector-effect="none" points="180,-110 180,596 " />
+<polyline fill="none" vector-effect="none" points="220,-110 220,596 " />
+<polyline fill="none" vector-effect="none" points="240,-110 240,596 " />
+<polyline fill="none" vector-effect="none" points="260,-110 260,596 " />
+<polyline fill="none" vector-effect="none" points="280,-110 280,596 " />
+<polyline fill="none" vector-effect="none" points="320,-110 320,596 " />
+<polyline fill="none" vector-effect="none" points="340,-110 340,596 " />
+<polyline fill="none" vector-effect="none" points="360,-110 360,596 " />
+<polyline fill="none" vector-effect="none" points="380,-110 380,596 " />
+<polyline fill="none" vector-effect="none" points="420,-110 420,596 " />
+<polyline fill="none" vector-effect="none" points="440,-110 440,596 " />
+<polyline fill="none" vector-effect="none" points="460,-110 460,596 " />
+<polyline fill="none" vector-effect="none" points="480,-110 480,596 " />
+<polyline fill="none" vector-effect="none" points="520,-110 520,596 " />
+<polyline fill="none" vector-effect="none" points="540,-110 540,596 " />
+<polyline fill="none" vector-effect="none" points="560,-110 560,596 " />
+<polyline fill="none" vector-effect="none" points="580,-110 580,596 " />
+<polyline fill="none" vector-effect="none" points="620,-110 620,596 " />
+<polyline fill="none" vector-effect="none" points="640,-110 640,596 " />
+<polyline fill="none" vector-effect="none" points="660,-110 660,596 " />
+<polyline fill="none" vector-effect="none" points="680,-110 680,596 " />
+<polyline fill="none" vector-effect="none" points="720,-110 720,596 " />
+<polyline fill="none" vector-effect="none" points="740,-110 740,596 " />
+<polyline fill="none" vector-effect="none" points="760,-110 760,596 " />
+<polyline fill="none" vector-effect="none" points="780,-110 780,596 " />
+<polyline fill="none" vector-effect="none" points="820,-110 820,596 " />
+<polyline fill="none" vector-effect="none" points="840,-110 840,596 " />
+<polyline fill="none" vector-effect="none" points="860,-110 860,596 " />
+<polyline fill="none" vector-effect="none" points="880,-110 880,596 " />
+<polyline fill="none" vector-effect="none" points="920,-110 920,596 " />
+<polyline fill="none" vector-effect="none" points="940,-110 940,596 " />
+<polyline fill="none" vector-effect="none" points="960,-110 960,596 " />
+<polyline fill="none" vector-effect="none" points="980,-110 980,596 " />
+<polyline fill="none" vector-effect="none" points="1020,-110 1020,596 " />
+<polyline fill="none" vector-effect="none" points="1040,-110 1040,596 " />
+<polyline fill="none" vector-effect="none" points="1060,-110 1060,596 " />
+<polyline fill="none" vector-effect="none" points="1080,-110 1080,596 " />
+<polyline fill="none" vector-effect="none" points="1120,-110 1120,596 " />
+<polyline fill="none" vector-effect="none" points="1140,-110 1140,596 " />
+<polyline fill="none" vector-effect="none" points="1160,-110 1160,596 " />
+<polyline fill="none" vector-effect="none" points="1180,-110 1180,596 " />
+<polyline fill="none" vector-effect="none" points="1220,-110 1220,596 " />
+<polyline fill="none" vector-effect="none" points="1240,-110 1240,596 " />
+<polyline fill="none" vector-effect="none" points="1260,-110 1260,596 " />
+<polyline fill="none" vector-effect="none" points="-270,-120 1263,-120 " />
+<polyline fill="none" vector-effect="none" points="-270,-80 1263,-80 " />
+<polyline fill="none" vector-effect="none" points="-270,-60 1263,-60 " />
+<polyline fill="none" vector-effect="none" points="-270,-40 1263,-40 " />
+<polyline fill="none" vector-effect="none" points="-270,-20 1263,-20 " />
+<polyline fill="none" vector-effect="none" points="-270,20 1263,20 " />
+<polyline fill="none" vector-effect="none" points="-270,40 1263,40 " />
+<polyline fill="none" vector-effect="none" points="-270,60 1263,60 " />
+<polyline fill="none" vector-effect="none" points="-270,80 1263,80 " />
+<polyline fill="none" vector-effect="none" points="-270,120 1263,120 " />
+<polyline fill="none" vector-effect="none" points="-270,140 1263,140 " />
+<polyline fill="none" vector-effect="none" points="-270,160 1263,160 " />
+<polyline fill="none" vector-effect="none" points="-270,180 1263,180 " />
+<polyline fill="none" vector-effect="none" points="-270,220 1263,220 " />
+<polyline fill="none" vector-effect="none" points="-270,240 1263,240 " />
+<polyline fill="none" vector-effect="none" points="-270,260 1263,260 " />
+<polyline fill="none" vector-effect="none" points="-270,280 1263,280 " />
+<polyline fill="none" vector-effect="none" points="-270,320 1263,320 " />
+<polyline fill="none" vector-effect="none" points="-270,340 1263,340 " />
+<polyline fill="none" vector-effect="none" points="-270,360 1263,360 " />
+<polyline fill="none" vector-effect="none" points="-270,380 1263,380 " />
+<polyline fill="none" vector-effect="none" points="-270,420 1263,420 " />
+<polyline fill="none" vector-effect="none" points="-270,440 1263,440 " />
+<polyline fill="none" vector-effect="none" points="-270,460 1263,460 " />
+<polyline fill="none" vector-effect="none" points="-270,480 1263,480 " />
+<polyline fill="none" vector-effect="none" points="-270,520 1263,520 " />
+<polyline fill="none" vector-effect="none" points="-270,540 1263,540 " />
+<polyline fill="none" vector-effect="none" points="-270,560 1263,560 " />
+<polyline fill="none" vector-effect="none" points="-270,580 1263,580 " />
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="-200,-110 -200,596 " />
+<polyline fill="none" vector-effect="none" points="-100,-110 -100,596 " />
+<polyline fill="none" vector-effect="none" points="0,-110 0,596 " />
+<polyline fill="none" vector-effect="none" points="100,-110 100,596 " />
+<polyline fill="none" vector-effect="none" points="200,-110 200,596 " />
+<polyline fill="none" vector-effect="none" points="300,-110 300,596 " />
+<polyline fill="none" vector-effect="none" points="400,-110 400,596 " />
+<polyline fill="none" vector-effect="none" points="500,-110 500,596 " />
+<polyline fill="none" vector-effect="none" points="600,-110 600,596 " />
+<polyline fill="none" vector-effect="none" points="700,-110 700,596 " />
+<polyline fill="none" vector-effect="none" points="800,-110 800,596 " />
+<polyline fill="none" vector-effect="none" points="900,-110 900,596 " />
+<polyline fill="none" vector-effect="none" points="1000,-110 1000,596 " />
+<polyline fill="none" vector-effect="none" points="1100,-110 1100,596 " />
+<polyline fill="none" vector-effect="none" points="1200,-110 1200,596 " />
+<polyline fill="none" vector-effect="none" points="-270,-100 1263,-100 " />
+<polyline fill="none" vector-effect="none" points="-270,0 1263,0 " />
+<polyline fill="none" vector-effect="none" points="-270,100 1263,100 " />
+<polyline fill="none" vector-effect="none" points="-270,200 1263,200 " />
+<polyline fill="none" vector-effect="none" points="-270,300 1263,300 " />
+<polyline fill="none" vector-effect="none" points="-270,400 1263,400 " />
+<polyline fill="none" vector-effect="none" points="-270,500 1263,500 " />
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1230,130)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#ff2600" fill-opacity="0.498039" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1230,130)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<rect x="0" y="0" width="200" height="380"/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1230,130)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,310,230)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#92bbff" fill-opacity="0.498039" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,310,230)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<rect x="0" y="0" width="480" height="300"/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,310,230)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,640,445)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#f0f0f0" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,640,445)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M-6,0 L-5.69412,-1.89646 L-4.84235,-3.54352 L-3.54352,-4.84235 L-1.89646,-5.69412 L0,-6 L139,-6 L140.896,-5.69412 L142.544,-4.84235 L143.842,-3.54352 L144.694,-1.89646 L145,0 L145,58 L144.694,59.8965 L143.842,61.5435 L142.544,62.8423 L140.896,63.6941 L139,64 L0,64 L-1.89646,63.6941 L-3.54352,62.8423 L-4.84235,61.5435 L-5.69412,59.8965 L-6,58 L-6,0 Z "/>
+</g>
+
+<g fill="#ffffff" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,640,445)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M-6,0 L-5.69412,-1.89646 L-4.84235,-3.54352 L-3.54352,-4.84235 L-1.89646,-5.69412 L0,-6 L139,-6 L140.896,-5.69412 L142.544,-4.84235 L143.842,-3.54352 L144.694,-1.89646 L145,0 L145,58 L144.694,59.8965 L143.842,61.5435 L142.544,62.8423 L140.896,63.6941 L139,64 L0,64 L-1.89646,63.6941 L-3.54352,62.8423 L-4.84235,61.5435 L-5.69412,59.8965 L-6,58 L-6,0 Z "/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,640,445)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,640,445)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#ffffff" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,640,445)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+<rect x="0" y="0" width="139" height="58"/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,640,445)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,640,445)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,640,445)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+<text fill="#ffffff" fill-opacity="1" stroke="none" xml:space="preserve" x="4" y="16.6719" font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+ >required acceleration</text>
+<text fill="#ffffff" fill-opacity="1" stroke="none" xml:space="preserve" x="4" y="33.6719" font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+ >to reduce tracking</text>
+<text fill="#ffffff" fill-opacity="1" stroke="none" xml:space="preserve" x="4" y="50.6719" font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+ >error</text>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,640,445)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,640,445)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,640,445)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,640,445)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1250,145)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#f0f0f0" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,1250,145)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M-6,0 L-5.69412,-1.89646 L-4.84235,-3.54352 L-3.54352,-4.84235 L-1.89646,-5.69412 L0,-6 L60,-6 L61.8965,-5.69412 L63.5435,-4.84235 L64.8423,-3.54352 L65.6941,-1.89646 L66,0 L66,31 L65.6941,32.8965 L64.8423,34.5435 L63.5435,35.8423 L61.8965,36.6941 L60,37 L0,37 L-1.89646,36.6941 L-3.54352,35.8423 L-4.84235,34.5435 L-5.69412,32.8965 L-6,31 L-6,0 Z "/>
+</g>
+
+<g fill="#ffffff" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,1250,145)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M-6,0 L-5.69412,-1.89646 L-4.84235,-3.54352 L-3.54352,-4.84235 L-1.89646,-5.69412 L0,-6 L60,-6 L61.8965,-5.69412 L63.5435,-4.84235 L64.8423,-3.54352 L65.6941,-1.89646 L66,0 L66,31 L65.6941,32.8965 L64.8423,34.5435 L63.5435,35.8423 L61.8965,36.6941 L60,37 L0,37 L-1.89646,36.6941 L-3.54352,35.8423 L-4.84235,34.5435 L-5.69412,32.8965 L-6,31 L-6,0 Z "/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1250,145)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1250,145)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#ffffff" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,1250,145)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+<rect x="0" y="0" width="60" height="31"/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1250,145)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1250,145)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1250,145)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1250,145)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="4" y="22.0938" font-family="Arial" font-size="20" font-weight="600" font-style="normal" 
+ >robot</text>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1250,145)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1250,145)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1250,145)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1250,145)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,950,560)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#f0f0f0" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,950,560)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M-6,0 L-5.69412,-1.89646 L-4.84235,-3.54352 L-3.54352,-4.84235 L-1.89646,-5.69412 L0,-6 L24,-6 L25.8965,-5.69412 L27.5435,-4.84235 L28.8423,-3.54352 L29.6941,-1.89646 L30,0 L30,24 L29.6941,25.8965 L28.8423,27.5435 L27.5435,28.8423 L25.8965,29.6941 L24,30 L0,30 L-1.89646,29.6941 L-3.54352,28.8423 L-4.84235,27.5435 L-5.69412,25.8965 L-6,24 L-6,0 Z "/>
+</g>
+
+<g fill="#ffffff" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,950,560)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M-6,0 L-5.69412,-1.89646 L-4.84235,-3.54352 L-3.54352,-4.84235 L-1.89646,-5.69412 L0,-6 L24,-6 L25.8965,-5.69412 L27.5435,-4.84235 L28.8423,-3.54352 L29.6941,-1.89646 L30,0 L30,24 L29.6941,25.8965 L28.8423,27.5435 L27.5435,28.8423 L25.8965,29.6941 L24,30 L0,30 L-1.89646,29.6941 L-3.54352,28.8423 L-4.84235,27.5435 L-5.69412,25.8965 L-6,24 L-6,0 Z "/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,950,560)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,950,560)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#ffffff" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,950,560)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+<rect x="0" y="0" width="24" height="24"/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,950,560)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,950,560)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,950,560)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#0000ff" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,950,560)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+<text fill="#0000ff" fill-opacity="1" stroke="none" xml:space="preserve" x="4" y="16.6719" font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+ >qd</text>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,950,560)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,950,560)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,950,560)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,950,560)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,950,620)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#f0f0f0" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,950,620)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M-6,0 L-5.69412,-1.89646 L-4.84235,-3.54352 L-3.54352,-4.84235 L-1.89646,-5.69412 L0,-6 L16,-6 L17.8965,-5.69412 L19.5435,-4.84235 L20.8423,-3.54352 L21.6941,-1.89646 L22,0 L22,24 L21.6941,25.8965 L20.8423,27.5435 L19.5435,28.8423 L17.8965,29.6941 L16,30 L0,30 L-1.89646,29.6941 L-3.54352,28.8423 L-4.84235,27.5435 L-5.69412,25.8965 L-6,24 L-6,0 Z "/>
+</g>
+
+<g fill="#ffffff" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,950,620)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M-6,0 L-5.69412,-1.89646 L-4.84235,-3.54352 L-3.54352,-4.84235 L-1.89646,-5.69412 L0,-6 L16,-6 L17.8965,-5.69412 L19.5435,-4.84235 L20.8423,-3.54352 L21.6941,-1.89646 L22,0 L22,24 L21.6941,25.8965 L20.8423,27.5435 L19.5435,28.8423 L17.8965,29.6941 L16,30 L0,30 L-1.89646,29.6941 L-3.54352,28.8423 L-4.84235,27.5435 L-5.69412,25.8965 L-6,24 L-6,0 Z "/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,950,620)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,950,620)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#ffffff" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,950,620)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+<rect x="0" y="0" width="16" height="24"/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,950,620)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,950,620)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,950,620)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#0000ff" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,950,620)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+<text fill="#0000ff" fill-opacity="1" stroke="none" xml:space="preserve" x="4" y="16.6719" font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+ >q</text>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,950,620)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,950,620)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,950,620)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,950,620)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="5" stroke-linecap="square" stroke-linejoin="round" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M220,180 L160,180 "/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="5" stroke-linecap="square" stroke-linejoin="round" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M400,180 L320,180 "/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="5" stroke-linecap="square" stroke-linejoin="round" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M220,320 L160,320 "/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="5" stroke-linecap="square" stroke-linejoin="round" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M400,200 L360,200 L360,320 L320,320 "/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="5" stroke-linecap="square" stroke-linejoin="round" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M1100,300 L1125,300 L1125,140 L1105,140 "/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="5" stroke-linecap="square" stroke-linejoin="round" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M840,140 L785,140 "/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="5" stroke-linecap="square" stroke-linejoin="round" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M660,180 L500,180 "/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="5" stroke-linecap="square" stroke-linejoin="round" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M980,140 L940,140 "/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="5" stroke-linecap="square" stroke-linejoin="round" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M60,180 L-95,180 "/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="5" stroke-linecap="square" stroke-linejoin="round" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M60,320 L-47.5,320 L-47.5,200 L-95,200 "/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="5" stroke-linecap="square" stroke-linejoin="round" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M833,500 L1205,500 L1205,140 L1105,140 "/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="5" stroke-linecap="square" stroke-linejoin="round" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M833,480 L1185,480 L1185,160 L1105,160 "/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="5" stroke-linecap="square" stroke-linejoin="round" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M60,200 L-20,200 L-20,500 L820,500 "/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="5" stroke-linecap="square" stroke-linejoin="round" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M60,340 L0,340 L0,480 L820,480 "/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="5" stroke-linecap="square" stroke-linejoin="round" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M660,160 L620,160 L620,480 L820,480 "/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="5" stroke-linecap="square" stroke-linejoin="round" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M660,140 L590,140 L590,500 L820,500 "/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="5" stroke-linecap="square" stroke-linejoin="round" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M840,-20 L812.5,-20 L812.5,140 L785,140 "/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,270,110)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,490,250)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#e1e0e8" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,490,250)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M0,10 L0.161113,8.20249 L0.625625,6.51068 L1.36529,4.95281 L2.35187,3.55713 L3.55713,2.35187 L4.95281,1.36529 L6.51068,0.625625 L8.20249,0.161113 L10,0 L90,0 L91.7975,0.161113 L93.4893,0.625625 L95.0472,1.36529 L96.4429,2.35187 L97.6481,3.55713 L98.6347,4.95281 L99.3744,6.51068 L99.8389,8.20249 L100,10 L100,90 L99.8389,91.7975 L99.3744,93.4893 L98.6347,95.0472 L97.6481,96.4429 L96.4429,97.6481 L95.0472,98.6347 L93.4893,99.3744 L91.7975,99.8389 L90,100 L10,100 L8.20249,99.8389 L6.51068,99.3744 L4.95281,98.6347 L3.55713,97.6481 L2.35187,96.4429 L1.36529,95.0472 L0.625625,93.4893 L0.161113,91.7975 L0,90 L0,10 Z "/>
+</g>
+
+<g fill="none" stroke="#696969" stroke-opacity="1" stroke-width="3" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,490,250)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M0,10 L0.161113,8.20249 L0.625625,6.51068 L1.36529,4.95281 L2.35187,3.55713 L3.55713,2.35187 L4.95281,1.36529 L6.51068,0.625625 L8.20249,0.161113 L10,0 L90,0 L91.7975,0.161113 L93.4893,0.625625 L95.0472,1.36529 L96.4429,2.35187 L97.6481,3.55713 L98.6347,4.95281 L99.3744,6.51068 L99.8389,8.20249 L100,10 L100,90 L99.8389,91.7975 L99.3744,93.4893 L98.6347,95.0472 L97.6481,96.4429 L96.4429,97.6481 L95.0472,98.6347 L93.4893,99.3744 L91.7975,99.8389 L90,100 L10,100 L8.20249,99.8389 L6.51068,99.3744 L4.95281,98.6347 L3.55713,97.6481 L2.35187,96.4429 L1.36529,95.0472 L0.625625,93.4893 L0.161113,91.7975 L0,90 L0,10 Z "/>
+<image x="25" y="25" width="50" height="50" preserveAspectRatio="none" image-rendering="optimizeSpeed" xlink:href="data:image/png;base64,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" />
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,490,250)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,529.5,355)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,529.5,355)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,529.5,355)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,529.5,355)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="4" y="14.8594" font-family="Arial" font-size="12" font-weight="400" font-style="normal" 
+ >Kp</text>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,529.5,355)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,529.5,355)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,529.5,355)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,529.5,355)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,490,290)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#3483eb" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,490,290)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<rect x="-6" y="-6" width="12" height="12"/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,490,290)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,590,290)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#f54242" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,590,290)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M-6,-6 L8,0 L-6,6 L-6,-6 Z "/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,590,290)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,490,390)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#e1e0e8" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,490,390)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M0,10 L0.161113,8.20249 L0.625625,6.51068 L1.36529,4.95281 L2.35187,3.55713 L3.55713,2.35187 L4.95281,1.36529 L6.51068,0.625625 L8.20249,0.161113 L10,0 L90,0 L91.7975,0.161113 L93.4893,0.625625 L95.0472,1.36529 L96.4429,2.35187 L97.6481,3.55713 L98.6347,4.95281 L99.3744,6.51068 L99.8389,8.20249 L100,10 L100,90 L99.8389,91.7975 L99.3744,93.4893 L98.6347,95.0472 L97.6481,96.4429 L96.4429,97.6481 L95.0472,98.6347 L93.4893,99.3744 L91.7975,99.8389 L90,100 L10,100 L8.20249,99.8389 L6.51068,99.3744 L4.95281,98.6347 L3.55713,97.6481 L2.35187,96.4429 L1.36529,95.0472 L0.625625,93.4893 L0.161113,91.7975 L0,90 L0,10 Z "/>
+</g>
+
+<g fill="none" stroke="#696969" stroke-opacity="1" stroke-width="3" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,490,390)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M0,10 L0.161113,8.20249 L0.625625,6.51068 L1.36529,4.95281 L2.35187,3.55713 L3.55713,2.35187 L4.95281,1.36529 L6.51068,0.625625 L8.20249,0.161113 L10,0 L90,0 L91.7975,0.161113 L93.4893,0.625625 L95.0472,1.36529 L96.4429,2.35187 L97.6481,3.55713 L98.6347,4.95281 L99.3744,6.51068 L99.8389,8.20249 L100,10 L100,90 L99.8389,91.7975 L99.3744,93.4893 L98.6347,95.0472 L97.6481,96.4429 L96.4429,97.6481 L95.0472,98.6347 L93.4893,99.3744 L91.7975,99.8389 L90,100 L10,100 L8.20249,99.8389 L6.51068,99.3744 L4.95281,98.6347 L3.55713,97.6481 L2.35187,96.4429 L1.36529,95.0472 L0.625625,93.4893 L0.161113,91.7975 L0,90 L0,10 Z "/>
+<image x="25" y="25" width="50" height="50" preserveAspectRatio="none" image-rendering="optimizeSpeed" xlink:href="data:image/png;base64,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" />
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,490,390)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,530.5,495)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,530.5,495)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,530.5,495)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,530.5,495)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="4" y="14.8594" font-family="Arial" font-size="12" font-weight="400" font-style="normal" 
+ >Kv</text>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,530.5,495)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,530.5,495)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,530.5,495)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,530.5,495)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,490,430)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#3483eb" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,490,430)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<rect x="-6" y="-6" width="12" height="12"/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,490,430)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,590,430)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#f54242" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,590,430)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M-6,-6 L8,0 L-6,6 L-6,-6 Z "/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,590,430)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,330,390)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#e1e0e8" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,330,390)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M0,10 L0.161113,8.20249 L0.625625,6.51068 L1.36529,4.95281 L2.35187,3.55713 L3.55713,2.35187 L4.95281,1.36529 L6.51068,0.625625 L8.20249,0.161113 L10,0 L90,0 L91.7975,0.161113 L93.4893,0.625625 L95.0472,1.36529 L96.4429,2.35187 L97.6481,3.55713 L98.6347,4.95281 L99.3744,6.51068 L99.8389,8.20249 L100,10 L100,90 L99.8389,91.7975 L99.3744,93.4893 L98.6347,95.0472 L97.6481,96.4429 L96.4429,97.6481 L95.0472,98.6347 L93.4893,99.3744 L91.7975,99.8389 L90,100 L10,100 L8.20249,99.8389 L6.51068,99.3744 L4.95281,98.6347 L3.55713,97.6481 L2.35187,96.4429 L1.36529,95.0472 L0.625625,93.4893 L0.161113,91.7975 L0,90 L0,10 Z "/>
+</g>
+
+<g fill="none" stroke="#696969" stroke-opacity="1" stroke-width="3" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,330,390)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M0,10 L0.161113,8.20249 L0.625625,6.51068 L1.36529,4.95281 L2.35187,3.55713 L3.55713,2.35187 L4.95281,1.36529 L6.51068,0.625625 L8.20249,0.161113 L10,0 L90,0 L91.7975,0.161113 L93.4893,0.625625 L95.0472,1.36529 L96.4429,2.35187 L97.6481,3.55713 L98.6347,4.95281 L99.3744,6.51068 L99.8389,8.20249 L100,10 L100,90 L99.8389,91.7975 L99.3744,93.4893 L98.6347,95.0472 L97.6481,96.4429 L96.4429,97.6481 L95.0472,98.6347 L93.4893,99.3744 L91.7975,99.8389 L90,100 L10,100 L8.20249,99.8389 L6.51068,99.3744 L4.95281,98.6347 L3.55713,97.6481 L2.35187,96.4429 L1.36529,95.0472 L0.625625,93.4893 L0.161113,91.7975 L0,90 L0,10 Z "/>
+<image x="25" y="25" width="50" height="50" preserveAspectRatio="none" image-rendering="optimizeSpeed" xlink:href="data:image/png;base64,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" />
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,330,390)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,342.5,495)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,342.5,495)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,342.5,495)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,342.5,495)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="4" y="14.8594" font-family="Arial" font-size="12" font-weight="400" font-style="normal" 
+ >velocity error</text>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,342.5,495)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,342.5,495)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,342.5,495)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,342.5,495)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,330,430)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#3483eb" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,330,430)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<rect x="-6" y="-6" width="12" height="12"/>
+</g>
+
+<g fill="#3483eb" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,330,430)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M15,0 L25,0 M20,-5 L20,5 "/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,330,430)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,330,450)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#3483eb" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,330,450)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<rect x="-6" y="-6" width="12" height="12"/>
+</g>
+
+<g fill="#3483eb" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,330,450)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M15,0 L25,0 "/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,330,450)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,430,430)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#f54242" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,430,430)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M-6,-6 L8,0 L-6,6 L-6,-6 Z "/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,430,430)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,330,250)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#e1e0e8" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,330,250)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M0,10 L0.161113,8.20249 L0.625625,6.51068 L1.36529,4.95281 L2.35187,3.55713 L3.55713,2.35187 L4.95281,1.36529 L6.51068,0.625625 L8.20249,0.161113 L10,0 L90,0 L91.7975,0.161113 L93.4893,0.625625 L95.0472,1.36529 L96.4429,2.35187 L97.6481,3.55713 L98.6347,4.95281 L99.3744,6.51068 L99.8389,8.20249 L100,10 L100,90 L99.8389,91.7975 L99.3744,93.4893 L98.6347,95.0472 L97.6481,96.4429 L96.4429,97.6481 L95.0472,98.6347 L93.4893,99.3744 L91.7975,99.8389 L90,100 L10,100 L8.20249,99.8389 L6.51068,99.3744 L4.95281,98.6347 L3.55713,97.6481 L2.35187,96.4429 L1.36529,95.0472 L0.625625,93.4893 L0.161113,91.7975 L0,90 L0,10 Z "/>
+</g>
+
+<g fill="none" stroke="#696969" stroke-opacity="1" stroke-width="3" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,330,250)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M0,10 L0.161113,8.20249 L0.625625,6.51068 L1.36529,4.95281 L2.35187,3.55713 L3.55713,2.35187 L4.95281,1.36529 L6.51068,0.625625 L8.20249,0.161113 L10,0 L90,0 L91.7975,0.161113 L93.4893,0.625625 L95.0472,1.36529 L96.4429,2.35187 L97.6481,3.55713 L98.6347,4.95281 L99.3744,6.51068 L99.8389,8.20249 L100,10 L100,90 L99.8389,91.7975 L99.3744,93.4893 L98.6347,95.0472 L97.6481,96.4429 L96.4429,97.6481 L95.0472,98.6347 L93.4893,99.3744 L91.7975,99.8389 L90,100 L10,100 L8.20249,99.8389 L6.51068,99.3744 L4.95281,98.6347 L3.55713,97.6481 L2.35187,96.4429 L1.36529,95.0472 L0.625625,93.4893 L0.161113,91.7975 L0,90 L0,10 Z "/>
+<image x="25" y="25" width="50" height="50" preserveAspectRatio="none" image-rendering="optimizeSpeed" xlink:href="data:image/png;base64,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" />
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,330,250)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,342.5,355)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,342.5,355)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,342.5,355)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,342.5,355)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="4" y="14.8594" font-family="Arial" font-size="12" font-weight="400" font-style="normal" 
+ >position error</text>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,342.5,355)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,342.5,355)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,342.5,355)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,342.5,355)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,330,290)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#3483eb" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,330,290)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<rect x="-6" y="-6" width="12" height="12"/>
+</g>
+
+<g fill="#3483eb" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,330,290)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M15,0 L25,0 M20,-5 L20,5 "/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,330,290)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,330,310)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#3483eb" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,330,310)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<rect x="-6" y="-6" width="12" height="12"/>
+</g>
+
+<g fill="#3483eb" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,330,310)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M15,0 L25,0 "/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,330,310)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,430,290)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#f54242" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,430,290)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M-6,-6 L8,0 L-6,6 L-6,-6 Z "/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,430,290)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,670,250)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#e1e0e8" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,670,250)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M0,10 L0.161113,8.20249 L0.625625,6.51068 L1.36529,4.95281 L2.35187,3.55713 L3.55713,2.35187 L4.95281,1.36529 L6.51068,0.625625 L8.20249,0.161113 L10,0 L90,0 L91.7975,0.161113 L93.4893,0.625625 L95.0472,1.36529 L96.4429,2.35187 L97.6481,3.55713 L98.6347,4.95281 L99.3744,6.51068 L99.8389,8.20249 L100,10 L100,90 L99.8389,91.7975 L99.3744,93.4893 L98.6347,95.0472 L97.6481,96.4429 L96.4429,97.6481 L95.0472,98.6347 L93.4893,99.3744 L91.7975,99.8389 L90,100 L10,100 L8.20249,99.8389 L6.51068,99.3744 L4.95281,98.6347 L3.55713,97.6481 L2.35187,96.4429 L1.36529,95.0472 L0.625625,93.4893 L0.161113,91.7975 L0,90 L0,10 Z "/>
+</g>
+
+<g fill="none" stroke="#696969" stroke-opacity="1" stroke-width="3" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,670,250)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M0,10 L0.161113,8.20249 L0.625625,6.51068 L1.36529,4.95281 L2.35187,3.55713 L3.55713,2.35187 L4.95281,1.36529 L6.51068,0.625625 L8.20249,0.161113 L10,0 L90,0 L91.7975,0.161113 L93.4893,0.625625 L95.0472,1.36529 L96.4429,2.35187 L97.6481,3.55713 L98.6347,4.95281 L99.3744,6.51068 L99.8389,8.20249 L100,10 L100,90 L99.8389,91.7975 L99.3744,93.4893 L98.6347,95.0472 L97.6481,96.4429 L96.4429,97.6481 L95.0472,98.6347 L93.4893,99.3744 L91.7975,99.8389 L90,100 L10,100 L8.20249,99.8389 L6.51068,99.3744 L4.95281,98.6347 L3.55713,97.6481 L2.35187,96.4429 L1.36529,95.0472 L0.625625,93.4893 L0.161113,91.7975 L0,90 L0,10 Z "/>
+<image x="25" y="25" width="50" height="50" preserveAspectRatio="none" image-rendering="optimizeSpeed" xlink:href="data:image/png;base64,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" />
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,670,250)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,688.5,355)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,688.5,355)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,688.5,355)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,688.5,355)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="4" y="14.8594" font-family="Arial" font-size="12" font-weight="400" font-style="normal" 
+ >Sum Block</text>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,688.5,355)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,688.5,355)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,688.5,355)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,688.5,355)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,670,290)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#3483eb" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,670,290)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<rect x="-6" y="-6" width="12" height="12"/>
+</g>
+
+<g fill="#3483eb" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,670,290)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M15,0 L25,0 M20,-5 L20,5 "/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,670,290)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,670,310)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#3483eb" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,670,310)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<rect x="-6" y="-6" width="12" height="12"/>
+</g>
+
+<g fill="#3483eb" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,670,310)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M15,0 L25,0 M20,-5 L20,5 "/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,670,310)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,770,290)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#f54242" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,770,290)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M-6,-6 L8,0 L-6,6 L-6,-6 Z "/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,770,290)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1250,210)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#e1e0e8" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,1250,210)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M0,10 L0.161113,8.20249 L0.625625,6.51068 L1.36529,4.95281 L2.35187,3.55713 L3.55713,2.35187 L4.95281,1.36529 L6.51068,0.625625 L8.20249,0.161113 L10,0 L115,0 L116.798,0.161113 L118.489,0.625625 L120.047,1.36529 L121.443,2.35187 L122.648,3.55713 L123.635,4.95281 L124.374,6.51068 L124.839,8.20249 L125,10 L125,110 L124.839,111.798 L124.374,113.489 L123.635,115.047 L122.648,116.443 L121.443,117.648 L120.047,118.635 L118.489,119.374 L116.798,119.839 L115,120 L10,120 L8.20249,119.839 L6.51068,119.374 L4.95281,118.635 L3.55713,117.648 L2.35187,116.443 L1.36529,115.047 L0.625625,113.489 L0.161113,111.798 L0,110 L0,10 Z "/>
+</g>
+
+<g fill="none" stroke="#696969" stroke-opacity="1" stroke-width="3" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1250,210)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M0,10 L0.161113,8.20249 L0.625625,6.51068 L1.36529,4.95281 L2.35187,3.55713 L3.55713,2.35187 L4.95281,1.36529 L6.51068,0.625625 L8.20249,0.161113 L10,0 L115,0 L116.798,0.161113 L118.489,0.625625 L120.047,1.36529 L121.443,2.35187 L122.648,3.55713 L123.635,4.95281 L124.374,6.51068 L124.839,8.20249 L125,10 L125,110 L124.839,111.798 L124.374,113.489 L123.635,115.047 L122.648,116.443 L121.443,117.648 L120.047,118.635 L118.489,119.374 L116.798,119.839 L115,120 L10,120 L8.20249,119.839 L6.51068,119.374 L4.95281,118.635 L3.55713,117.648 L2.35187,116.443 L1.36529,115.047 L0.625625,113.489 L0.161113,111.798 L0,110 L0,10 Z "/>
+<image x="37.5" y="35" width="50" height="50" preserveAspectRatio="none" image-rendering="optimizeSpeed" xlink:href="data:image/png;base64,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" />
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1250,210)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1263,335)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1263,335)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1263,335)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1263,335)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="4" y="14.8594" font-family="Arial" font-size="12" font-weight="400" font-style="normal" 
+ >forward dynamics</text>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1263,335)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1263,335)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1263,335)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1263,335)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1250,250)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#3483eb" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1250,250)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<rect x="-6" y="-6" width="12" height="12"/>
+</g>
+
+<g fill="#3483eb" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1250,250)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="10" y="5" font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+ >τ</text>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1250,250)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1375,250)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#f54242" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1375,250)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M-6,-6 L8,0 L-6,6 L-6,-6 Z "/>
+</g>
+
+<g fill="#f54242" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1375,250)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="-18" y="5" font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+ >q</text>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1375,250)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1375,270)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#f54242" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1375,270)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M-6,-6 L8,0 L-6,6 L-6,-6 Z "/>
+</g>
+
+<g fill="#f54242" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1375,270)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="-26" y="5" font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+ >qd</text>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1375,270)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1375,290)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#f54242" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1375,290)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M-6,-6 L8,0 L-6,6 L-6,-6 Z "/>
+</g>
+
+<g fill="#f54242" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1375,290)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="-33" y="5" font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+ >qdd</text>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1375,290)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,930,210)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#e1e0e8" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,930,210)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M0,10 L0.161113,8.20249 L0.625625,6.51068 L1.36529,4.95281 L2.35187,3.55713 L3.55713,2.35187 L4.95281,1.36529 L6.51068,0.625625 L8.20249,0.161113 L10,0 L115,0 L116.798,0.161113 L118.489,0.625625 L120.047,1.36529 L121.443,2.35187 L122.648,3.55713 L123.635,4.95281 L124.374,6.51068 L124.839,8.20249 L125,10 L125,110 L124.839,111.798 L124.374,113.489 L123.635,115.047 L122.648,116.443 L121.443,117.648 L120.047,118.635 L118.489,119.374 L116.798,119.839 L115,120 L10,120 L8.20249,119.839 L6.51068,119.374 L4.95281,118.635 L3.55713,117.648 L2.35187,116.443 L1.36529,115.047 L0.625625,113.489 L0.161113,111.798 L0,110 L0,10 Z "/>
+</g>
+
+<g fill="none" stroke="#696969" stroke-opacity="1" stroke-width="3" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,930,210)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M0,10 L0.161113,8.20249 L0.625625,6.51068 L1.36529,4.95281 L2.35187,3.55713 L3.55713,2.35187 L4.95281,1.36529 L6.51068,0.625625 L8.20249,0.161113 L10,0 L115,0 L116.798,0.161113 L118.489,0.625625 L120.047,1.36529 L121.443,2.35187 L122.648,3.55713 L123.635,4.95281 L124.374,6.51068 L124.839,8.20249 L125,10 L125,110 L124.839,111.798 L124.374,113.489 L123.635,115.047 L122.648,116.443 L121.443,117.648 L120.047,118.635 L118.489,119.374 L116.798,119.839 L115,120 L10,120 L8.20249,119.839 L6.51068,119.374 L4.95281,118.635 L3.55713,117.648 L2.35187,116.443 L1.36529,115.047 L0.625625,113.489 L0.161113,111.798 L0,110 L0,10 Z "/>
+<image x="37.5" y="35" width="50" height="50" preserveAspectRatio="none" image-rendering="optimizeSpeed" xlink:href="data:image/png;base64,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" />
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,930,210)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,943,335)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,943,335)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,943,335)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,943,335)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="4" y="14.8594" font-family="Arial" font-size="12" font-weight="400" font-style="normal" 
+ >inverse dynamics</text>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,943,335)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,943,335)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,943,335)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,943,335)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,930,250)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#3483eb" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,930,250)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<rect x="-6" y="-6" width="12" height="12"/>
+</g>
+
+<g fill="#3483eb" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,930,250)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="10" y="5" font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+ >q</text>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,930,250)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,930,270)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#3483eb" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,930,270)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<rect x="-6" y="-6" width="12" height="12"/>
+</g>
+
+<g fill="#3483eb" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,930,270)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="10" y="5" font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+ >qd</text>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,930,270)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,930,290)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#3483eb" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,930,290)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<rect x="-6" y="-6" width="12" height="12"/>
+</g>
+
+<g fill="#3483eb" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,930,290)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="10" y="5" font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+ >qdd</text>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,930,290)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1055,250)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#f54242" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1055,250)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M-6,-6 L8,0 L-6,6 L-6,-6 Z "/>
+</g>
+
+<g fill="#f54242" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1055,250)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="-16" y="5" font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+ >τ</text>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1055,250)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,50,250)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#e1e0e8" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,50,250)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M0,10 L0.161113,8.20249 L0.625625,6.51068 L1.36529,4.95281 L2.35187,3.55713 L3.55713,2.35187 L4.95281,1.36529 L6.51068,0.625625 L8.20249,0.161113 L10,0 L115,0 L116.798,0.161113 L118.489,0.625625 L120.047,1.36529 L121.443,2.35187 L122.648,3.55713 L123.635,4.95281 L124.374,6.51068 L124.839,8.20249 L125,10 L125,110 L124.839,111.798 L124.374,113.489 L123.635,115.047 L122.648,116.443 L121.443,117.648 L120.047,118.635 L118.489,119.374 L116.798,119.839 L115,120 L10,120 L8.20249,119.839 L6.51068,119.374 L4.95281,118.635 L3.55713,117.648 L2.35187,116.443 L1.36529,115.047 L0.625625,113.489 L0.161113,111.798 L0,110 L0,10 Z "/>
+</g>
+
+<g fill="none" stroke="#696969" stroke-opacity="1" stroke-width="3" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,50,250)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M0,10 L0.161113,8.20249 L0.625625,6.51068 L1.36529,4.95281 L2.35187,3.55713 L3.55713,2.35187 L4.95281,1.36529 L6.51068,0.625625 L8.20249,0.161113 L10,0 L115,0 L116.798,0.161113 L118.489,0.625625 L120.047,1.36529 L121.443,2.35187 L122.648,3.55713 L123.635,4.95281 L124.374,6.51068 L124.839,8.20249 L125,10 L125,110 L124.839,111.798 L124.374,113.489 L123.635,115.047 L122.648,116.443 L121.443,117.648 L120.047,118.635 L118.489,119.374 L116.798,119.839 L115,120 L10,120 L8.20249,119.839 L6.51068,119.374 L4.95281,118.635 L3.55713,117.648 L2.35187,116.443 L1.36529,115.047 L0.625625,113.489 L0.161113,111.798 L0,110 L0,10 Z "/>
+<image x="37.5" y="35" width="50" height="50" preserveAspectRatio="none" image-rendering="optimizeSpeed" xlink:href="data:image/png;base64,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" />
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,50,250)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,53,375)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,53,375)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,53,375)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,53,375)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="4" y="14.8594" font-family="Arial" font-size="12" font-weight="400" font-style="normal" 
+ >Joint space trajectory</text>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,53,375)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,53,375)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,53,375)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,53,375)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,175,290)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#f54242" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,175,290)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M-6,-6 L8,0 L-6,6 L-6,-6 Z "/>
+</g>
+
+<g fill="#f54242" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,175,290)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="-18" y="5" font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+ >q</text>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,175,290)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,175,310)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#f54242" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,175,310)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M-6,-6 L8,0 L-6,6 L-6,-6 Z "/>
+</g>
+
+<g fill="#f54242" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,175,310)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="-26" y="5" font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+ >qd</text>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,175,310)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,175,330)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#f54242" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,175,330)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M-6,-6 L8,0 L-6,6 L-6,-6 Z "/>
+</g>
+
+<g fill="#f54242" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,175,330)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="-33" y="5" font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+ >qdd</text>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,175,330)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1270,370)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#e1e0e8" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,1270,370)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M0,10 L0.161113,8.20249 L0.625625,6.51068 L1.36529,4.95281 L2.35187,3.55713 L3.55713,2.35187 L4.95281,1.36529 L6.51068,0.625625 L8.20249,0.161113 L10,0 L90,0 L91.7975,0.161113 L93.4893,0.625625 L95.0472,1.36529 L96.4429,2.35187 L97.6481,3.55713 L98.6347,4.95281 L99.3744,6.51068 L99.8389,8.20249 L100,10 L100,90 L99.8389,91.7975 L99.3744,93.4893 L98.6347,95.0472 L97.6481,96.4429 L96.4429,97.6481 L95.0472,98.6347 L93.4893,99.3744 L91.7975,99.8389 L90,100 L10,100 L8.20249,99.8389 L6.51068,99.3744 L4.95281,98.6347 L3.55713,97.6481 L2.35187,96.4429 L1.36529,95.0472 L0.625625,93.4893 L0.161113,91.7975 L0,90 L0,10 Z "/>
+</g>
+
+<g fill="none" stroke="#696969" stroke-opacity="1" stroke-width="3" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1270,370)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M0,10 L0.161113,8.20249 L0.625625,6.51068 L1.36529,4.95281 L2.35187,3.55713 L3.55713,2.35187 L4.95281,1.36529 L6.51068,0.625625 L8.20249,0.161113 L10,0 L90,0 L91.7975,0.161113 L93.4893,0.625625 L95.0472,1.36529 L96.4429,2.35187 L97.6481,3.55713 L98.6347,4.95281 L99.3744,6.51068 L99.8389,8.20249 L100,10 L100,90 L99.8389,91.7975 L99.3744,93.4893 L98.6347,95.0472 L97.6481,96.4429 L96.4429,97.6481 L95.0472,98.6347 L93.4893,99.3744 L91.7975,99.8389 L90,100 L10,100 L8.20249,99.8389 L6.51068,99.3744 L4.95281,98.6347 L3.55713,97.6481 L2.35187,96.4429 L1.36529,95.0472 L0.625625,93.4893 L0.161113,91.7975 L0,90 L0,10 Z "/>
+<image x="25" y="25" width="50" height="50" preserveAspectRatio="none" image-rendering="optimizeSpeed" xlink:href="data:image/png;base64,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" />
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1270,370)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1278.5,475)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1278.5,475)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1278.5,475)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1278.5,475)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="4" y="14.8594" font-family="Arial" font-size="12" font-weight="400" font-style="normal" 
+ >Arm animation</text>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1278.5,475)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1278.5,475)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1278.5,475)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1278.5,475)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1370,410)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#3483eb" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1370,410)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<rect x="-6" y="-6" width="12" height="12"/>
+</g>
+
+<g fill="#3483eb" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1370,410)"
+font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="-18" y="5" font-family="Arial" font-size="14" font-weight="400" font-style="normal" 
+ >q</text>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1370,410)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1110,210)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#e1e0e8" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,1110,210)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M0,10 L0.161113,8.20249 L0.625625,6.51068 L1.36529,4.95281 L2.35187,3.55713 L3.55713,2.35187 L4.95281,1.36529 L6.51068,0.625625 L8.20249,0.161113 L10,0 L90,0 L91.7975,0.161113 L93.4893,0.625625 L95.0472,1.36529 L96.4429,2.35187 L97.6481,3.55713 L98.6347,4.95281 L99.3744,6.51068 L99.8389,8.20249 L100,10 L100,90 L99.8389,91.7975 L99.3744,93.4893 L98.6347,95.0472 L97.6481,96.4429 L96.4429,97.6481 L95.0472,98.6347 L93.4893,99.3744 L91.7975,99.8389 L90,100 L10,100 L8.20249,99.8389 L6.51068,99.3744 L4.95281,98.6347 L3.55713,97.6481 L2.35187,96.4429 L1.36529,95.0472 L0.625625,93.4893 L0.161113,91.7975 L0,90 L0,10 Z "/>
+</g>
+
+<g fill="none" stroke="#696969" stroke-opacity="1" stroke-width="3" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1110,210)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M0,10 L0.161113,8.20249 L0.625625,6.51068 L1.36529,4.95281 L2.35187,3.55713 L3.55713,2.35187 L4.95281,1.36529 L6.51068,0.625625 L8.20249,0.161113 L10,0 L90,0 L91.7975,0.161113 L93.4893,0.625625 L95.0472,1.36529 L96.4429,2.35187 L97.6481,3.55713 L98.6347,4.95281 L99.3744,6.51068 L99.8389,8.20249 L100,10 L100,90 L99.8389,91.7975 L99.3744,93.4893 L98.6347,95.0472 L97.6481,96.4429 L96.4429,97.6481 L95.0472,98.6347 L93.4893,99.3744 L91.7975,99.8389 L90,100 L10,100 L8.20249,99.8389 L6.51068,99.3744 L4.95281,98.6347 L3.55713,97.6481 L2.35187,96.4429 L1.36529,95.0472 L0.625625,93.4893 L0.161113,91.7975 L0,90 L0,10 Z "/>
+<image x="25" y="25" width="50" height="50" preserveAspectRatio="none" image-rendering="optimizeSpeed" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAAD6CAYAAACI7Fo9AAABIGlDQ1BzUkdCAAAYlWNgYHzAAAQsDgwMuXklRUHuTgoRkVEKDEggMbm4gAEv+HaNgRFEX9YNLGHjxq8WA3AVAS0E0n+AWCQdzGYUALGTIGwVELu8pKAEyLYAsZMLikBsHyBbKTkjMQXIBrlPpygkyBnIngNkK6QjsZOQ2CmpxclA9h4gWwXhz/z5DAwWXxgYmCcixJKmMTBsb2dgkLiDEFNZyMDA38rAsO0yQuyzP9jvjGKHcnNKk6F+AonwpOaFBgNpNiCWYfBj0GdwZGAoTjM2gqjgcWBgYL37//9nLQYG9kkMDH/7////vej//7+Lge64xcBwoL0gsSgRrJYZiJnS0hgYPi1nYOCNZGAQvgAMtmgc9nGA7StmCGJwZ3ACAHssTnV9IHqGAAAACXBIWXMAAA7BAAAOwQG4kWvtAAADpklEQVR4nO3dwW3bQBRAwXXgglICS0oJ6SgluDTlEBiIDSqmpEhL6s0AvFkQV7sP/0LQYwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwycvk7z9N/v69mL0PPLlvs28AuD+hQ4DQIUDoECB0CBA6BAgdAoQOAUKHAKFDgEcvH2/tsV/7wF2Z6BAgdAgQOgQIHQKEDgFChwChQ4DQIUDoECB0CBA6BAgdAoQOAUKHAKFDgNAhQOgQIHQIEDoECB0CXmffABlrL8UsmvIiUBMdAoQOAUKHAKFDgNAhQOgQIHQIEDoECB0ChA4BHoFlJv8X/kFMdAgQOgQIHQKEDgFChwChQ4DQIUDoECB0CBA6BAgdAoQOAUKHAKFDgNAhQOgQIHQIEDoECB0ChA4BQocAoUOA0CFA6BAgdAgQOgQIHQKEDgFChwChQ4DQIUDoECB0CBA6BAgdAoQOAUKHAKFDgNAhQOgQIHQIEDoECB0ChA4BQocAoUOA0CFA6BAgdAgQOgQIHQKEDgFChwChQ4DQIeCS0H/c7S6AXVjGGKcxxvfJ9/EMTitXQXXdh/I2/mzMr9k38gSqB7667sNYxsfNMdVvUz3w1XUfxvs0f79M9dtUD3x13YewjPUNMtWvVz3w1XUfwudpbqrfrnrgq+vevWWsb46pfpvqga+ue/fOTXNT/TbVA19d964t49+Rm+rXqx746rp37atpbqpfr3rgq+verWVsi9xUv071wFfXvVtbp7mpfp3qga+ue5eWcVnkpvrlqge+uu5dunSam+qXqx746rp34WXj3/29KVs/w7q1A174Tavr3gUvnoAAoUOA0CFA6BAgdAgQOgQIHQKEDgFChwChQ8Dr7BtgjOG5b+7MRIcAoUOA0CFA6BAgdAgQOgQIHQKEDgFChwChQ4BHYB/Pm095OBMdAoQOAUKHAKFDgNAhQOgQIHQIEDoECB0ChA4BQocAoUOA0CFA6BAgdAgQOgQIHQKEDgFChwChQ4DQIUDoECB0CBA6BAgdAoQOAUKHAKFDgNAhQOgQIHQIEDoECB0ChA4BQocAoUOA0CFA6Ld7G2Mss28C/ofTXxcfvf8ugufwhH7e6dMleA5L6Od9Dl3wHJbQzzsXuuA5HKGf91Xogucwth5ml+A5sNlxPOP185INgEeYHcUzXW/DRIfDETgECBwCBA4BAocAgUOAwAEAAADY5DfKflYnZSYrTQAAAABJRU5ErkJggg==" />
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1110,210)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1148.5,315)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1148.5,315)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1148.5,315)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1148.5,315)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="4" y="14.8594" font-family="Arial" font-size="12" font-weight="400" font-style="normal" 
+ >Tfb</text>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1148.5,315)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1148.5,315)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1148.5,315)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1148.5,315)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1110,250)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#3483eb" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1110,250)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<rect x="-6" y="-6" width="12" height="12"/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1110,250)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1210,250)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#f54242" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1210,250)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M-6,-6 L8,0 L-6,6 L-6,-6 Z "/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1210,250)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,50,490)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#e1e0e8" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,50,490)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M0,10 L0.161113,8.20249 L0.625625,6.51068 L1.36529,4.95281 L2.35187,3.55713 L3.55713,2.35187 L4.95281,1.36529 L6.51068,0.625625 L8.20249,0.161113 L10,0 L90,0 L91.7975,0.161113 L93.4893,0.625625 L95.0472,1.36529 L96.4429,2.35187 L97.6481,3.55713 L98.6347,4.95281 L99.3744,6.51068 L99.8389,8.20249 L100,10 L100,90 L99.8389,91.7975 L99.3744,93.4893 L98.6347,95.0472 L97.6481,96.4429 L96.4429,97.6481 L95.0472,98.6347 L93.4893,99.3744 L91.7975,99.8389 L90,100 L10,100 L8.20249,99.8389 L6.51068,99.3744 L4.95281,98.6347 L3.55713,97.6481 L2.35187,96.4429 L1.36529,95.0472 L0.625625,93.4893 L0.161113,91.7975 L0,90 L0,10 Z "/>
+</g>
+
+<g fill="none" stroke="#696969" stroke-opacity="1" stroke-width="3" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,50,490)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M0,10 L0.161113,8.20249 L0.625625,6.51068 L1.36529,4.95281 L2.35187,3.55713 L3.55713,2.35187 L4.95281,1.36529 L6.51068,0.625625 L8.20249,0.161113 L10,0 L90,0 L91.7975,0.161113 L93.4893,0.625625 L95.0472,1.36529 L96.4429,2.35187 L97.6481,3.55713 L98.6347,4.95281 L99.3744,6.51068 L99.8389,8.20249 L100,10 L100,90 L99.8389,91.7975 L99.3744,93.4893 L98.6347,95.0472 L97.6481,96.4429 L96.4429,97.6481 L95.0472,98.6347 L93.4893,99.3744 L91.7975,99.8389 L90,100 L10,100 L8.20249,99.8389 L6.51068,99.3744 L4.95281,98.6347 L3.55713,97.6481 L2.35187,96.4429 L1.36529,95.0472 L0.625625,93.4893 L0.161113,91.7975 L0,90 L0,10 Z "/>
+<image x="25" y="25" width="50" height="50" preserveAspectRatio="none" image-rendering="optimizeSpeed" xlink:href="data:image/png;base64,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" />
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,50,490)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,67.5,595)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,67.5,595)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,67.5,595)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,67.5,595)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="4" y="14.8594" font-family="Arial" font-size="12" font-weight="400" font-style="normal" 
+ >Main Block</text>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,67.5,595)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,67.5,595)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,67.5,595)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,67.5,595)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1090,590)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="5" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1090,590)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M8.5,0 L4.5,0 "/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1090,590)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1103,590)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1103,590)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1090,590)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1090,590)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1090,610)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="5" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1090,610)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M8.5,0 L4.5,0 "/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1090,610)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1103,610)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1103,610)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1090,610)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1090,610)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1110,50)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#e1e0e8" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,1110,50)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M0,10 L0.161113,8.20249 L0.625625,6.51068 L1.36529,4.95281 L2.35187,3.55713 L3.55713,2.35187 L4.95281,1.36529 L6.51068,0.625625 L8.20249,0.161113 L10,0 L90,0 L91.7975,0.161113 L93.4893,0.625625 L95.0472,1.36529 L96.4429,2.35187 L97.6481,3.55713 L98.6347,4.95281 L99.3744,6.51068 L99.8389,8.20249 L100,10 L100,90 L99.8389,91.7975 L99.3744,93.4893 L98.6347,95.0472 L97.6481,96.4429 L96.4429,97.6481 L95.0472,98.6347 L93.4893,99.3744 L91.7975,99.8389 L90,100 L10,100 L8.20249,99.8389 L6.51068,99.3744 L4.95281,98.6347 L3.55713,97.6481 L2.35187,96.4429 L1.36529,95.0472 L0.625625,93.4893 L0.161113,91.7975 L0,90 L0,10 Z "/>
+</g>
+
+<g fill="none" stroke="#696969" stroke-opacity="1" stroke-width="3" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1110,50)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M0,10 L0.161113,8.20249 L0.625625,6.51068 L1.36529,4.95281 L2.35187,3.55713 L3.55713,2.35187 L4.95281,1.36529 L6.51068,0.625625 L8.20249,0.161113 L10,0 L90,0 L91.7975,0.161113 L93.4893,0.625625 L95.0472,1.36529 L96.4429,2.35187 L97.6481,3.55713 L98.6347,4.95281 L99.3744,6.51068 L99.8389,8.20249 L100,10 L100,90 L99.8389,91.7975 L99.3744,93.4893 L98.6347,95.0472 L97.6481,96.4429 L96.4429,97.6481 L95.0472,98.6347 L93.4893,99.3744 L91.7975,99.8389 L90,100 L10,100 L8.20249,99.8389 L6.51068,99.3744 L4.95281,98.6347 L3.55713,97.6481 L2.35187,96.4429 L1.36529,95.0472 L0.625625,93.4893 L0.161113,91.7975 L0,90 L0,10 Z "/>
+<image x="25" y="25" width="50" height="50" preserveAspectRatio="none" image-rendering="optimizeSpeed" xlink:href="data:image/png;base64,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" />
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1110,50)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1123.5,155)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1123.5,155)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1123.5,155)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1123.5,155)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="4" y="14.8594" font-family="Arial" font-size="12" font-weight="400" font-style="normal" 
+ >Scope Block</text>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1123.5,155)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1123.5,155)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1123.5,155)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1123.5,155)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1110,90)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#3483eb" fill-opacity="1" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1110,90)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+<rect x="-6" y="-6" width="12" height="12"/>
+</g>
+
+<g fill="none" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1110,90)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family=".AppleSystemUIFont" font-size="13" font-weight="400" font-style="normal" 
+>
+</g>
+</g>
+</svg>
