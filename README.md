@@ -27,6 +27,14 @@ To follow Tobi's Part 2 presentation locally:
 
 2. Run `pixi run presentation` within this directory in a terminal.
 
+For browser-based GitHub Codespaces, use the dedicated launcher that auto-installs Pixi if needed and uses a browser-safe execute keybinding:
+
+- `bash tobi/scripts/run_presentation_codespaces.sh`
+
+If this repository is opened with a devcontainer-enabled Codespace, Pixi bootstrap runs automatically on creation via `.devcontainer/devcontainer.json`.
+The devcontainer startup also applies Codespaces-specific keybinding overrides directly to `tobi/presenterm_config.yaml` (only when `CODESPACES=true`), so only one presenterm config file is maintained.
+On first attach, the presentation also auto-starts once in the container. To trigger that one-time startup again, remove `~/.cache/icra2026_presentation_autostarted` in the Codespace.
+
 ## Abstract
 
 Robotics is powered by software. The tools we use shape the pace of innovation in research, drive
