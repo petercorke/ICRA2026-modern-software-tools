@@ -30,3 +30,6 @@ export:
   dimensions:
     columns: 110
     rows: 37
+
+bindings:
+  execute_code: ["e"]

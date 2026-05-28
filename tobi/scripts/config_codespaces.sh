@@ -7,8 +7,6 @@ if [[ "${CODESPACES:-}" != "true" ]]; then
 	exit 0
 fi
 
-python "$SCRIPT_DIR/prepare_codespaces.py" --config-only --config-file "$SCRIPT_DIR/../presenterm_config.yaml"
-
 if [[ -f "$HOME/.bashrc" ]]; then
 	for line in \
 		'export DISPLAY=:99' \
