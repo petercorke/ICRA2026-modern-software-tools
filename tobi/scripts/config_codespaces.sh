@@ -7,16 +7,7 @@ if [[ "${CODESPACES:-}" != "true" ]]; then
 	exit 0
 fi
 
-PRESENTERM_CONFIG="$SCRIPT_DIR/../presenterm_config.yaml"
-if [[ -f "$PRESENTERM_CONFIG" ]]; then
-	if grep -Eq '^[[:space:]]*execute_code:[[:space:]]*\[.*\][[:space:]]*$' "$PRESENTERM_CONFIG"; then
-		sed -E -i 's|^([[:space:]]*execute_code:[[:space:]]*)\[.*\][[:space:]]*$|\1["e"]|' "$PRESENTERM_CONFIG"
-	elif grep -Eq '^[[:space:]]*bindings:[[:space:]]*$' "$PRESENTERM_CONFIG"; then
-		sed -i '/^[[:space:]]*bindings:[[:space:]]*$/a\  execute_code: ["e"]' "$PRESENTERM_CONFIG"
-	else
-		printf '\nbindings:\n  execute_code: ["e"]\n' >> "$PRESENTERM_CONFIG"
-	fi
-fi
+python "$SCRIPT_DIR/prepare_codespaces.py" --config-only --config-file "$SCRIPT_DIR/../presenterm_config.yaml"
 
 if [[ -f "$HOME/.bashrc" ]]; then
 	for line in \
