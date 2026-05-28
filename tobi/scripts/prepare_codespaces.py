@@ -76,6 +76,39 @@ def prepare_codespaces_markdown(source: Path, destination: Path) -> None:
     print(f"Wrote Codespaces markdown to {destination}")
 
 
+def apply_codespaces_bindings(config_file: Path) -> None:
+    if not config_file.exists():
+        print(f"presenterm config not found at {config_file}; skipping Codespaces overrides")
+        return
+
+    text = config_file.read_text(encoding="utf-8")
+    updated = text
+
+    execute_code_line = re.compile(r"(?m)^([ \t]*execute_code:[ \t]*)\[.*\][ \t]*$")
+    if execute_code_line.search(updated):
+        updated = execute_code_line.sub(r'\1["e"]', updated, count=1)
+        action = "Applied Codespaces override"
+    else:
+        bindings_block = re.compile(r"(?m)^([ \t]*)bindings:[ \t]*$")
+        match = bindings_block.search(updated)
+        if match:
+            indent = match.group(1)
+            updated = (
+                updated[: match.end()]
+                + f"\n{indent}  execute_code: [\"e\"]"
+                + updated[match.end() :]
+            )
+            action = "Added Codespaces execute binding"
+        else:
+            suffix = "\n" if updated.endswith("\n") else "\n\n"
+            updated = updated + suffix + "bindings:\n  execute_code: [\"e\"]\n"
+            action = "Added bindings block"
+
+    if updated != text:
+        config_file.write_text(updated, encoding="utf-8")
+    print(f"{action} in {config_file} (execute_code: [\"e\"])")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("source", nargs="?", type=Path)
@@ -85,7 +118,24 @@ def main() -> None:
         action="store_true",
         help="Update source markdown in place",
     )
+    parser.add_argument(
+        "--config-file",
+        type=Path,
+        default=None,
+        help="presenterm config file to patch for Codespaces keybinding",
+    )
+    parser.add_argument(
+        "--config-only",
+        action="store_true",
+        help="Only patch the presenterm config file and skip markdown generation",
+    )
     args = parser.parse_args()
+
+    if args.config_file is not None:
+        apply_codespaces_bindings(args.config_file)
+
+    if args.config_only:
+        return
 
     if args.in_place:
         if args.source is None:
@@ -94,7 +144,7 @@ def main() -> None:
         return
 
     if args.source is None or args.destination is None:
-        parser.error("source and destination are required unless --in-place is set")
+        parser.error("source and destination are required unless --config-only or --in-place is set")
 
     prepare_codespaces_markdown(args.source, args.destination)
 
