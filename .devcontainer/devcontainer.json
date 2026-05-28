@@ -1,0 +1,12 @@
+{
+  "name": "ICRA2026-modern-software-tools",
+  "forwardPorts": [6080],
+  "portsAttributes": {
+    "6080": {
+      "label": "Codespaces desktop",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "postCreateCommand": "bash -lc 'bash tobi/scripts/config_codespaces.sh && bash tobi/scripts/run_presentation_codespaces.sh --install-only'",
+  "postAttachCommand": "bash -lc 'bash tobi/scripts/config_codespaces.sh && mkdir -p ~/.cache && if [ ! -f ~/.cache/icra2026_presentation_autostarted ]; then touch ~/.cache/icra2026_presentation_autostarted && bash tobi/scripts/run_presentation_codespaces.sh; fi'"
+}

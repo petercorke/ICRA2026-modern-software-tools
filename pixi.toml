@@ -23,6 +23,9 @@ build_part1_jupyterlite = { cmd = "jupyter lite build --contents content/ --base
 
 run_presenterm = { cmd = "TQDM_DISABLE=1 pixi run presenterm --enable-snippet-execution -X icra_software_tools.md --config-file presenterm_config.yaml --theme {{ theme }}", args = [{ arg = "theme", default = "terminal-dark", choices = ["terminal-dark", "terminal-light"] }], description = "Run presenterm presentation", cwd = "./tobi" }
 presentation = { cmd = "exit 0", args = [{ arg = "theme", default = "terminal-dark", choices = ["terminal-dark", "terminal-light"] }], depends-on = ["clean_init_pixi", { task = "run_presenterm", args = ["{{ theme }}"] }], description = "Run the presentation", cwd = "./tobi" }
+prepare_codespaces = { cmd = "python scripts/prepare_codespaces.py --in-place icra_software_tools.md --config-file presenterm_config.yaml", description = "Apply Codespaces keybinding and port guidance to the presentation", cwd = "./tobi" }
+presentation_codespaces = { cmd = "exit 0", args = [{ arg = "theme", default = "terminal-dark", choices = ["terminal-dark", "terminal-light"] }], depends-on = ["prepare_codespaces", "clean_init_pixi", { task = "run_presenterm", args = ["{{ theme }}"] }], description = "Run the presentation with Codespaces overrides applied", cwd = "./tobi" }
+
 
 [target.win-64.tasks]
 presentation_windows_markdown = { cmd = "python scripts/prepare_windows.py icra_software_tools.md icra_software_tools_windows.md", description = "Generate the Windows presentation markdown", cwd = "./tobi" }
