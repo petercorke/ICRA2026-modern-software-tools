@@ -64,7 +64,7 @@ for nb_path, title in NOTEBOOKS:
     }
 
     executor.preprocess(nb, resources)
-    nb.cells = nb.cells[len(injected_cells):]
+    nb.cells = nb.cells[len(injected_cells) :]
 
     body, _ = exporter.from_notebook_node(nb, resources=resources)
     pdf_path = outdir / (Path(nb_path).stem + ".pdf")
