@@ -42,3 +42,25 @@ jupyterlite-core = ">=0.7,<0.8"
 jupyterlite-pyodide-kernel = ">=0.7,<0.8"
 jupyter_server = "*"
 actionlint = "*"
+
+[feature.part1-pdf]
+platforms = ["linux-64", "osx-arm64"]
+
+[feature.part1-pdf.tasks]
+export_part1_notebooks_pdf = { cmd = "rm -rf _artifacts/part1-pdfs _artifacts/part1-notebooks-pdf.zip && python peter/jupyter-lite/content/makepdf.py && cd _artifacts/part1-pdfs && zip -r ../part1-notebooks-pdf.zip ./*.pdf", description = "Export Peter's Part 1 notebooks to a PDF zip" }
+
+[feature.part1-pdf.dependencies]
+python = "3.12.*"
+ipykernel = "*"
+nbconvert-core = "*"
+nbformat = "*"
+pandoc = "*"
+zip = "*"
+quadprog = "*"
+bdsim = "*"
+machinevision-toolbox-python = "*"
+roboticstoolbox-python = "*"
+spatialmath-python = "*"
+
+[environments]
+part1-pdf = { features = ["part1-pdf"], no-default-feature = true }
