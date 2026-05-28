@@ -131,9 +131,6 @@ This Talk Is Executable
 
 The slides are also the demo environment.
 
-<!-- column_layout: [1, 1] -->
-
-<!-- column: 0 -->
 
 ## During the talk
 
@@ -143,20 +140,16 @@ The slides are also the demo environment.
 - `?`: show keybindings
 - `esc` or `control` + `c`: exit
 
-<!-- column: 1 -->
 
 ## Running it yourself
 
 Use a terminal and raw `git clone`
-(avoid GitHub web download or GitHub Desktop).
-
+(avoid GitHub Web or GitHub Desktop):
 ```bash
 git clone https://github.com/petercorke/ICRA2026-modern-software-tools.git
 cd ICRA2026-modern-software-tools
 pixi run presentation
 ```
-
-<!-- reset_layout -->
 
 <!-- pause -->
 
@@ -234,7 +227,7 @@ pixi init
 # Add PyTorch
 
 ```bash +exec +pty:80:3
-pixi add pytorch torchvision
+pixi add python pytorch torchvision
 ```
 
 <!-- end_slide -->
@@ -307,8 +300,7 @@ pixi task add start "python train.py" --depends-on download-mnist
 
 ```toml
 [tasks]
-start = { cmd = "python train.py", depends-on = ["download-mnist"] }
-
+...
 download-mnist = {
   cmd = "python -c 'torchvision.datasets.MNIST("data", download=True)'",
   outputs = ["data/MNIST"]
@@ -402,7 +394,7 @@ through the conda-forge ecosystem.
 
 <!-- pause -->
 
-```bash +exec +pty:80:3
+```bash +exec +pty:80:10
 pixi workspace channel add https://prefix.dev/robostack-rolling
 pixi add ros-rolling-desktop
 ```
@@ -411,11 +403,6 @@ pixi add ros-rolling-desktop
 
 ROS Desktop App from a Locked Environment
 ===
-
-Start with a tiny demo.
-Then scale the same idea to real stacks.
-
-<!-- pause -->
 
 Hands up if you have ever installed a VM
 or old Ubuntu just to get ROS running.
@@ -432,7 +419,10 @@ pixi run ros2 topic pub /turtle1/cmd_vel \
   geometry_msgs/msg/Twist \
   "{linear: {x: 2.0}, angular: {z: 1.8}}"
 ```
+<!-- pause -->
 
+Start with a tiny demo.
+Then scale the same idea to real stacks.
 
 <!-- end_slide -->
 
@@ -481,8 +471,9 @@ Build Your Own ROS / C++ / Python Packages
 ## Create a ROS package
 
 <!-- // Delete the icra_ros_package in case it already exists -->
-```bash +exec +pty:80:4
+```bash +exec +pty:80:2
 /// python -c "from pathlib import Path; import shutil; [p.unlink() if p.is_file() else shutil.rmtree(p, ignore_errors=True) for p in [Path('icra_ros_package')]]"
+/// python scripts/pixi_snippets.py remove icra-ros-package
 pixi run ros2 pkg create \
   --build-type ament_cmake \
   --node-name icra_node \
@@ -509,8 +500,9 @@ ros-rolling-icra-ros-package = { path = "icra_ros_package/package.xml" }
 <!-- // The helper script adds small snippets into the pixi.toml that I want to hide for the presentation -->
 <!-- // See scripts/pixi_snippets.py for these snippets -->
 
-```bash +exec +pty:80:4
+```bash +exec +pty:80:2
 /// python scripts/pixi_snippets.py add pixi-build-preview icra-ros-package
+# The equivalent to colcon build!
 pixi install
 ```
 
@@ -574,7 +566,7 @@ python scripts/remote_demo.py prepare
 ```
 <!-- end_slide -->
 
-```bash +exec
+```bash +exec +pty:80:10
 # Optional presenter remote: run the same Pixi task on Linux/HPC
 # Prints each remote command before executing it
 python scripts/remote_demo.py run
@@ -604,8 +596,8 @@ composability, reproducibility, and easy onboarding.
 ```text
 README.md
 
-1. Install ROS
-2. Build OpenCV
+1. Install ROS, ...
+2. Build OpenCV, ...
 3. Download models
 4. Download datasets
 5. Configure CUDA
@@ -613,13 +605,14 @@ README.md
 7. Pray
 ```
 
+<!-- pause -->
+
 <!-- column: 1 -->
 
 ## After ✨
 ```bash +exec +pty:80:6
 git clone https://github.com/VSLAM-LAB/VSLAM-LAB.git > /dev/null 2>&1
-cd VSLAM-LAB && \
-pixi run demo orbslam2 eth table_3 mono
+pixi run -m ./VSLAM-LAB/pixi.toml demo orbslam2 eth table_3 mono 
 ```
 
 <!-- reset_layout -->
