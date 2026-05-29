@@ -38,7 +38,8 @@ jobs:
             texlive-latex-base \
             texlive-xetex \
             texlive-fonts-recommended \
-            texlive-plain-generic
+            texlive-plain-generic \
+            inkscape
 
       - name: Export Part 1 notebooks to PDF zip
         run: pixi run -e part1-pdf export_part1_notebooks_pdf
