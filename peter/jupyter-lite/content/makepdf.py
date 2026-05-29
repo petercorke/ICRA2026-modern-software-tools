@@ -14,45 +14,7 @@ NOTEBOOKS = [
 
 EXPORT_ONLY_CODE = {
     "spatial-math.ipynb": "if NBCONVERT:\n    from spatialmath import BasePoseMatrix\n    BasePoseMatrix._color = False\n",
-    "robotics.ipynb": """if NBCONVERT:
-    from spatialmath import BasePoseMatrix
-    BasePoseMatrix._color = False
-
-    # Avoid a Matplotlib/Robotics Toolbox colorbar issue in the conda-forge export stack.
-    from roboticstoolbox.mobile.PlannerBase import PlannerBase
-    _plot_bg = PlannerBase.plot_bg
-
-    def _plot_bg_without_colorbar(self, *args, **kwargs):
-        kwargs.setdefault("colorbar", False)
-        return _plot_bg(self, *args, **kwargs)
-
-    PlannerBase.plot_bg = _plot_bg_without_colorbar
-
-    import numpy as _np
-    from spatialmath import Polygon2
-    from roboticstoolbox.mobile.Animations import VehiclePolygon
-    _vehicle_polygon_init = VehiclePolygon.__init__
-
-    def _vehicle_polygon_init_compat(self, shape="car", scale=1, **kwargs):
-        coords = None
-        if isinstance(shape, Polygon2):
-            coords = shape.vertices()
-        elif isinstance(shape, _np.ndarray) and shape.ndim == 2:
-            if shape.shape[0] == 2:
-                coords = shape
-            elif shape.shape[1] == 2:
-                coords = shape.T
-
-        if coords is not None:
-            _vehicle_polygon_init(self, "car", scale=1, **kwargs)
-            self._coords = coords * scale
-            self._args = kwargs
-            return None
-
-        return _vehicle_polygon_init(self, shape, scale=scale, **kwargs)
-
-    VehiclePolygon.__init__ = _vehicle_polygon_init_compat
-""",
+    "robotics.ipynb": "if NBCONVERT:\n    from spatialmath import BasePoseMatrix\n    BasePoseMatrix._color = False\n",
 }
 
 MARKDOWN_IMAGE_RE = re.compile(r"!\[[^\]]+\]\(([^)]+)\)")
