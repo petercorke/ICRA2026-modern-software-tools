@@ -1,4 +1,6 @@
+import re
 from pathlib import Path
+
 import nbformat
 from nbconvert.exporters import PDFExporter
 from nbconvert.preprocessors import ExecutePreprocessor
@@ -15,6 +17,14 @@ EXPORT_ONLY_CODE = {
     "robotics.ipynb": "if NBCONVERT:\n    from spatialmath import BasePoseMatrix\n    BasePoseMatrix._color = False\n",
 }
 
+MARKDOWN_IMAGE_RE = re.compile(r"!\[[^\]]+\]\(([^)]+)\)")
+
+
+def strip_markdown_image_alt_text(cell):
+    if cell.cell_type == "markdown":
+        cell.source = MARKDOWN_IMAGE_RE.sub(r"![](\1)", cell.source)
+
+
 outdir = Path("_artifacts/part1-pdfs")
 outdir.mkdir(parents=True, exist_ok=True)
 content_root = Path("peter/jupyter-lite/content")
@@ -27,6 +37,13 @@ executor = ExecutePreprocessor(timeout=600, kernel_name="python3")
 for nb_path, title in NOTEBOOKS:
     nb_file = Path(nb_path)
     nb_dir = nb_file.parent
+    resource_paths = [
+        nb_dir,
+        nb_dir / "support",
+        nb_dir / "support/figs",
+        content_root / "support",
+        content_root / "support/figs",
+    ]
     with nb_file.open("r", encoding="utf-8") as f:
         nb = nbformat.read(f, as_version=4)
 
@@ -34,7 +51,16 @@ for nb_path, title in NOTEBOOKS:
     if len(nb.cells) >= 2:
         nb.cells = nb.cells[2:]
 
-    injected_cells = [nbformat.v4.new_code_cell("NBCONVERT = True\n")]
+    for cell in nb.cells:
+        strip_markdown_image_alt_text(cell)
+
+    injected_cells = [
+        nbformat.v4.new_code_cell(
+            "NBCONVERT = True\n"
+            "import warnings\n"
+            "warnings.filterwarnings('ignore')\n"
+        )
+    ]
 
     export_only_code = EXPORT_ONLY_CODE.get(nb_file.name)
     if export_only_code:
@@ -54,13 +80,7 @@ for nb_path, title in NOTEBOOKS:
             # Helps nbconvert resolve local assets referenced by notebook markdown.
             "path": str(nb_dir),
         },
-        "resource_paths": [
-            str(nb_dir),
-            str(nb_dir / "support"),
-            str(nb_dir / "support/figs"),
-            str(content_root / "support"),
-            str(content_root / "support/figs"),
-        ],
+        "resource_paths": [str(path) for path in resource_paths],
     }
 
     executor.preprocess(nb, resources)

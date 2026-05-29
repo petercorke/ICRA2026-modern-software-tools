@@ -29,6 +29,7 @@ peter/jupyter-lite/_site/
 peter/jupyter-lite/.cache/
 peter/jupyter-lite/.jupyterlite.doit.db
 peter/jupyter-lite/_output/*
+_artifacts/
 
 # Conda/Pixi environment related
 *.conda
