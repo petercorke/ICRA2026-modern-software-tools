@@ -38,14 +38,15 @@ def run_logged(
 
 def ensure_zeus_internet_client(host: str, dry_run: bool) -> None:
     command = (
-        "pgrep -f /opt/qutiaclient/IAClient >/dev/null || "
-        "(nohup /opt/qutiaclient/IAClient >/tmp/qutiaclient.log 2>&1 &)"
+        "nohup /opt/qutiaclient/IAClient "
+        "</dev/null >/tmp/qutiaclient.log 2>&1 & "
+        "echo 'Started IAClient with nohup'"
     )
+
     run_logged(
         ["ssh", host, command],
         dry_run=dry_run,
     )
-
 
 def remote_demo(args: argparse.Namespace) -> None:
     host = remote_host(args)
@@ -82,13 +83,14 @@ def remote_demo(args: argparse.Namespace) -> None:
             ],
             dry_run=args.dry_run,
         )
+    elif args.remote_action == "establish_internet":
+        ensure_zeus_internet_client(host, args.dry_run)
     elif args.remote_action == "run":
         ensure_zeus_internet_client(host, args.dry_run)
         run_logged(
             ["ssh", host, f"cd {remote_dir} && pixi add pytorch-gpu -p linux-64"],
             quiet=False,
             dry_run=args.dry_run,
-            display=f'ssh {host} "cd {remote_dir} && pixi add pytorch-gpu -p linux-64"',
         )
         run_logged(
             ["ssh", host, f"cd {remote_dir} && pixi run start"],
@@ -101,7 +103,7 @@ def remote_demo(args: argparse.Namespace) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("remote_action", choices=["reset", "prepare", "run"])
+    parser.add_argument("remote_action", choices=["reset", "prepare", "establish_internet", "run"])
     parser.add_argument("--host")
     parser.add_argument("--remote-dir", default="~/robotics-demo")
     parser.add_argument("--dry-run", action="store_true")

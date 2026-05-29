@@ -21,7 +21,8 @@ export_presentation_html_light = { cmd = "TQDM_DISABLE=1 pixi run presenterm --e
 remove_large_peter_wheels = { cmd = "python -c \"from pathlib import Path; [p.unlink() for pattern in ('bdsim-*.whl', 'rtb_data-*.whl') for p in Path('.').glob(pattern)]\"", description = "Remove large wheels from Peter's JupyterLite deployment bundle", cwd = "./peter/jupyter-lite/pypi" }
 build_part1_jupyterlite = { cmd = "jupyter lite build --contents content/ --base-url /ICRA2026-modern-software-tools/part1/ --output-dir _site", depends-on = ["remove_large_peter_wheels"], description = "Build Peter's JupyterLite site", cwd = "./peter/jupyter-lite" }
 
-run_presenterm = { cmd = "TQDM_DISABLE=1 pixi run presenterm --enable-snippet-execution -X icra_software_tools.md --config-file presenterm_config.yaml --theme {{ theme }}", args = [{ arg = "theme", default = "terminal-dark", choices = ["terminal-dark", "terminal-light"] }], description = "Run presenterm presentation", cwd = "./tobi" }
+prepare_presenterm_manifest = { cmd = "python scripts/prepare_presenterm_manifest.py", description = "Remove missing optional ROS package dependency before presenterm", cwd = "./tobi" }
+run_presenterm = { cmd = "TQDM_DISABLE=1 pixi run presenterm --enable-snippet-execution -X icra_software_tools.md --config-file presenterm_config.yaml --theme {{ theme }}", args = [{ arg = "theme", default = "terminal-dark", choices = ["terminal-dark", "terminal-light"] }], depends-on = ["prepare_presenterm_manifest"], description = "Run presenterm presentation", cwd = "./tobi" }
 presentation = { cmd = "exit 0", args = [{ arg = "theme", default = "terminal-dark", choices = ["terminal-dark", "terminal-light"] }], depends-on = ["clean_init_pixi", { task = "run_presenterm", args = ["{{ theme }}"] }], description = "Run the presentation", cwd = "./tobi" }
 prepare_codespaces = { cmd = "python scripts/prepare_codespaces.py --in-place icra_software_tools.md --config-file presenterm_config.yaml", description = "Apply Codespaces keybinding and port guidance to the presentation", cwd = "./tobi" }
 presentation_codespaces = { cmd = "exit 0", args = [{ arg = "theme", default = "terminal-dark", choices = ["terminal-dark", "terminal-light"] }], depends-on = ["prepare_codespaces", "clean_init_pixi", { task = "run_presenterm", args = ["{{ theme }}"] }], description = "Run the presentation with Codespaces overrides applied", cwd = "./tobi" }
@@ -30,13 +31,13 @@ presentation_codespaces = { cmd = "exit 0", args = [{ arg = "theme", default = "
 [target.win-64.tasks]
 presentation_windows_markdown = { cmd = "python scripts/prepare_windows.py icra_software_tools.md icra_software_tools_windows.md", description = "Generate the Windows presentation markdown", cwd = "./tobi" }
 
-run_presenterm = { cmd = "TQDM_DISABLE=1 pixi run presenterm --enable-snippet-execution -X icra_software_tools_windows.md --config-file presenterm_config.yaml --theme {{ theme }}", args = [{ arg = "theme", default = "terminal-dark", choices = ["terminal-dark", "terminal-light"] }], depends-on = ["presentation_windows_markdown"], description = "Run presenterm Windows presentation", cwd = "./tobi" }
+run_presenterm = { cmd = "TQDM_DISABLE=1 pixi run presenterm --enable-snippet-execution -X icra_software_tools_windows.md --config-file presenterm_config.yaml --theme {{ theme }}", args = [{ arg = "theme", default = "terminal-dark", choices = ["terminal-dark", "terminal-light"] }], depends-on = ["presentation_windows_markdown", "prepare_presenterm_manifest"], description = "Run presenterm Windows presentation", cwd = "./tobi" }
 presentation = { cmd = "exit /b 0", args = [{ arg = "theme", default = "terminal-dark", choices = ["terminal-dark", "terminal-light"] }], depends-on = ["clean_init_pixi", { task = "run_presenterm", args = ["{{ theme }}"] }], description = "Run the Windows presentation", cwd = "./tobi" }
 
 [dependencies]
 presenterm = ">=0.16.1"
 jupyterlab = ">=4.0.0"
-python = ">=3.10.0"
+python = "3.13.*"
 weasyprint = "*"
 jupyterlite-core = ">=0.7,<0.8"
 jupyterlite-pyodide-kernel = ">=0.7,<0.8"
