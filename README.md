@@ -4,17 +4,26 @@
 * When: Wednesday, 3 June
 * Where: Strauss 1-2
 
-## Getting started
 
-The tutorial landing site is published at:
+# Important links
+
+On the day, go to the tutorial landing page
+
 <https://petercorke.github.io/ICRA2026-modern-software-tools/>
 
-From there you can open Peter's Part 1 JupyterLite notebooks, Tobi's Part 2 HTML slides, and the
-Part 2 PDF export.
+and from there you get access to all the resources we'll use in the session.
 
-To follow Peter's Part 1 material, open the JupyterLite notebooks from the landing site. Open the
-notebook before the tutorial, run the first cell, and wait for the setup to complete so the browser
-cache is ready.
+We will use [mentimeter](https://www.menti.com/al8np6e1en7t) to capture questions from the floor, and we'll do our best to answer them.  It might be convenient to use your phone for questions, so point it here
+
+<img src="figs/QR%20Mentimeter.png" width="50%">
+
+# Tutorial structure
+
+## Beyond Fragments: A Unified Python Ecosystem for Robotics, Vision, and Control; Peter (45 minutes)
+
+Head over to Peter's [README](peter/README.md).
+
+## From Research Code to Running Systems: Cross-Platform Robotics and ML Workflows; Tobi (45 minutes)
 
 To follow Tobi's Part 2 presentation locally:
 
