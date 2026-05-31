@@ -48,6 +48,6 @@ The notebooks are all zero-install and work in your browser (Safari, Chrome defi
 ### References
 1. [The Robotics Toolbox: 30 years old and still going strong](https://www.youtube.com/watch?v=U37NMe7anXc&list=PL9Hnb9qlvGkRsNBDR7EATNAkzfEK0musp&index=5&pp=iAQB) video of Keynote talk at ICRA@40, 2024.
 2. [Robotics Software: Past, Present, and Future](https://www.annualreviews.org/content/journals/10.1146/annurev-control-061323-095841), , ANNUAL REVIEW OF CONTROL, ROBOTICS, AND AUTONOMOUS SYSTEMS Volume 7, 2024.
-3. [Robotics, Vision and Control Fundamental Algorithms in Python](https://doi.org/10.1007/978-3-031-06469-2), 3rd edition, Springer 2023.
-4. [Not your grandmother’s toolbox – the Robotics Toolbox reinvented for Python](https://doi.org/10.1109/ICRA48506.2021.9561366), Peter Corke and Jesse Haviland, IEEE International Conference on Robotics and Automation (ICRA) 2021.
-5. [Some notes about in browser execution](WASM.md), Peter 2026.
+3. [Not your grandmother’s toolbox – the Robotics Toolbox reinvented for Python](https://doi.org/10.1109/ICRA48506.2021.9561366), Peter Corke and Jesse Haviland, IEEE International Conference on Robotics and Automation (ICRA) 2021.
+4. [Some notes about in browser execution](WASM.md), Peter 2026.
+5. [Robotics, Vision and Control Fundamental Algorithms in Python](https://doi.org/10.1007/978-3-031-06469-2), 3rd edition, Springer 2023.
