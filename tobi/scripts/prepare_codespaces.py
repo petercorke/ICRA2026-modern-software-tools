@@ -18,8 +18,8 @@ def transform_codespaces_markdown(text: str) -> str:
     updated = text
 
     updated = re.sub(
-        r"Run code on a slide with `(?:control|ctrl)` \+ `e`",
-        "Run code on a slide with `e`",
+        r"(?m)^-\s*`?(?:control|ctrl)`?\s*\+\s*`?e`?:\s*run code\s*$",
+        "- `e`: run code",
         updated,
         count=1,
         flags=re.IGNORECASE,
@@ -76,6 +76,14 @@ def prepare_codespaces_markdown(source: Path, destination: Path) -> None:
     print(f"Wrote Codespaces markdown to {destination}")
 
 
+def apply_default_codespaces_markdown() -> None:
+    default_markdown = Path(__file__).resolve().parent.parent / "icra_software_tools.md"
+    if not default_markdown.exists():
+        print(f"default markdown not found at {default_markdown}; skipping markdown update")
+        return
+    prepare_codespaces_markdown(default_markdown, default_markdown)
+
+
 def apply_codespaces_bindings(config_file: Path) -> None:
     if not config_file.exists():
         print(f"presenterm config not found at {config_file}; skipping Codespaces overrides")
@@ -127,7 +135,7 @@ def main() -> None:
     parser.add_argument(
         "--config-only",
         action="store_true",
-        help="Only patch the presenterm config file and skip markdown generation",
+        help="Patch presenterm config and apply in-place Codespaces markdown updates",
     )
     args = parser.parse_args()
 
@@ -135,6 +143,7 @@ def main() -> None:
         apply_codespaces_bindings(args.config_file)
 
     if args.config_only:
+        apply_default_codespaces_markdown()
         return
 
     if args.in_place:
