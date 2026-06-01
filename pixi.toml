@@ -64,7 +64,7 @@ bdsim = "*"
 machinevision-toolbox-python = "*"
 pgraph-python = "*"
 rtb-data = "*"
-spatialmath-python = "*"
+spatialmath-python = { git = "https://github.com/petercorke/spatialmath-python.git", branch = "fix/twist-pitch" }
 roboticstoolbox-python = { git = "https://github.com/petercorke/robotics-toolbox-python.git", branch = "future" }
 spatialgeometry = { git = "https://github.com/jhavl/spatialgeometry.git", branch = "future" }
 

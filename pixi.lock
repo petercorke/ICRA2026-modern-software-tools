@@ -1099,11 +1099,11 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/zipp-4.1.0-pyhcf101f3_0.conda
       - pypi: git+https://github.com/jhavl/spatialgeometry.git?branch=future#56a37d145f480577b3f347577f726f50a306881b
       - pypi: git+https://github.com/petercorke/robotics-toolbox-python.git?branch=future#8b0ff19a4206a5f5f9ae7ae339fdc94458c6e735
+      - pypi: git+https://github.com/petercorke/spatialmath-python.git?branch=fix%2Ftwist-pitch#2f311a6d0e436cbc15b9c52e1c28a3574c7a0587
       - pypi: https://files.pythonhosted.org/packages/01/8e/1e35281b8ab6d5d72ebe9911edcdffa3f36b04ed9d51dec6dd140396e220/scipy-1.17.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/10/bd/c038d7cc38edc1aa5bf91ab8068b63d4308c66c4c8bb3cbba7dfbc049f9c/pyparsing-3.3.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/16/e1/3079a9ff9b8e11b846c6ac5c8b5bfb7ff225eee721825310c91b3b50304f/tqdm-4.67.3-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/28/3f/3fd093a11abd2a402d47b0783986c2811c23edcfbd7a75655ab8fb609f3a/ansitable-0.11.5-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/2e/c8/cd09ee865ef3747c104f34ed6e780a43d4ea8cc6d6915f680ae225f11c06/spatialmath_python-1.1.16-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/32/91/d024616abdba99e83120e07a20658976f6a343646710760c4a51df126029/matplotlib-3.10.9-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/33/6b/e0547afaf41bf2c42e52430072fa5658766e3d65bd4b03a563d1b6336f57/distlib-0.4.0-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/42/59/123aee44a039b212cfb8d90be1adf06496a99b313ee1683aadf90b3d9799/progress-1.6.1-py3-none-any.whl
@@ -1227,12 +1227,12 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/zip-3.0-h84a0fba_4.conda
       - pypi: git+https://github.com/jhavl/spatialgeometry.git?branch=future#56a37d145f480577b3f347577f726f50a306881b
       - pypi: git+https://github.com/petercorke/robotics-toolbox-python.git?branch=future#8b0ff19a4206a5f5f9ae7ae339fdc94458c6e735
+      - pypi: git+https://github.com/petercorke/spatialmath-python.git?branch=fix%2Ftwist-pitch#2f311a6d0e436cbc15b9c52e1c28a3574c7a0587
       - pypi: https://files.pythonhosted.org/packages/08/ef/b3c6b9b5be2f82416d73fe2ed2e96e2793cd80e7510bd6a17ca79cdd88ec/fonttools-4.63.0-cp312-cp312-macosx_10_13_universal2.whl
       - pypi: https://files.pythonhosted.org/packages/0c/eb/4fc8d0a7110eb5fc9cc161723a34a8a6c200ce3b4fbf681bc86feee22308/charset_normalizer-3.4.7-cp312-cp312-macosx_10_13_universal2.whl
       - pypi: https://files.pythonhosted.org/packages/10/bd/c038d7cc38edc1aa5bf91ab8068b63d4308c66c4c8bb3cbba7dfbc049f9c/pyparsing-3.3.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/16/e1/3079a9ff9b8e11b846c6ac5c8b5bfb7ff225eee721825310c91b3b50304f/tqdm-4.67.3-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/28/3f/3fd093a11abd2a402d47b0783986c2811c23edcfbd7a75655ab8fb609f3a/ansitable-0.11.5-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/2e/c8/cd09ee865ef3747c104f34ed6e780a43d4ea8cc6d6915f680ae225f11c06/spatialmath_python-1.1.16-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/33/6b/e0547afaf41bf2c42e52430072fa5658766e3d65bd4b03a563d1b6336f57/distlib-0.4.0-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/42/59/123aee44a039b212cfb8d90be1adf06496a99b313ee1683aadf90b3d9799/progress-1.6.1-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/53/3e/405b59cfa13021a56bba395a6b3aca8cec012b45bf177b0eaf7a202cde2c/contourpy-1.3.3-cp312-cp312-macosx_11_0_arm64.whl
@@ -8064,6 +8064,31 @@ packages:
   - sphinx-autodoc-typehints ; extra == 'docs'
   - sphinx-favicon ; extra == 'docs'
   requires_python: '>=3.8'
+- pypi: git+https://github.com/petercorke/spatialmath-python.git?branch=fix%2Ftwist-pitch#2f311a6d0e436cbc15b9c52e1c28a3574c7a0587
+  name: spatialmath-python
+  version: 1.1.15
+  requires_dist:
+  - numpy>=1.22
+  - scipy
+  - matplotlib
+  - ansitable
+  - typing-extensions
+  - pre-commit
+  - sympy ; extra == 'dev'
+  - pytest ; extra == 'dev'
+  - pytest-timeout ; extra == 'dev'
+  - pytest-xvfb ; extra == 'dev'
+  - coverage ; extra == 'dev'
+  - flake8 ; extra == 'dev'
+  - sphinx ; extra == 'docs'
+  - sphinx-rtd-theme ; extra == 'docs'
+  - sphinx-autorun ; extra == 'docs'
+  - sphinxcontrib-jsmath ; extra == 'docs'
+  - sphinx-favicon ; extra == 'docs'
+  - sphinx-autodoc-typehints ; extra == 'docs'
+  - matplotlib==3.5.1 ; extra == 'ros-humble'
+  - numpy<2 ; extra == 'ros-humble'
+  requires_python: '>=3.7'
 - pypi: https://files.pythonhosted.org/packages/01/8e/1e35281b8ab6d5d72ebe9911edcdffa3f36b04ed9d51dec6dd140396e220/scipy-1.17.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
   name: scipy
   version: 1.17.1
@@ -8185,32 +8210,6 @@ packages:
   - sphinx-markdown-tables ; extra == 'docs'
   - sphinx-rtd-theme ; extra == 'docs'
   - sphinxcontrib-jsmath ; extra == 'docs'
-  requires_python: '>=3.7'
-- pypi: https://files.pythonhosted.org/packages/2e/c8/cd09ee865ef3747c104f34ed6e780a43d4ea8cc6d6915f680ae225f11c06/spatialmath_python-1.1.16-py3-none-any.whl
-  name: spatialmath-python
-  version: 1.1.16
-  sha256: 0427e1c82de3b39589e3976ab215ae474f01d022eccfe2a33d8d297b84ac55de
-  requires_dist:
-  - numpy>=1.22
-  - scipy
-  - matplotlib
-  - ansitable
-  - typing-extensions
-  - pre-commit
-  - sympy ; extra == 'dev'
-  - pytest ; extra == 'dev'
-  - pytest-timeout ; extra == 'dev'
-  - pytest-xvfb ; extra == 'dev'
-  - coverage ; extra == 'dev'
-  - flake8 ; extra == 'dev'
-  - sphinx ; extra == 'docs'
-  - sphinx-rtd-theme ; extra == 'docs'
-  - sphinx-autorun ; extra == 'docs'
-  - sphinxcontrib-jsmath ; extra == 'docs'
-  - sphinx-favicon ; extra == 'docs'
-  - sphinx-autodoc-typehints ; extra == 'docs'
-  - matplotlib==3.5.1 ; extra == 'ros-humble'
-  - numpy<2 ; extra == 'ros-humble'
   requires_python: '>=3.7'
 - pypi: https://files.pythonhosted.org/packages/32/91/d024616abdba99e83120e07a20658976f6a343646710760c4a51df126029/matplotlib-3.10.9-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
   name: matplotlib
