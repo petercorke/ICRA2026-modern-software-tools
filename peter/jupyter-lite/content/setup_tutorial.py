@@ -43,6 +43,11 @@ TOOLBOXES = {
         "pip_name": "pgraph-python",
         "wheel_prefixes": ["pgraph_python-"],
     },
+    "spatialmath": {
+        "import_name": "spatialmath",
+        "pip_name": "spatialmath-python",
+        "wheel_prefixes": ["spatialmath_python-"],
+    },
 }
 
 PACKAGES = {
