@@ -1,9 +1,8 @@
 # Building, running and deploying modern software tools for robotics
 
-* ICRA2026 Keynote Tutorial 4
-* When: Wednesday, 3 June
+* ICRA2026 Keynote Tutorial 3 (was 4)
+* When: Wednesday, 3 June 15:00 to 16:30 (90 minutes)
 * Where: Strauss 1-2
-
 
 # Important links
 
