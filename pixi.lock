@@ -1099,7 +1099,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/zipp-4.1.0-pyhcf101f3_0.conda
       - pypi: git+https://github.com/jhavl/spatialgeometry.git?branch=future#56a37d145f480577b3f347577f726f50a306881b
       - pypi: git+https://github.com/petercorke/robotics-toolbox-python.git?branch=future#8b0ff19a4206a5f5f9ae7ae339fdc94458c6e735
-      - pypi: git+https://github.com/petercorke/spatialmath-python.git?branch=fix%2Ftwist-pitch#2f311a6d0e436cbc15b9c52e1c28a3574c7a0587
+      - pypi: git+https://github.com/petercorke/spatialmath-python.git?branch=good#5b8895cabeb74c045d48db3f95df20f103be65c3
       - pypi: https://files.pythonhosted.org/packages/01/8e/1e35281b8ab6d5d72ebe9911edcdffa3f36b04ed9d51dec6dd140396e220/scipy-1.17.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/10/bd/c038d7cc38edc1aa5bf91ab8068b63d4308c66c4c8bb3cbba7dfbc049f9c/pyparsing-3.3.2-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/16/e1/3079a9ff9b8e11b846c6ac5c8b5bfb7ff225eee721825310c91b3b50304f/tqdm-4.67.3-py3-none-any.whl
@@ -1227,7 +1227,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/zip-3.0-h84a0fba_4.conda
       - pypi: git+https://github.com/jhavl/spatialgeometry.git?branch=future#56a37d145f480577b3f347577f726f50a306881b
       - pypi: git+https://github.com/petercorke/robotics-toolbox-python.git?branch=future#8b0ff19a4206a5f5f9ae7ae339fdc94458c6e735
-      - pypi: git+https://github.com/petercorke/spatialmath-python.git?branch=fix%2Ftwist-pitch#2f311a6d0e436cbc15b9c52e1c28a3574c7a0587
+      - pypi: git+https://github.com/petercorke/spatialmath-python.git?branch=good#5b8895cabeb74c045d48db3f95df20f103be65c3
       - pypi: https://files.pythonhosted.org/packages/08/ef/b3c6b9b5be2f82416d73fe2ed2e96e2793cd80e7510bd6a17ca79cdd88ec/fonttools-4.63.0-cp312-cp312-macosx_10_13_universal2.whl
       - pypi: https://files.pythonhosted.org/packages/0c/eb/4fc8d0a7110eb5fc9cc161723a34a8a6c200ce3b4fbf681bc86feee22308/charset_normalizer-3.4.7-cp312-cp312-macosx_10_13_universal2.whl
       - pypi: https://files.pythonhosted.org/packages/10/bd/c038d7cc38edc1aa5bf91ab8068b63d4308c66c4c8bb3cbba7dfbc049f9c/pyparsing-3.3.2-py3-none-any.whl
@@ -8064,7 +8064,7 @@ packages:
   - sphinx-autodoc-typehints ; extra == 'docs'
   - sphinx-favicon ; extra == 'docs'
   requires_python: '>=3.8'
-- pypi: git+https://github.com/petercorke/spatialmath-python.git?branch=fix%2Ftwist-pitch#2f311a6d0e436cbc15b9c52e1c28a3574c7a0587
+- pypi: git+https://github.com/petercorke/spatialmath-python.git?branch=good#5b8895cabeb74c045d48db3f95df20f103be65c3
   name: spatialmath-python
   version: 1.1.15
   requires_dist:
