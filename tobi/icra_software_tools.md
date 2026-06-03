@@ -43,9 +43,12 @@ theme:
 From Research Code to Running Systems
 ===
 
-Cross-platform robotics and ML workflows
+Robotics papers increasingly depend on full software stacks:
+ROS, Python, C++, CUDA, simulators, ML tooling, and data.
 
-Robotics papers increasingly depend on software systems.
+Cross-platform robotics and ML workflows (Linux + Windows + MacOS + ...)
+
+Support for many programming languages: Python, C++, Rust, R, ...
 
 <!-- pause -->
 
@@ -62,11 +65,6 @@ speaker_note: |
 
 The Problem: Research Code Becomes Infrastructure
 ===
-
-Robotics papers increasingly depend on full software stacks:
-ROS, Python, C++, CUDA, simulators, ML tooling, and data.
-
-<!-- pause -->
 
 ## Hands up if you have lost time to...
 
@@ -146,7 +144,8 @@ The slides are also the demo environment.
 Use a terminal and raw `git clone`
 (avoid GitHub Web or GitHub Desktop):
 ```bash
-git clone https://github.com/petercorke/ICRA2026-modern-software-tools.git
+git clone https://github.com/petercorke/
+          ICRA2026-modern-software-tools.git
 cd ICRA2026-modern-software-tools
 pixi run presentation
 ```
@@ -179,7 +178,7 @@ Think: conda packages, modern project workflow.
 
 <!-- column: 0 -->
 
-## Instructions
+## The old way: Instructions
 
 - README.md
 - shell scripts
@@ -188,7 +187,7 @@ Think: conda packages, modern project workflow.
 
 <!-- column: 1 -->
 
-## Artifacts
+## Now: shared artifacts
 
 - `pixi.toml`
 - `pixi.lock`
@@ -384,6 +383,11 @@ transformers = "*"
 Robotics Meets ML: RoboStack
 ===
 
+Hands up if you have ever installed a VM
+or old Ubuntu just to get ROS running.
+
+<!-- pause -->
+
 RoboStack enables ROS on:
 
 - Linux
@@ -403,11 +407,6 @@ pixi add ros-rolling-desktop
 
 ROS Desktop App from a Locked Environment
 ===
-
-Hands up if you have ever installed a VM
-or old Ubuntu just to get ROS running.
-
-<!-- pause -->
 
 ```bash +exec
 pixi run ros2 run turtlesim turtlesim_node
@@ -545,7 +544,7 @@ Cross Platform Reproducibility
 - Same lockfile
 - Same command
 - Different machine
-- Different OS
+- Different OS - note: no root required!
 
 <!-- pause -->
 
@@ -717,7 +716,7 @@ It means the effort is captured instead of rediscovered.
    Drivers, GUIs, middleware, and hardware access need testing.
 
 2. Packaging moves work earlier.
-   Old libraries and unusual builds likely need patches.
+   Old libraries and unusual builds likely need patches (our RoboStack builds have 100s!).
 
 3. Pixi is one layer.
    Docker, HPC modules, and embedded toolchains still matter.
@@ -745,7 +744,7 @@ Teasers
 <!-- pause -->
 2. Pack environments for another machine: `pixi pack`
 <!-- pause -->
-3. [Cross-platform CI in GitHub](https://github.com/ruben-arts/ros-example)
+3. [Cross-platform CI](https://github.com/ruben-arts/ros-example)
 
 ```yaml
 jobs:
@@ -765,7 +764,7 @@ jobs:
 
 <!-- pause -->
 5. Package AI/ML models as versioned, cached dependencies:
-   [prefix.dev blog](https://prefix.dev/blog/packaging-ai-ml-models-as-conda-packages)
+   https://prefix.dev/blog/packaging-ai-ml-models-as-conda-packages
 
 <!--
 speaker_note: |
@@ -802,7 +801,7 @@ Key Insights
 
 QUT Centre for Robotics
 
-Thanks to the **prefix.dev** team, **Silvio Traversaro**,
+Thanks to the **prefix.dev** team for creating Pixi, **Silvio Traversaro**,
 **Alejandro Fontan**, **Nicolas Marticorena**, **Margaux Edwards**,
 my **co-authors**, open-source contributors,
 and the Australian Research Council.
@@ -822,6 +821,8 @@ References and Links
 
 <!-- list_item_newlines: 2 -->
 
+- [<span class="highlight">pixi.sh</span>](https://pixi.sh)
+
 - [<span class="highlight">A RoboStack Tutorial: Using the Robot Operating System Alongside the Conda and Jupyter Data Science Ecosystems</span>](https://doi.org/10.1109/MRA.2021.3128367), IEEE Robotics & Automation Magazine, vol. 29, no. 2, June 2022
 
 - [<span class="highlight">Pixi: Unified Software Development and Distribution for Robotics and AI</span>](https://arxiv.org/abs/2511.04827), arXiv:2511.04827
@@ -829,7 +830,5 @@ References and Links
 - [<span class="highlight">ROS2WASM: Bringing the Robot Operating System to the Web</span>](https://doi.org/10.1109/ICRA55743.2025.11127821), IEEE International Conference on Robotics and Automation (ICRA) 2025
 
 - [<span class="highlight">VSLAM-LAB: A Comprehensive Framework for Visual SLAM Methods and Datasets</span>](https://arxiv.org/abs/2504.04457), IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2025
-
-- [<span class="highlight">pixi.sh</span>](https://pixi.sh)
 
 - [<span class="highlight">rattler.build</span>](https://rattler.build)
