@@ -24,10 +24,10 @@ Head over to Peter's [README](peter/README.md).
 
 ## From Research Code to Running Systems: Cross-Platform Robotics and ML Workflows; Tobi (45 minutes)
 
+### Locally running Tobi's presentation (recommended!)
 To follow Tobi's Part 2 presentation locally:
 
-1. Install `pixi` (or if already installed, please update to the latest version via `pixi self-update`):
-
+1. Install [pixi](https://pixi.sh):
 - On Unix (Linux/MacOS): `curl -fsSL https://pixi.sh/install.sh | sh`
 - On Windows:
 `powershell -ExecutionPolicy ByPass -c "irm -useb https://pixi.sh/install.ps1 | iex"`
@@ -35,13 +35,18 @@ To follow Tobi's Part 2 presentation locally:
 
 2. Run `pixi run presentation` within this directory in a terminal.
 
-For browser-based GitHub Codespaces, use the dedicated launcher that auto-installs Pixi if needed and uses a browser-safe execute keybinding:
+### Run Tobi's presentation on GitHub codespaces
 
-- `bash tobi/scripts/run_presentation_codespaces.sh`
-
-If this repository is opened with a devcontainer-enabled Codespace, Pixi bootstrap runs automatically on creation via `.devcontainer/devcontainer.json`.
-The devcontainer startup also applies Codespaces-specific keybinding overrides directly to `tobi/presenterm_config.yaml` (only when `CODESPACES=true`), so only one presenterm config file is maintained.
-On first attach, the presentation also auto-starts once in the container. To trigger that one-time startup again, remove `~/.cache/icra2026_presentation_autostarted` in the Codespace.
+1. From the repository page, select the Code button.
+2. Instead of cloning the repository to your local machine, select the Codespaces tab.
+  - Do not open the Codespace using the default configuration. Some examples may not run correctly with the default resource allocation.
+  - Instead, select: "New with options". Recommended configuration: 8 cores as a minimum recommended option or 16 cores for best performance, where available
+3. After selecting the machine type, create the Codespace. GitHub will open a cloud-based VS Code environment and automatically begin setting up the development environment for the repository. The Codespace setup process will install and configure the required dependencies, including pixi, which is used to manage the software environment.
+4. Running Graphical Examples. Some examples use graphical output. These will run in a dedicated graphical window within the Codespace environment. For graphical displays, open `vnc_lite.html`.
+5. Notes
+  - The initial setup may take several minutes, particularly when using the repository for the first time.
+  - If graphical examples do not appear, check the VNC display through vnc_lite.html. The link to the port can also be found through the ports tab, under Codespaces desktop.
+  - On first attach, the presentation also auto-starts once in the container. To trigger that one-time startup again, remove `~/.cache/icra2026_presentation_autostarted` in the Codespace.
 
 ## Abstract
 
@@ -74,7 +79,7 @@ We will be demonstrating tools: what they do, how to use them, and how to instal
 
 
 
-The room we've been allocated seats 470 so it might be a big crowd. We will use [mentimeter](https://www.mentimeter.com) to capture questions from the floor and we'll do our best to answer them.
+The room we've been allocated seats 470 so it might be a big crowd. We will use [mentimeter](https://www.menti.com/al8np6e1en7t) to capture questions from the floor and we'll do our best to answer them.
 
 ## Presenters
 
