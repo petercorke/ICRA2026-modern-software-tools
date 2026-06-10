@@ -43,12 +43,14 @@ theme:
 From Research Code to Running Systems
 ===
 
-Robotics papers increasingly depend on full software stacks:
-ROS, Python, C++, CUDA, simulators, ML tooling, and data.
+Robotics papers increasingly depend on full software stacks
 
-Cross-platform robotics and ML workflows (Linux + Windows + MacOS + ...)
-
-Support for many programming languages: Python, C++, Rust, R, ...
+Bucket list:
+  - ROS, Python, C++, CUDA, simulators, ML tooling, and data
+  - Cross-platform robotics and ML workflows
+    (Linux + Windows + MacOS + ...)
+  - Support for many programming languages:
+    Python, C++, Rust, R, ...
 
 <!-- pause -->
 
@@ -83,7 +85,7 @@ speaker_note: |
 ## The thesis
 
 Tooling is part of how research is
-<span class="accent">shared, reused, and extended</span>.
+<span class="accent">shared, reused, and extended</span>. Developing and sharing should be a single workflow, not separated.
 
 <!-- end_slide -->
 
